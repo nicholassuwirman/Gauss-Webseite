@@ -1,17 +1,7 @@
 /* about.css */
 
-.logo {
-  width: 250px;
-  height: 40px;
-  position: relative;
-  z-index: 10;
-  margin-left: 13px;
-}
 
 .navbar-section {
-  padding-left: 90px;
-  padding-right: 95px;
-  padding-top: 20px;
 }
 
 .navbar-menu-text-container {
@@ -19,13 +9,6 @@
   flex-direction: row;
 }
 
-.navbar-menu-text {
-  position: relative;
-  color: white;
-  font-family: 'Michroma';
-  margin-left: 40px;
-  text-decoration: none;
-}
 
 .navbar-menu-text::after {
   content: "";

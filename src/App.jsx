@@ -7,6 +7,7 @@ import './output.css';
 import Hero from './containers/pages/home/hero/hero';  // Correct path for Hero.jsx
 import About from './containers/pages/about/about';    // Correct path for About.jsx
 import Home from './containers/pages/home/home';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   return (

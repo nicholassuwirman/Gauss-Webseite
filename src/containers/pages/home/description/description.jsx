@@ -14,6 +14,8 @@ import sponsorMobilityAc from '../../../../assets/sponsor-mobility-academy.png';
 import sponsorStaubli from '../../../../assets/sponsor-staubli.png';
 import sponsorInnovatiq from '../../../../assets/sponsot-innovatiq.png';
 
+import bikeChargingStation from '../../../../assets/gauss-charging-station.png';
+
 import bikePic2uncut from '../../../../assets/gauss_image_2_uncut.png';
 import gaussGroupImage from '../../../../assets/gauss-group-image.jpg';
 import gaussGroupImage2 from '../../../../assets/gauss-group-image2.jpg';
@@ -189,17 +191,17 @@ const Description = () => {
 
   return (
      <div
-      className="flex flex-col bg-black text-left p-5 pl-[90px] pr-[90px] text-lg h-auto"
+      className="flex flex-col bg-black text-left p-5 pb-4 pl-[90px] pr-[90px] text-lg h-auto "
       ref={descriptionRef}
     >
-      <div className="description-text pt-40 justify-center flex text-[#EAEAEA] text-5xl font-semibold">
+      <div className=" description-text pt-20 justify-center flex text-[#EAEAEA] text-[1rem] font-semibold sm:text-[3rem]">
         <p>{randomText}</p>
       </div>
-      <div className="bg-black h-auto w-full mt-16 rounded-xl flex flex-col items-center  ">
+      <div className="bg-black h-auto w-full mt-8 rounded-xl flex flex-col items-center  ">
         {/* Image with fade-in effect */}
         <img
           src={bikePic1}
-          className={`w-[560px] h-[280px] mt-4 fade-in ${
+          className={`w-[560px] h-[280px] fade-in ${
             isVisible ? 'active' : ''
           }`}
           alt="Gauss Motorcycle"
@@ -207,13 +209,15 @@ const Description = () => {
 
         {/* Logos with fade-in effect */}
         <div
-          className={`flex justify-between pt-8 space-x-[90px] fade-in ${
+          className={`speed-torque-container flex justify-between pt-3 space-x-[90px] fade-in ${
             isVisible ? 'active' : ''
           }`}
+
+
         >
           <div className="flex flex-col items-center">
-            <Power className="w-[40px] h-[40px]" />
-            <p className="power-text text-white mt-5 font-exo text-[16px]">
+            <Power className="w-[40px] h-[40px] pt-0" />
+            <p className="power-text text-white mt-4 font-exo text-[16px]">
               110kW / 200kW
             </p>
           </div>
@@ -223,7 +227,7 @@ const Description = () => {
               alt="torque logo"
               className="w-[50px] h-[50px]"
             />
-            <p className="power-text text-white mt-3 font-exo">500 Nm</p>
+            <p className="power-text text-white mt-[0.85rem] font-exo">500 Nm</p>
           </div>
           <div className="flex flex-col items-center">
             <img
@@ -231,7 +235,7 @@ const Description = () => {
               alt="battery logo"
               className="w-[40px] h-[40px]"
             />
-            <p className="power-text text-white mt-5 font-exo">
+            <p className="power-text text-white mt-4 font-exo">
               16 – 20 kWh / 700 V
             </p>
           </div>
@@ -241,7 +245,7 @@ const Description = () => {
               alt="battery logo"
               className="w-[40px] h-[40px]"
             />
-            <p className="power-text text-white mt-5 font-exo">220 kg</p>
+            <p className="power-text text-white mt-4 font-exo">220 kg</p>
           </div>
           <div className="flex flex-col items-center">
             <img
@@ -249,22 +253,52 @@ const Description = () => {
               alt="speed logo"
               className="w-[40px] h-[40px]"
             />
-            <p className="power-text text-white mt-5 font-exo">250+ km/h</p>
+            <p className="power-text text-white mt-4 font-exo">250+ km/h</p>
           </div>
         </div>
       </div>
 
-      <div className='w-full h-auto mt-[15vh] flex flex-row items-center mb-[20vh]'>
-          <img
-            src={bikePic2uncut}
-            className='h-[65vh] w-auto max-w-full rounded-lg'
-          />
+  <div className='gauss-2picture-container'>
+    <div className='gauss-electric-container'>
+      <img
+        src={bikePic2uncut}
+        className='gauss-electric-picture h-full ml-6 mr-7 max-w-full rounded-lg w-[50%]'
+      />
 
-          <div className='ml-8 flex flex-col justify-center w-[50%]'>
-            <p className='power-text text-white mt-5 font-exo text-5xl mb-8 font-medium'>GAUSS - Electric Superbike</p>
-            <p className='power-text text-white font-exo'>The GAUSS superbike is the world’s first fully electric endurance motorcycle.  The new fast exchangeable high performance battery system for racing purposes shifts limits. The new designed chassis is fully adaptable to the race track and pilot’s needs and the steering head angle, height and the length of the swingarm are adjustable.</p>
-          </div>
+      <div className='gauss-electric-text flex flex-col justify-center w-[50%] sm:ml-8 mt-8'>
+          <p className='power-text text-white mt-5 font-exo text-lg mb-8 font-medium sm:text-5xl'>
+            GAUSS - Electric Superbike
+          </p>
+          <p className='power-text text-white font-exo'>
+            The GAUSS superbike is the world’s first fully electric endurance motorcycle.
+            The new fast exchangeable high performance battery system for racing purposes
+            shifts limits. The new designed chassis is fully adaptable to the race track
+            and pilot’s needs and the steering head angle, height and the length of the swingarm are adjustable.
+          </p>
       </div>
+    </div>
+
+    <div className='gauss-charge-container '>
+      <div className='flex flex-col justify-center w-[45%] ml-8 mt-4'>
+          <p className='power-text text-white mt-5 font-exo text-5xl mb-8 font-medium'>
+            Special Charging Station
+          </p>
+          <p className='power-text text-white font-exo'>
+          The core of the electric superbike is its Li-Ion energy storage system. Within seconds, 
+          an empty battery can be changed against a fully charged one. The energy storage system can be charged 
+          with a GAUSS fast charging station either off board or on board. The GAUSS charging station also supports 
+          data recording software to analyze telemetry data of the vehicle.
+          </p>
+      </div>
+
+      <img
+        src={bikeChargingStation}
+        className='h-[70%] w-[45%] rounded-lg ml-12'
+      />
+    </div>
+  </div>
+ 
+
 
       <div className="h-[100vh] flex flex-col items-center justify-center space-y-6 pb-[40vh] mt-[18vh]">
         <div className='flex flex-col items-center justify-center mb-10'>
@@ -277,7 +311,7 @@ const Description = () => {
         </div>
         
         <video
-          className="background-video-gauss-2 w-full h-[40vh]"
+          className="background-video-gauss-2 h-[40vh]"
           autoPlay
           muted
           loop
@@ -460,13 +494,13 @@ const Description = () => {
   </div>
   </div>
 
-  <div className='flex justify-between'>
-    <div className='flex items-center mt-[18rem]' >
-      <img src={copyrightLogo} className='h-[1.5rem] mr-2'/>    
-      <p className='text-white'>Gauss Project</p>
+  <div className='flex justify-between items-center'>
+    <div className='flex items-center mt-[18rem] ml-[2.4rem]' >
+      <img src={copyrightLogo} className='h-[1.5rem] mr-2 '/>    
+      <p className='text-white pt-[1rem]'>Gauss Project</p>
     </div>
 
-    <div className="flex mt-[18.2rem]">
+    <div className="flex mt-[18.2rem] items-center">
       <a
         href="https://www.youtube.com/@gauss-project7686"
         target="_blank"

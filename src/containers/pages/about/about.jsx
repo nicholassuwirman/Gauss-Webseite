@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div id="about" className="relative flex flex-col w-full h-[100vh] overflow-hidden bg-black">
       {/* Navbar Section */}
-      <div className="navbar-section h-[60px] w-full flex flex-col">
+      <div className="navbar-section ">
         <div className="flex items-center justify-between">
           <Link to="/home">
             <img src={logo} alt="Gauss Logo" className="logo" />
