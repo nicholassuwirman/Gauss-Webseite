@@ -189,13 +189,13 @@ const Description = () => {
 
   return (
      <div
-      className="flex flex-col bg-black text-left p-5 pl-[90px] pr-[90px] text-lg h-[490vh]"
+      className="flex flex-col bg-black text-left p-5 pl-[90px] pr-[90px] text-lg h-auto"
       ref={descriptionRef}
     >
       <div className="description-text pt-40 justify-center flex text-[#EAEAEA] text-5xl font-semibold">
         <p>{randomText}</p>
       </div>
-      <div className="bg-black h-[80vh] w-full mt-16 rounded-xl flex flex-col items-center">
+      <div className="bg-black h-auto w-full mt-16 rounded-xl flex flex-col items-center  ">
         {/* Image with fade-in effect */}
         <img
           src={bikePic1}
@@ -254,7 +254,7 @@ const Description = () => {
         </div>
       </div>
 
-      <div className='w-full h-[60vh] flex flex-row items-center mb-[25vh]'>
+      <div className='w-full h-auto mt-[15vh] flex flex-row items-center mb-[20vh]'>
           <img
             src={bikePic2uncut}
             className='h-[65vh] w-auto max-w-full rounded-lg'
@@ -466,17 +466,45 @@ const Description = () => {
       <p className='text-white'>Gauss Project</p>
     </div>
 
-    <div className='flex mt-[18.2rem]'>
-    <a href="https://www.youtube.com/@gauss-project7686" target="_blank" rel="noopener noreferrer">
-      <img src={youtubeLogo} className="social-icon h-[1.5rem] mr-2 ml-[0.5rem]" alt="YouTube" />
-    </a>
-    <a href="https://www.instagram.com/gauss_project?igsh=cnJsNjdrN3RyN3Vr" target="_blank" rel="noopener noreferrer">
-      <img src={instagramLogo} className="social-icon h-[1.5rem] mr-2 ml-[0.7rem]" alt="Instagram" />
-    </a>
-    <a href="https://www.linkedin.com/company/gauss-project/" target="_blank" rel="noopener noreferrer">
-      <img src={linkedinLogo} className="social-icon h-[1.5rem] mr-2 ml-[0.5rem]" alt="LinkedIn" />
-    </a>      
+    <div className="flex mt-[18.2rem]">
+      <a
+        href="https://www.youtube.com/@gauss-project7686"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group"
+      >
+        <img
+          src={youtubeLogo}
+          className="social-icon h-[1.5rem] mr-2 ml-[0.5rem] group-hover:translate-y-[-4px] transition-transform duration-200"
+          alt="YouTube"
+        />
+      </a>
+      <a
+        href="https://www.instagram.com/gauss_project?igsh=cnJsNjdrN3RyN3Vr"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group"
+      >
+        <img
+          src={instagramLogo}
+          className="social-icon h-[1.5rem] mr-2 ml-[0.7rem] group-hover:translate-y-[-4px] transition-transform duration-200"
+          alt="Instagram"
+        />
+      </a>
+      <a
+        href="https://www.linkedin.com/company/gauss-project/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group"
+      >
+        <img
+          src={linkedinLogo}
+          className="social-icon h-[1.5rem] mr-2 ml-[0.5rem] group-hover:translate-y-[-4px] transition-transform duration-200"
+          alt="LinkedIn"
+        />
+      </a>
     </div>
+
 
   </div>
   

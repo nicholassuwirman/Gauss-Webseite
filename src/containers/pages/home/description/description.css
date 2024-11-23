@@ -61,7 +61,7 @@ width: 100%;  /* Make it fill the width */
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  animation: scrollVertical 55s linear infinite; /* Infinite smooth scrolling */
+  animation: scrollVertical 40s linear infinite; /* Infinite smooth scrolling */
 }
 
 .parallax-images-2 {
@@ -70,7 +70,7 @@ width: 100%;  /* Make it fill the width */
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  animation: scrollVertical 40s linear infinite; /* Infinite smooth scrolling */
+  animation: scrollVertical 67s linear infinite; /* Infinite smooth scrolling */
 }
 
 .parallax-images-3 {
