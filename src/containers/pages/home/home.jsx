@@ -7,8 +7,8 @@ import './home.css';
 const Home = () => {
   return (
     <div className="home-container">
-      <Hero />       {/* Full viewport Hero section */}
-      <Description /> {/* Description section below */}
+      <Hero />    
+      <Description /> 
     </div>
   );
 };

@@ -1,7 +1,223 @@
-.description-container {
-    padding: 20px;
-    background-color: pink;
-    text-align: center;
-    font-size: 18px;
-    color: black;
+.description-text {
+  font-family: 'Michroma';
+
+}
+
+.power-text {
+  font-family: 'Exo 2';
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.background-video-gauss-2{
+  margin-top: 15rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover; 
+  transition: filter 0.5s ease-out;
+  will-change: filter;
+}
+
+.sponsor-image {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+/* The container holding all the columns */
+.parallax-container {
+display: flex;
+justify-content: space-between;
+height: 100vh;      /* Full viewport height */
+overflow: hidden;   /* Hide anything that overflows */
+position: relative;
+}
+
+/* Each column will take equal space */
+.parallax-column {
+flex: 1;                /* Each column takes up equal space */        
+overflow: hidden;       /* Hide anything that overflows */
+display: flex;
+flex-direction: column;
+justify-content: flex-start; /* Align images from the top */
+position: relative;
+width: 100%;  /* Make it fill the width */
+}
+
+/* The images inside each column */
+.parallax-images-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  animation: scrollVertical 55s linear infinite; /* Infinite smooth scrolling */
+}
+
+.parallax-images-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  animation: scrollVertical 40s linear infinite; /* Infinite smooth scrolling */
+}
+
+.parallax-images-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  animation: scrollVertical 55s linear infinite; /* Infinite smooth scrolling */
+}
+
+.parallax-images-4 {
+  display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    animation: scrollVertical 65s linear infinite; /* Infinite smooth scrolling */
+}
+
+/* Image set inside each column */
+.parallax-image-set {
+display: flex;
+justify-content: center;
+flex-direction: column;
+height: 100%;  /* Ensure the images take full height of the container */
+}
+
+/* Styling the images */
+.parallax-images img {
+width: 100%;              /* Make images take full width */
+height: auto;             /* Maintain aspect ratio */
+object-fit: cover;        /* Ensure images are cropped correctly */
+margin-bottom: 1rem;      /* Add spacing between images */
+}
+
+/* Keyframes for vertical scrolling effect */
+@keyframes scrollVertical {
+0% {
+  transform: translateY(-50%);  /* Start at the top */
+}
+100% {
+  transform: translateY(0%);  /* Scroll to the bottom, and stop exactly at halfway point */
+}
+}
+
+/* Style for the "Be a part of history" text */
+.history-text {
+  font-size: 4rem; /* Adjust text size */
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  font-family: 'Exo 2';
+  text-transform: uppercase; /* Optional - for a more impactful look */
+  z-index: 10; /* Ensure the text stays above all parallax images */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centering the text in the middle */
+  padding: 20px;
+
+  /* Radial gradient background */
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 70%, transparent 100%);
+  border-radius: 90px; /* Rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); /* Shadow effect around the text */
+
+  /* Optional: Add subtle text shadow for depth */
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.scroll-button-container {
+  text-align: center; /* Center the button horizontally */
+  margin-top: 20px; /* Add spacing from the parallax section */
+  padding: 20px 0; /* Add some vertical padding */
+}
+
+.scroll-to-hero-button {
+  padding: 13px 27.5px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'Exo 2';
+
+
+  
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative; /* Ensure position for pseudo-elements */
+}
+
+.scroll-to-hero-button:hover {
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.scroll-to-hero-button:before {
+  content: '';
+  /* Linear gradient with your desired colors */
+  background: linear-gradient(45deg, #F9F7F7, #DBE2EF, #3F72AF, #112D4E);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.scroll-to-hero-button:hover:before {
+  opacity: 1; /* Show the glow effect when the button is hovered */
+}
+
+.scroll-to-hero-button:active {
+  color: #000;
+}
+
+.scroll-to-hero-button:active:after {
+  background: transparent;
+}
+
+.scroll-to-hero-button:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 5px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
 }

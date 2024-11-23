@@ -1,6 +1,7 @@
 // src/App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './output.css';
 
 // Import containers with correct paths based on your folder structure
 import Hero from './containers/pages/home/hero/hero';  // Correct path for Hero.jsx

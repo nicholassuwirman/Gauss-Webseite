@@ -1,18 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './hero.css';
-import gaussVideo from '../../../../assets/Gauss Webvideo New compressed.mp4';
+import gaussVideo from '../../../../assets/Gauss Video Cut New compressed.mp4';
 import logo from '../../../../assets/gauss logo.png';
 
 const Hero = () => {
   return (
     <>
-      <div className="hero-container">
-        <div className="navbar-section">
-          <div className="navbar-section-top">
+      <div id="hero" className="relative flex flex-col w-full h-screen overflow-hidden">
+        <div className="navbar-section h-[60px] w-full flex flex-col">
+          <div className=" flex items-center justify-between">
             <Link to="/home">
               <img src={logo} alt="Gauss Logo" className="logo" />
-            </Link>            <div className="navbar-menu-text-container">
+            </Link> <div className="navbar-menu-text-container">
               <Link to="/about" className="navbar-menu-text">About</Link>
               <Link to="/" className="navbar-menu-text">Bikes</Link>
               <Link to="/" className="navbar-menu-text">Partners</Link>
@@ -21,7 +21,7 @@ const Hero = () => {
 
             </div>
           </div>
-          <div className="navbar-section-line"></div>
+          <div className="mt-[10px] w-[101.5%] border-b-2 border-[#F9F7F7] h-[4px] relative z-5"></div>
         </div>
 
         <video 
@@ -32,7 +32,8 @@ const Hero = () => {
           src={gaussVideo} 
           type="video/mp4"
         />
-        
+                <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black to-transparent opacity-100 z-0"></div>
+
         <div className="hero-shadow"></div>
         
         <div className="hero-title">
