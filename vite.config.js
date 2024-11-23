@@ -1,8 +1,10 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react-swc';
 
-// https://vite.dev/config/
+// https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/Gauss-Webseite/' : '/',  // Dynamic base URL
   plugins: [react()],
-})
+  build: {
+    outDir: 'dist', // Ensure this matches your build output folder
+  },
+});
