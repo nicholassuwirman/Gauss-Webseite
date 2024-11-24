@@ -39,6 +39,7 @@ import speedLogo from '../../../../assets/speed_.png';
 import weightLogo from '../../../../assets/weight_.png';
 import torqueLogo from '../../../../assets/torque_.png';
 import batteryLogo from '../../../../assets/battery-charging.png';
+import powerLogo from '../../../../assets/power-logo.png';
 
 import copyrightLogo from '../../../../assets/copyright_.png';
 import youtubeLogo from '../../../../assets/youtube_.png';
@@ -191,7 +192,7 @@ const Description = () => {
 
   return (
      <div
-      className="flex flex-col bg-black text-left p-5 pb-4 pl-[90px] pr-[90px] text-lg h-auto "
+      className="description-container flex flex-col bg-black text-left p-5 pb-4 pl-[90px] pr-[90px] text-lg h-auto "
       ref={descriptionRef}
     >
       <div className=" description-text pt-20 justify-center flex text-[#EAEAEA] text-[1rem] font-semibold sm:text-[3rem]">
@@ -201,7 +202,7 @@ const Description = () => {
         {/* Image with fade-in effect */}
         <img
           src={bikePic1}
-          className={`w-[560px] h-[280px] fade-in ${
+          className={`description-gauss-motorbike w-[560px] h-[280px] fade-in ${
             isVisible ? 'active' : ''
           }`}
           alt="Gauss Motorcycle"
@@ -215,39 +216,51 @@ const Description = () => {
 
 
         >
-          <div className="flex flex-col items-center">
-            <Power className="w-[40px] h-[40px] pt-0" />
-            <p className="power-text text-white mt-4 font-exo text-[16px]">
-              110kW / 200kW
-            </p>
-          </div>
-          <div className="flex flex-col items-center">
-            <img
-              src={torqueLogo}
-              alt="torque logo"
-              className="w-[50px] h-[50px]"
-            />
-            <p className="power-text text-white mt-[0.85rem] font-exo">500 Nm</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <img
-              src={batteryLogo}
-              alt="battery logo"
-              className="w-[40px] h-[40px]"
-            />
-            <p className="power-text text-white mt-4 font-exo">
-              16 – 20 kWh / 700 V
-            </p>
-          </div>
-          <div className="flex flex-col items-center">
-            <img
-              src={weightLogo}
-              alt="battery logo"
-              className="w-[40px] h-[40px]"
-            />
-            <p className="power-text text-white mt-4 font-exo">220 kg</p>
-          </div>
-          <div className="flex flex-col items-center">
+          <div className='flex flex-row'>
+            <div className="description-power flex flex-col items-center">
+                <img
+                  src={powerLogo}
+                  alt="power logo"
+                  className="power-logo w-[42px] h-[42px]"
+                />
+                
+                <p className="power-text-power text-white mt-4 font-exo">
+                  110kW / 200kW
+                </p>
+              </div>
+
+              <div className="description-torque flex flex-col items-center">
+                <img
+                  src={torqueLogo}
+                  alt="torque logo"
+                  className="w-[53px] h-[53px]"
+                />
+                <p className="power-text-torque text-white mt-[0.85rem] font-exo">500 Nm</p>
+              </div>
+            </div >
+
+            <div className="description-logo-2 flex flex-row m-0">
+              <div className="description-battery flex flex-col items-center">
+                <img
+                  src={batteryLogo}
+                  alt="battery logo"
+                  className="w-[40px] h-[40px]"
+                />
+                <p className="power-text text-white mt-4 font-exo">
+                  16 – 20 kWh / 700 V
+                </p>
+              </div>
+              <div className="description-weight flex flex-col items-center">
+                <img
+                  src={weightLogo}
+                  alt="battery logo"
+                  className="w-[40px] h-[40px]"
+                />
+                <p className="power-text text-white mt-4 font-exo">220 kg</p>
+              </div>
+            </div>
+          
+          <div className="description-speed flex flex-col items-center">
             <img
               src={speedLogo}
               alt="speed logo"
@@ -266,7 +279,7 @@ const Description = () => {
       />
 
       <div className='gauss-electric-text flex flex-col justify-center w-[50%] sm:ml-8 mt-8'>
-          <p className='power-text text-white mt-5 font-exo text-lg mb-8 font-medium sm:text-5xl'>
+          <p className='gauss-electric-superbike-text text-white mt-5 font-exo text-lg mb-8 font-medium sm:text-5xl'>
             GAUSS - Electric Superbike
           </p>
           <p className='power-text text-white font-exo'>
@@ -279,11 +292,11 @@ const Description = () => {
     </div>
 
     <div className='gauss-charge-container '>
-      <div className='flex flex-col justify-center w-[45%] ml-8 mt-4'>
-          <p className='power-text text-white mt-5 font-exo text-5xl mb-8 font-medium'>
+      <div className='description-charging-container flex flex-col justify-center w-[45%] mt-4'>
+          <p className='description-charging-text power-text text-white mt-5 font-exo text-5xl mb-8 font-medium'>
             Special Charging Station
           </p>
-          <p className='power-text text-white font-exo'>
+          <p className='description-charging-description power-text text-white font-exo'>
           The core of the electric superbike is its Li-Ion energy storage system. Within seconds, 
           an empty battery can be changed against a fully charged one. The energy storage system can be charged 
           with a GAUSS fast charging station either off board or on board. The GAUSS charging station also supports 
@@ -293,7 +306,7 @@ const Description = () => {
 
       <img
         src={bikeChargingStation}
-        className='h-[70%] w-[45%] rounded-lg ml-12'
+        className='image2-container h-[70%] w-[45%] rounded-lg ml-12'
       />
     </div>
   </div>

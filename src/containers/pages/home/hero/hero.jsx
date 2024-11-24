@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import { RiMenuLine, RiCloseLine } from 'react-icons/ri';
 
 import logoNew from '../../../../assets/gauss-logo-new.png'; // Update logo path as necessary
-import gaussVideo from '../../../../assets/Gauss Video Cut New compressed.mp4'; // Update video path
+
+import gaussVideoWotext from '../../../../assets/gauss-video-wotext-compressed.mp4'; // Update video path
 
 const Menu = () => {
   return (
@@ -50,7 +51,7 @@ const Hero = () => {
       </div>
 
       {/* White Line Below Navbar */}
-      <div className="navbar-white-line hidden sm:block ml-20 mt-[11px] w-[91%] border-b-2 border-[#F9F7F7] h-[4px] relative z-5"></div>
+      <div className="navbar-white-line hidden sm:block ml-20 mt-[11px] w-[91%] border-b-2 border-[#F9F7F7] h-[4px] relative"></div>
 
       {/* Background Video */}
       <video 
@@ -58,7 +59,7 @@ const Hero = () => {
         autoPlay
         muted
         loop
-        src={gaussVideo} 
+        src={gaussVideoWotext} 
         type="video/mp4"
       />
       
@@ -68,20 +69,27 @@ const Hero = () => {
           <Menu />
         </div>
       </div>
+      <div className="hero-shadow-left"></div> {/* Add the left shadow here */}
 
       <div className="hero-shadow-bottom absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black to-transparent opacity-100"></div>
 
       {/* Hero Title Section */}
       <div className="hero-title-container">
-        <p className="hero-title-fuel">Fuel the Future</p>
-        <p className="hero-title-partner">Partner with <span className="highlight-text">Gauss 2</span></p>
+        <p className="hero-title-fuel">Charge the Future</p>
+
+        <p className="hero-title-partner"><span className="highlight-text"></span></p>
+        <p className="hero-title-highlight">Gauss 2</p>
+        <p className="hero-title-search-partner">Seeking sponsors for our electric superbike. </p>
         <div className="hero-title-partner-mobile-container">
-          <p className="hero-title-partner-mobile">Partner with</p>
+          <p className="hero-title-partner-mobile"></p>
         </div>
-        <div className="hero-title-partner-highlight-mobile-container">
-          <p className="hero-title-partner-highlight-mobile">Gauss 2</p>
+        
+        <div className="hero-button-container">
+          <button className="hero-sponsor-button">Partner Now</button>
+          <button className="hero-button-partner">Contact Us</button>
         </div>
-        <button className="hero-sponsor-button">Partner now</button>
+        
+
       </div>
     </div>
   );

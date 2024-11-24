@@ -219,7 +219,7 @@ margin-bottom: 1rem;      /* Add spacing between images */
 .gauss-2picture-container{
   width: auto;
   height: auto;
-  margin-top: 8vh;
+  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -234,9 +234,29 @@ margin-bottom: 1rem;      /* Add spacing between images */
   margin-bottom: 3rem;
 }
 
+.description-torque {
+  margin-right: 15vh;
+}
+
+.description-power {
+  margin-right: 15vh ;
+}
+
+.description-battery {
+  margin-right: 15vh;
+}
+
+.description-weight {
+  margin-right: 15vh;
+}
+.description-charging-container  {
+  margin-left: 2rem;
+} 
 .gauss-charge-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 4vh;
 }
 @keyframes glowing {
   0% { background-position: 0 0; }
@@ -261,4 +281,93 @@ margin-bottom: 1rem;      /* Add spacing between images */
   .gauss-charge-container {
     flex-direction: column;
   }
+
+.description-text {
+  font-size: 2.2rem;
+}
+
+  .description-gauss-motorbike {
+    width: 340px;
+    height: 180px;
+  }
+
+  .description-torque {
+    margin-right: 3vh;
+    margin-left: 10vh;
+  }
+  
+  .description-power {
+    margin-right: 3vh ;
+  }
+  
+  .description-battery {
+    margin-right: 3vh;
+  }
+  
+  .description-weight {
+    margin-right: 3vh;
+  }
+  
+
+.power-text-power {
+  font-size: 1rem;
+}
+
+.power-text-torque {
+  font-size: 1rem;
+}
+
+.description-power {
+  margin-left: 1vh;
+}
+
+.description-battery {
+  margin-right: 9vh;    
+}
+
+  .description-logo-2 {
+    padding: 0;
+  }
+
+  .power-logo {
+    margin-left: 2vh;
+  }
+
+  .gauss-electric-picture {
+    width: 110%;
+    margin: 0;
+  }
+
+  .gauss-electric-text {
+    width: 100%;
+    margin: 0;
+  }
+
+  .gauss-electric-superbike-text {
+    font-size: 1.5rem;
+  }
+
+  .description-container {
+    padding: 0rem;
+  }
+
+  .description-speed {
+    margin-top: 5vh;
+    padding-right: 10vh;
+  }
+  .image2-container {
+    order: -1; /* Move the image to the top */
+    height: 100%;
+    width: 97%;
+    margin: 0;
+  }
+  .description-charging-container  {
+    width: 100%;
+    margin-left: 0;
+  }
+  .description-charging-text {
+    font-size: 1.5rem;
+  }
+
+  
 }
