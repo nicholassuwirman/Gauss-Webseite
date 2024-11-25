@@ -192,11 +192,11 @@ const Description = () => {
 
   return (
      <div
-      className="description-container flex flex-col bg-black text-left p-5 pb-4 pl-[90px] pr-[90px] text-lg h-auto "
+      className="description-container flex flex-col bg-black text-left  pb-4  text-lg h-auto "
       ref={descriptionRef}
     >
       <div className=" description-text pt-20 justify-center flex text-[#EAEAEA] text-[1rem] font-semibold sm:text-[3rem]">
-        <p>{randomText}</p>
+        <p className='description-text-header'>Description</p>
       </div>
       <div className="bg-black h-auto w-full mt-8 rounded-xl flex flex-col items-center  ">
         {/* Image with fade-in effect */}
@@ -271,7 +271,6 @@ const Description = () => {
         </div>
       </div>
 
-  <div className='gauss-2picture-container'>
     <div className='gauss-electric-container'>
       <img
         src={bikePic2uncut}
@@ -279,10 +278,10 @@ const Description = () => {
       />
 
       <div className='gauss-electric-text flex flex-col justify-center w-[50%] sm:ml-8 mt-8'>
-          <p className='gauss-electric-superbike-text text-white mt-5 font-exo text-lg mb-8 font-medium sm:text-5xl'>
+          <p className='gauss-electric-superbike-text text-white font-exo text-lg font-medium sm:text-5xl'>
             GAUSS - Electric Superbike
           </p>
-          <p className='power-text text-white font-exo'>
+          <p className='gauss-electric-description text-white font-exo'>
             The GAUSS superbike is the world’s first fully electric endurance motorcycle.
             The new fast exchangeable high performance battery system for racing purposes
             shifts limits. The new designed chassis is fully adaptable to the race track
@@ -291,14 +290,33 @@ const Description = () => {
       </div>
     </div>
 
+
+    <div className="h-[100vh] w-[100%] flex flex-col items-center justify-center space-y-6 pb-[30vh] mt-[11vh]">
+        <div className='flex flex-col items-center justify-center'>
+          <p className="lightning-fast-text text-white font-exo text-5xl font-medium">
+            Lightning-Fast Battery Swap
+          </p>
+          <p className="lightning-fast-text-description text-white font-exo text-5xl font-medium">
+          minimize downtime, maximize efficiency, and lead the charge towards a sustainable future.          </p>
+        </div>
+        
+        <video
+          className="description-battery-swap-video"
+          autoPlay
+          muted
+          loop
+          src={gauss2Video}
+          type="video/mp4"
+        />
+      </div>
+
     <div className='gauss-charge-container '>
       <div className='description-charging-container flex flex-col justify-center w-[45%] mt-4'>
           <p className='description-charging-text power-text text-white mt-5 font-exo text-5xl mb-8 font-medium'>
             Special Charging Station
           </p>
           <p className='description-charging-description power-text text-white font-exo'>
-          The core of the electric superbike is its Li-Ion energy storage system. Within seconds, 
-          an empty battery can be changed against a fully charged one. The energy storage system can be charged 
+          The core of the electric superbike is its Li-Ion energy storage system. The energy storage system can be charged 
           with a GAUSS fast charging station either off board or on board. The GAUSS charging station also supports 
           data recording software to analyze telemetry data of the vehicle.
           </p>
@@ -309,29 +327,10 @@ const Description = () => {
         className='image2-container h-[70%] w-[45%] rounded-lg ml-12'
       />
     </div>
-  </div>
  
 
 
-      <div className="h-[100vh] flex flex-col items-center justify-center space-y-6 pb-[40vh] mt-[18vh]">
-        <div className='flex flex-col items-center justify-center mb-10'>
-          <p className="power-text text-white font-exo text-5xl font-medium mb-6">
-            Lightning-Fast Battery Swap
-          </p>
-          <p className='power-text text-white font-exo text-md w-[70%] flex flex-col items-center justify-center text-center ' >
-          The core of the electric superbike is its Li-Ion energy storage system. Within seconds, an empty battery can be exchanged against a fully charged one. The energy storage system can be charged with a GAUSS fast charging station either off board or on board. The GAUSS charging station also supports data recording software to analyze telemetry data of the vehicle.
-          </p>
-        </div>
-        
-        <video
-          className="background-video-gauss-2 h-[40vh]"
-          autoPlay
-          muted
-          loop
-          src={gauss2Video}
-          type="video/mp4"
-        />
-      </div>
+      
       
       <div className='flex w-[100%]'>
   
