@@ -102,7 +102,6 @@
 }
 
   .navbar-mobile-menu {
-    position: fixed;
     top: 1rem;
     right: 1rem;
     z-index: 1100; /* Higher than the mobile menu container */
@@ -191,7 +190,6 @@
   /* Show Mobile Menu Icon */
   @media screen and (max-width: 768px) {
     .navbar-mobile-menu {
-      display: block;
     }
     
     .navbar-menu-container {
@@ -360,7 +358,6 @@
     .navbar-section {
         padding-left: 1rem;
         padding-right: 3rem;
-        position: relative;
     }
 
     .hero-title-container {
