@@ -21,11 +21,24 @@
     padding-top: 20px;
     border: none; /* Ensure no border */
     box-shadow: none;
-  position: relative;
   background: transparent !important; /* Ensure no background */
+  transition: transform 0.3s ease-in-out; /* Optional, if you want smooth transition for showing/hiding */
 
 }
-  
+/* Optional: Ensure background is clear for transparency */
+.navbar-white-line {
+  background-color: transparent;
+}
+
+/* This class will hide the navbar on scroll (if you decide to add the scroll behavior later) */
+.navbar-section.hide {
+  transform: translateY(-100%); /* Hide navbar on scroll */
+}
+
+.navbar-section.show {
+  transform: translateY(0); /* Show navbar */
+}
+
   .logo {
     width: 48px;
     height: 48px;

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import './hero.css';
+import React, { useState, useEffect } from "react";
+import './hero.css';  // Make sure this file is updated as shown above
 import { Link } from 'react-router-dom';
 import { RiMenuLine, RiCloseLine } from 'react-icons/ri';
 
@@ -60,15 +60,15 @@ const Hero = () => {
       <div className="navbar-white-line hidden sm:block ml-20 mt-[11px] w-[91%] border-b-2 border-[#F9F7F7] h-[4px] relative"></div>
 
       {/* Background Video */}
-      <video 
+      <video
         className="background-video"
         autoPlay
         muted
         loop
-        src={gaussVideoWotext} 
+        src={gaussVideoWotext}
         type="video/mp4"
       />
-      
+
       {/* Sliding Menu */}
       <div className={`navbar-mobile-container ${toggleMenu ? 'visible' : ''}`}>
         <div className="navbar-mobile-content">
@@ -78,19 +78,16 @@ const Hero = () => {
               <img src={gauss1Mobile} alt="Gauss 1 Image" className="gauss-bikes-mobile" />
               <img src={gauss2Mobile} alt="Gauss 2 Image" className="gauss-bikes-mobile" />
             </div>
-           
-
           </div>
           <Link to="/" className="navbar-menu-text-about">About</Link>
           <Link to="/" className="navbar-menu-text-history">History</Link>
           <Link to="/" className="navbar-menu-text-team">Team</Link>
-
-
           <Link to="/" className="navbar-menu-text-partners">Partners</Link>
           <Link to="/" className="navbar-menu-text-participate">Participate</Link>
           <Link to="/" className="navbar-menu-text-imprint">Imprint</Link>
         </div>
       </div>
+
       <div className="hero-shadow-left"></div> {/* Add the left shadow here */}
 
       <div className="hero-shadow-bottom absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black to-transparent opacity-100"></div>
@@ -98,7 +95,6 @@ const Hero = () => {
       {/* Hero Title Section */}
       <div className="hero-title-container">
         <p className="hero-title-fuel">Charge the Future</p>
-
         <p className="hero-title-partner"><span className="highlight-text"></span></p>
         <p className="hero-title-highlight">Gauss 2</p>
         <p className="hero-title-search-partner">Seeking sponsors for our electric superbike. </p>
@@ -110,8 +106,6 @@ const Hero = () => {
           <button className="hero-sponsor-button">Partner Now</button>
           <button className="hero-button-partner">Contact Us</button>
         </div>
-        
-
       </div>
     </div>
   );
