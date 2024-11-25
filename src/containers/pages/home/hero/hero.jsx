@@ -49,7 +49,7 @@ const Hero = () => {
               <RiCloseLine color="#FFFFFF" size={27} onClick={handleMenuToggle} />
             </div>
           ) : (
-            <div style={{ paddingTop: '2vh', paddingRight: '3vh' }}>
+            <div style={{ paddingTop: '0.5vh', paddingRight: '0vh' }}>
               <RiMenuLine color="#FFFFFF" size={27} onClick={handleMenuToggle} />
             </div>
           )}
