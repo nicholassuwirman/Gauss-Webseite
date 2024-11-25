@@ -19,6 +19,10 @@
     padding-left: 5.5rem;
     padding-right: 5.5rem;
     padding-top: 20px;
+    border: none; /* Ensure no border */
+    box-shadow: none; 
+    position: relative;
+
 }
   
   .logo {
