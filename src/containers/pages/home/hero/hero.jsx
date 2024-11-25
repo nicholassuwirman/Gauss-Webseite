@@ -43,7 +43,7 @@ const Hero = () => {
         </div>
 
         {/* Mobile Menu Toggle Icon */}
-        <div className="navbar-mobile-menu ">
+        <div className="navbar-mobile-menu md:hidden">
           {toggleMenu ? (
             <div style={{ paddingTop: '2vh', paddingRight: '0vh' }}>
               <RiCloseLine color="#FFFFFF" size={27} onClick={handleMenuToggle} />

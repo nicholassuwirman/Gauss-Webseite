@@ -106,8 +106,6 @@
     top: 1rem;
     right: 1rem;
     z-index: 1100; /* Higher than the mobile menu container */
-    box-shadow: none;
-    background: transparent !important; /* Ensure no background */
   }
   .navbar-mobile-container.visible {
     right: 0; /* Move to the screen */
