@@ -20,8 +20,9 @@
     padding-right: 5.5rem;
     padding-top: 20px;
     border: none; /* Ensure no border */
-    box-shadow: none; 
-    position: relative;
+    box-shadow: none;
+  position: relative;
+  background: transparent !important; /* Ensure no background */
 
 }
   
@@ -105,6 +106,8 @@
     top: 1rem;
     right: 1rem;
     z-index: 1100; /* Higher than the mobile menu container */
+    box-shadow: none;
+    background: transparent !important; /* Ensure no background */
   }
   .navbar-mobile-container.visible {
     right: 0; /* Move to the screen */

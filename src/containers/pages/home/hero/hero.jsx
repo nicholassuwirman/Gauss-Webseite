@@ -20,10 +20,6 @@ const Menu = () => {
     </>
   );
 };
-window.addEventListener('scroll', () => {
-  const navbar = document.querySelector('.navbar');
-  navbar.style.background = 'transparent';
-});
 
 const Hero = () => {
   const [toggleMenu, setToggleMenu] = useState(false); // State to toggle the mobile menu
@@ -47,13 +43,13 @@ const Hero = () => {
         </div>
 
         {/* Mobile Menu Toggle Icon */}
-        <div className="navbar-mobile-menu md:hidden">
+        <div className="navbar-mobile-menu ">
           {toggleMenu ? (
             <div style={{ paddingTop: '2vh', paddingRight: '0vh' }}>
               <RiCloseLine color="#FFFFFF" size={27} onClick={handleMenuToggle} />
             </div>
           ) : (
-            <div style={{ paddingTop: '0.5vh', paddingRight: '0vh' }}>
+            <div style={{ paddingTop: '1vh', paddingRight: '0vh' }}>
               <RiMenuLine color="#FFFFFF" size={27} onClick={handleMenuToggle} />
             </div>
           )}
