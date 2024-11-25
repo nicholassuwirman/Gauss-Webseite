@@ -331,6 +331,20 @@
   opacity: 1; /* Optional: Adjust the opacity for a subtle effect */
   z-index: -2;
 }
+.navbar {
+  background: transparent !important;
+  box-shadow: none !important;
+  overflow: hidden;
+}
+.navbar-container {
+  height: auto;
+  overflow: hidden;
+  background: none !important;
+}
+.navbar {
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+}
 
   @media (max-width: 768px) {
     .hero-shadow-bottom {
@@ -343,6 +357,10 @@
         opacity: 0.9; /* Adjust the opacity as needed */
         z-index: -4;
     }
+    .navbar {
+      background: transparent !important;
+      box-shadow: none !important;
+  }
     .navbar-menu-text-imprint {
       display: flex;
     }
