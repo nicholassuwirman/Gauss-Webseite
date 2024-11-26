@@ -210,13 +210,13 @@ const Description = () => {
 
         {/* Logos with fade-in effect */}
         <div
-          className={`speed-torque-container flex justify-between pt-3  fade-in ${
+          className={` flex justify-between pt-3  fade-in ${
             isVisible ? 'active' : ''
           }`}
 
 
         >
-          <div className='flex flex-row'>
+          <div className='speed-torque-container'>
             <div className="description-power flex flex-col items-center">
                 <img
                   src={powerLogo}

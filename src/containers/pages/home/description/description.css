@@ -278,6 +278,10 @@ margin-bottom: 1rem;      /* Add spacing between images */
   padding-left: 4rem;
   margin-bottom: 13rem;
 }
+
+.speed-torque-container {
+  flex-direction: row;
+}
 @keyframes glowing {
   0% { background-position: 0 0; }
   50% { background-position: 400% 0; }
@@ -331,7 +335,9 @@ margin-bottom: 1rem;      /* Add spacing between images */
   .description-weight {
     margin-right: 3vh;
   }
-  
+  .description-speed {
+    margin-right: 0;
+  }
 
 .power-text-power {
   font-size: 1rem;
@@ -389,10 +395,7 @@ margin-bottom: 1rem;      /* Add spacing between images */
 .lightning-fast-text {
   font-size: 1.6rem;
 }
-  .description-speed {
-    margin-top: 3vh;
-    padding-right: 14vh;
-  }
+
   .image2-container {
     order: -1; /* Move the image to the top */
     height: 100%;
