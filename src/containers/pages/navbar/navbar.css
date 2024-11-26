@@ -73,7 +73,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: start;
-    padding-top: 15vh;
+    padding-top: 13vh;
     color: white;
     font-family: 'Michroma', sans-serif;
   }
@@ -142,6 +142,13 @@
     display: none;
 
   }
+
+  .bikes-picture-container {
+    width: 77.5%;
+    padding-left: 2vh;
+    margin-top: 2vh;
+  }
+
   .navbar-menu-text-imprint {
     position: relative;
     color: white;
@@ -151,6 +158,26 @@
     font-size: 1.5rem;
     margin-top: 3vh;
     display: none;
+  }
+
+   .navbar-mobile-menu {
+    top: 1rem;
+    right: 1rem;
+    z-index: 1100; /* Higher than the mobile menu container */
+  }
+  .navbar-mobile-container.visible {
+    right: 0; /* Move to the screen */
+  }
+
+  /* Show Mobile Menu Icon */
+  @media screen and (max-width: 768px) {
+    .navbar-mobile-menu {
+    }
+    
+    .navbar-menu-container {
+      display: none; /* Hide the desktop menu */
+    }
+
   }
   @media screen and (max-width: 768px) {
     .navbar-menu-container {
@@ -173,5 +200,6 @@
           padding-left: 1rem;
           padding-right: 3rem;
       }
+      
   }
   

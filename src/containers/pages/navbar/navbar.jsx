@@ -43,9 +43,9 @@ const Navbar = () => {
         {/* Mobile Menu Toggle */}
         <div className="navbar-mobile-menu md:hidden">
             {toggleMenu ? (
-            <RiCloseLine color="#FFFFFF" size={27} onClick={handleMenuToggle} />
+            <RiCloseLine color="#FFFFFF" size={27} onClick={handleMenuToggle} className="close-logo"/>
             ) : (
-            <RiMenuLine color="#FFFFFF" size={27} onClick={handleMenuToggle} />
+            <RiMenuLine color="#FFFFFF" size={27} onClick={handleMenuToggle} className="open-logo"/>
             )}
         </div>
 
@@ -64,7 +64,7 @@ const Navbar = () => {
         <div className="navbar-mobile-content">
           <div className="navbar-menu-bikes-mobile">
             <Link to="/" className="navbar-menu-text-bikes">Bikes</Link>
-            <div className="flex flex-row ml-[3vh] mt-[2vh]">
+            <div className="bikes-picture-container flex flex-row">
               <img src={gauss1Mobile} alt="Gauss 1 Image" className="gauss-bikes-mobile" />
               <img src={gauss2Mobile} alt="Gauss 2 Image" className="gauss-bikes-mobile" />
             </div>

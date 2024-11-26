@@ -408,4 +408,9 @@ margin-bottom: 1rem;      /* Add spacing between images */
     font-size: 1rem;  
     width: 90%;
   }
+
+  .speed-torque-container {
+    flex-direction: column;
+    gap: 20px; /* adjust this value as needed for mobile spacing */
+  }
 }
