@@ -210,7 +210,7 @@ const Description = () => {
 
         {/* Logos with fade-in effect */}
         <div
-          className={`speed-torque-container flex justify-between pt-3 space-x-[90px] fade-in ${
+          className={`speed-torque-container flex justify-between pt-3  fade-in ${
             isVisible ? 'active' : ''
           }`}
 
@@ -296,7 +296,7 @@ const Description = () => {
           <p className="lightning-fast-text text-white font-exo text-5xl font-medium">
             Lightning-Fast Battery Swap
           </p>
-          <p className="lightning-fast-text-description text-white font-exo text-5xl font-medium">
+          <p className="c text-white font-exo text-5xl font-medium">
           minimize downtime, maximize efficiency, and lead the charge towards a sustainable future.          </p>
         </div>
         
