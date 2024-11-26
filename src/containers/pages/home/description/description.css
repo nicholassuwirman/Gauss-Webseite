@@ -514,14 +514,7 @@ margin-right: 3vh;
     width: 90%;
   }
 }
-/* Temporary debug borders for layout */
+/* Temporary debug borders for layout 
 * {
-  border: 1px solid red; /* Add borders for debugging */
-}
-/* Ensure containers don't overflow */
-.description-battery-swap-video-wrapper,
-.gauss-electric-container,
-.description-datasheet-container {
-  overflow: hidden; /* Prevent overflow */
-  position: relative; /* Contain absolutely positioned children */
-}
+  border: 1px solid red; 
+}*/
