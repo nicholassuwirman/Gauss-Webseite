@@ -442,37 +442,42 @@ margin-right: 3vh;
 
 
 
-
-  .gauss-electric-superbike-text {
-    font-size: 1.5rem;
-    margin-top: 3vh;
-    margin-bottom: 2vh;
-  }
-
-  .description-container {
-    padding: 0rem;
-  }
-.lightning-fast-text {
-  font-size: 1.6rem;
+.gauss-electric-container {
+  margin-bottom: 10vh;
+  margin-top: 14vh;
 }
 
-  .image2-container {
-    order: -1; /* Move the image to the top */
-    height: 100%;
-    width: 97%;
-    margin: 0;
-    order: 2;
+  .description-logo-2 {
+    padding: 0;
   }
-  .description-charging-container  {
-    width: 100%;
-    margin-left: 0;
-  }
-  .description-charging-text {
-    font-size: 1.5rem;
+.description-battery-swap-video {
+  height: 60%;
+}
+
+.description-battery-swap-video::before {
+  content: '';  /* Empty content for pseudo-element */
+  position: absolute;
+  top: 0;  /* Place at the top */
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: rgba(0, 0, 0, 0.5);  /* Shadow with transparency (black color with opacity) */
+  z-index: 1;  /* Ensure it stays above the video */
+}
+  .power-logo {
+    margin-left: 2vh;
   }
 
-  .lightning-fast-text-description {
-    font-size: 1rem;  
-    width: 90%;
+  
+
+  .gauss-electric-text {
+    width: 100%;
+    margin: 0;
   }
+  .gauss-electric-description {
+    font-size: 1rem;
+    line-height: 1.7;
+
+  }
+  
 }
