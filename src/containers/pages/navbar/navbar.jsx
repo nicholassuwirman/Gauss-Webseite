@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { RiMenuLine, RiCloseLine } from "react-icons/ri";
-import "./Navbar.css"; // Create a separate CSS file for the Navbar styles
+import "./navbar.css"; // Create a separate CSS file for the Navbar styles
 import logoNew from '../../../assets/gauss-logo-new.png'; // Update logo path as necessary
 import gauss1Mobile from '../../../assets/gauss-1-mobile.jpg'; // Update logo path as necessary
 import gauss2Mobile from '../../../assets/gauss-2-mobile.jpg'; // Update logo path as necessary
