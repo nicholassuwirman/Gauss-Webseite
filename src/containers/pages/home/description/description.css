@@ -310,29 +310,24 @@ margin-bottom: 1rem;      /* Add spacing between images */
   font-size: 2.2rem;
 }
 
-  .description-gauss-motorbike {
-    width: 340px;
-    height: 180px;
-  }
-
-  .description-torque {
-    margin-right: 3vh;
-    margin-left: 10vh;
-  }
   
-  .description-power {
-    margin-right: 3vh ;
-  }
-  
-  .description-battery {
-    margin-right: 7.2vh;
-  }
-  
-  .description-weight {
-    margin-right: 3vh;
-  }
   
 
+.power-text-power {
+  font-size: 1rem;
+}
+
+.gauss-electric-superbike-text {
+  font-size: rem;
+}
+
+.power-text-torque {
+  font-size: 1rem;
+}
+
+.description-power {
+  margin-left: 1vh;
+}
 
 
 
