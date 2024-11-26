@@ -315,6 +315,24 @@ margin-bottom: 1rem;      /* Add spacing between images */
     height: 180px;
   }
 
+  .description-torque {
+    margin-right: 3vh;
+    margin-left: 10vh;
+  }
+  
+  .description-power {
+    margin-right: 3vh ;
+  }
+  
+  .description-battery {
+    margin-right: 7.2vh;
+  }
+  
+  .description-weight {
+    margin-right: 3vh;
+  }
+  
+
 
 
 
