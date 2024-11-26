@@ -3,6 +3,8 @@ import './hero.css';  // Make sure this file is updated as shown above
 import { Link } from 'react-router-dom';
 import { RiMenuLine, RiCloseLine } from 'react-icons/ri';
 
+import Navbar from "../../navbar/navbar";
+
 import logoNew from '../../../../assets/gauss-logo-new.png'; // Update logo path as necessary
 import gauss1Mobile from '../../../../assets/gauss-1-mobile.jpg'; // Update logo path as necessary
 import gauss2Mobile from '../../../../assets/gauss-2-mobile.jpg'; // Update logo path as necessary
@@ -32,33 +34,7 @@ const Hero = () => {
   return (
     <div id="hero" className="hero-container relative flex flex-col w-full h-screen overflow-hidden">
       {/* Navbar Section */}
-      <div className="navbar-section">
-        <Link to="/home">
-          <img src={logoNew} alt="Gauss Logo" className="logo" />
-        </Link>
-
-        {/* Desktop Menu */}
-        <div className="navbar-menu-container hidden md:flex">
-          <Menu />
-        </div>
-
-        {/* Mobile Menu Toggle Icon */}
-        <div className="navbar-mobile-menu md:hidden">
-          {toggleMenu ? (
-            <div style={{ paddingTop: '2vh', paddingRight: '0vh' }}>
-              <RiCloseLine color="#FFFFFF" size={27} onClick={handleMenuToggle} />
-            </div>
-          ) : (
-            <div style={{ paddingTop: '1vh', paddingRight: '0vh' }}>
-              <RiMenuLine color="#FFFFFF" size={27} onClick={handleMenuToggle} />
-            </div>
-          )}
-        </div>
-      </div>
-
-      {/* White Line Below Navbar */}
-      <div className="navbar-white-line hidden sm:block ml-20 mt-[11px] w-[91%] border-b-2 border-[#F9F7F7] h-[4px] relative"></div>
-
+      <Navbar />
       {/* Background Video */}
       <video
         className="background-video"
@@ -68,25 +44,6 @@ const Hero = () => {
         src={gaussVideoWotext}
         type="video/mp4"
       />
-
-      {/* Sliding Menu */}
-      <div className={`navbar-mobile-container ${toggleMenu ? 'visible' : ''}`}>
-        <div className="navbar-mobile-content">
-          <div className="navbar-menu-bikes-mobile">
-            <Link to="/" className="navbar-menu-text-bikes">Bikes</Link>
-            <div className="flex flex-row ml-[3vh] mt-[2vh]">
-              <img src={gauss1Mobile} alt="Gauss 1 Image" className="gauss-bikes-mobile" />
-              <img src={gauss2Mobile} alt="Gauss 2 Image" className="gauss-bikes-mobile" />
-            </div>
-          </div>
-          <Link to="/" className="navbar-menu-text-about">About</Link>
-          <Link to="/" className="navbar-menu-text-history">History</Link>
-          <Link to="/" className="navbar-menu-text-team">Team</Link>
-          <Link to="/" className="navbar-menu-text-partners">Partners</Link>
-          <Link to="/" className="navbar-menu-text-participate">Participate</Link>
-          <Link to="/" className="navbar-menu-text-imprint">Imprint</Link>
-        </div>
-      </div>
 
       <div className="hero-shadow-left"></div> {/* Add the left shadow here */}
 

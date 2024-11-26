@@ -9,27 +9,6 @@
     background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%); 
     z-index: 1; 
 }
-
-/* Navbar Section TODO FIX NAVBAR PADDING */
-.navbar-section {
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 5.5rem;
-    padding-right: 5.5rem;
-    padding-top: 20px;
-    border: none; /* Ensure no border */
-    box-shadow: none;
-  background: transparent !important; /* Ensure no background */
-  transition: transform 0.3s ease-in-out; /* Optional, if you want smooth transition for showing/hiding */
-
-}
-/* Optional: Ensure background is clear for transparency */
-.navbar-white-line {
-  background-color: transparent;
-}
-
 /* This class will hide the navbar on scroll (if you decide to add the scroll behavior later) */
 .navbar-section.hide {
   transform: translateY(-100%); /* Hide navbar on scroll */
@@ -67,29 +46,11 @@
     z-index: -2;
   }
 
-  
-  .navbar-menu-text::after {
-    content: ""; 
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 100%;
-    height: 2px; 
-    background-color: #b3ddff;
-    opacity: 0; 
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: transform 0.3s ease, opacity 0.3s ease; 
-  }
+
   /* White Line Below Navbar */
   
   .navbar-white-line {
     z-index: -3;
-  }
-  
-  .navbar-menu-text:hover::after {
-    opacity: 1; 
-    transform: scaleX(1); 
   }
   
   /* Mobile Menu */
@@ -137,66 +98,9 @@
     z-index: 1;
   }
   
-  .navbar-menu-text {
-    position: relative;
-    color: white;
-    font-family: 'Michroma';
-    margin-left: 2.5rem;
-    text-decoration: none;
-  }
 
 
-
-  .navbar-menu-text-about {
-    position: relative;
-    color: white;
-    font-family: 'Michroma';
-    margin-left: 2.5rem;
-    text-decoration: none;
-    margin-top: 4vh;
-    font-size: 1.5rem;
-  }
-  .navbar-menu-text-bikes {
-    position: relative;
-    color: white;
-    font-family: 'Michroma';
-    margin-left: 2rem;
-    text-decoration: none;
-    font-size: 1.5rem;
-  }
-
-  
-  .navbar-menu-text-partners {
-    position: relative;
-    color: white;
-    font-family: 'Michroma';
-    margin-left: 2.5rem;
-    text-decoration: none;
-    font-size: 1.5rem;
-    margin-top: 3vh;
-    display: none;
-  }
-  .navbar-menu-text-participate {
-    position: relative;
-    color: white;
-    font-family: 'Michroma';
-    margin-left: 2.5rem;
-    text-decoration: none;
-    font-size: 1.5rem;
-    margin-top: 3vh;
-    display: none;
-
-  }
-  .navbar-menu-text-imprint {
-    position: relative;
-    color: white;
-    font-family: 'Michroma';
-    margin-left: 2.5rem;
-    text-decoration: none;
-    font-size: 1.5rem;
-    margin-top: 3vh;
-    display: none;
-  }
+ 
 
 
   .navbar-menu-text:hover {
