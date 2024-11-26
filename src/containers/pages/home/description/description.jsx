@@ -195,81 +195,23 @@ const Description = () => {
       className="description-container flex flex-col bg-black text-left  pb-4  text-lg h-auto "
       ref={descriptionRef}
     >
-      <div className=" description-text pt-20 justify-center flex text-[#EAEAEA] text-[1rem] font-semibold sm:text-[3rem]">
+      
+
+      <div className="description-datasheet-container">
+        <div className=" description-text justify-center flex text-[#EAEAEA] text-[1rem] font-semibold sm:text-[3rem]">
         <p className='description-text-header'>Description</p>
-      </div>
-      <div className="bg-black h-auto w-full mt-8 rounded-xl flex flex-col items-center  ">
-        {/* Image with fade-in effect */}
-        <img
-          src={bikePic1}
-          className={`description-gauss-motorbike w-[560px] h-[280px] fade-in ${
-            isVisible ? 'active' : ''
-          }`}
-          alt="Gauss Motorcycle"
-        />
-
-        {/* Logos with fade-in effect */}
-        <div
-          className={` flex justify-between pt-3  fade-in ${
-            isVisible ? 'active' : ''
-          }`}
-
-
-        >
-          <div className='speed-torque-container'>
-            <div className="description-power flex flex-col items-center">
-                <img
-                  src={powerLogo}
-                  alt="power logo"
-                  className="power-logo w-[42px] h-[42px]"
-                />
-                
-                <p className="power-text-power text-white mt-4 font-exo">
-                  110kW / 200kW
-                </p>
-              </div>
-
-              <div className="description-torque flex flex-col items-center">
-                <img
-                  src={torqueLogo}
-                  alt="torque logo"
-                  className="w-[53px] h-[53px]"
-                />
-                <p className="power-text-torque text-white mt-[0.85rem] font-exo">500 Nm</p>
-              </div>
-            </div >
-
-            <div className="description-logo-2 flex flex-row m-0">
-              <div className="description-battery flex flex-col items-center">
-                <img
-                  src={batteryLogo}
-                  alt="battery logo"
-                  className="w-[40px] h-[40px]"
-                />
-                <p className="power-text text-white mt-4 font-exo">
-                  16 – 20 kWh / 700 V
-                </p>
-              </div>
-              <div className="description-weight flex flex-col items-center">
-                <img
-                  src={weightLogo}
-                  alt="battery logo"
-                  className="w-[40px] h-[40px]"
-                />
-                <p className="power-text text-white mt-4 font-exo">220 kg</p>
-              </div>
-            </div>
-          
-          <div className="description-speed flex flex-col items-center">
-            <img
-              src={speedLogo}
-              alt="speed logo"
-              className="w-[40px] h-[40px]"
-            />
-            <p className="power-text text-white mt-4 font-exo">250+ km/h</p>
-          </div>
         </div>
+          <img src={bikePic1} className="description-gauss-motorbike" alt="Motorbike" />
+          
+          <div className="description-text-container">
+            <div className="description-text-item"> 200 kW Max. Power</div>
+            <div className="description-text-item">500 Nm Max Torque</div>
+            <div className="description-text-item">16 – 20 kWh / 700 V Battery System</div>
+            <div className="description-text-item">220 kg Weight</div>
+            <div className="description-text-item">250 km/h Max. Speed</div>
+          </div>
       </div>
+
 
     <div className='gauss-electric-container'>
       <img
@@ -291,15 +233,16 @@ const Description = () => {
     </div>
 
 
-    <div className="h-[100vh] w-[100%] flex flex-col items-center justify-center space-y-6 pb-[30vh] mt-[11vh]">
+    <div className="h-[100vh] w-[100%] flex flex-col items-center justify-center space-y-6 pb-[30vh]">
         <div className='flex flex-col items-center justify-center'>
-          <p className="lightning-fast-text text-white font-exo text-5xl font-medium">
+          <p className="lightning-fast-text text-white font-exo font-medium">
             Lightning-Fast Battery Swap
           </p>
-          <p className="c text-white font-exo text-5xl font-medium">
-          minimize downtime, maximize efficiency, and lead the charge towards a sustainable future.          </p>
+          <p className="minimize-downtime-text text-white font-exo mt-3">
+          minimize downtime, maximize efficiency.          </p>
         </div>
-        
+            <div className="video-shadow"></div>
+
         <video
           className="description-battery-swap-video"
           autoPlay
@@ -349,7 +292,11 @@ const Description = () => {
           <img src={sponsorBechtle} alt="Image 3" className='sponsor-image' />
           <img src={sponsorBmz} alt="Image 4" className='sponsor-image' />
           <img src={sponsorCarbon} alt="Image 5"  className='sponsor-image'/>
-          
+          <img src={sponsorHda} alt="Image 1" className='sponsor-image' />
+          <img src={sponsorHatronix} alt="Image 2" className='sponsor-image' />
+          <img src={sponsorBechtle} alt="Image 3" className='sponsor-image' />
+          <img src={sponsorBmz} alt="Image 4" className='sponsor-image' />
+          <img src={sponsorCarbon} alt="Image 5"  className='sponsor-image'/>
         </div>
         <div class="parallax-image-set">
         </div>
@@ -360,7 +307,11 @@ const Description = () => {
           <img src={sponsorBechtle} alt="Image 3" className='sponsor-image' />
           <img src={sponsorBmz} alt="Image 4" className='sponsor-image' />
           <img src={sponsorCarbon} alt="Image 5"  className='sponsor-image'/>
-        
+          <img src={sponsorHda} alt="Image 1" className='sponsor-image' />
+          <img src={sponsorHatronix} alt="Image 2" className='sponsor-image' />
+          <img src={sponsorBechtle} alt="Image 3" className='sponsor-image' />
+          <img src={sponsorBmz} alt="Image 4" className='sponsor-image' />
+          <img src={sponsorCarbon} alt="Image 5"  className='sponsor-image'/>
         </div>
         <div class="parallax-image-set">
         </div>
@@ -512,7 +463,7 @@ const Description = () => {
       <p className='text-white pt-[1rem]'>Gauss Project</p>
     </div>
 
-    <div className="flex mt-[18.2rem] items-center">
+    <div className="logo-footer-container flex mt-[18.2rem] items-center">
       <a
         href="https://www.youtube.com/@gauss-project7686"
         target="_blank"

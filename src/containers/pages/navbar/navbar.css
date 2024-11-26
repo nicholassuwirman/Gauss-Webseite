@@ -24,7 +24,7 @@
     color: white;
     font-family: 'Michroma';
     text-decoration: none;
-    margin-left: 2.2rem;
+    margin-left: 3rem;
     transition: color 0.3s ease;
   }
   
@@ -144,7 +144,7 @@
   }
 
   .bikes-picture-container {
-    width: 77.5%;
+    width: 100%;
     padding-left: 2vh;
     margin-top: 2vh;
   }
@@ -160,7 +160,7 @@
     display: none;
   }
 
-   .navbar-mobile-menu {
+  .navbar-mobile-menu {
     top: 1rem;
     right: 1rem;
     z-index: 1100; /* Higher than the mobile menu container */
@@ -198,7 +198,7 @@
       }
       .navbar-section {
           padding-left: 1rem;
-          padding-right: 3rem;
+          padding-right: 2rem;
       }
       
   }
