@@ -284,33 +284,29 @@ margin-bottom: 1rem;      /* Add spacing between images */
   100% { background-position: 0 0; }
 }
 @media (max-width: 768px) {
-  .gauss-electric-container {
-    flex-direction: column;
-    padding-right: 5vh;
-    padding-left: 5vh;
-  }
-  .gauss-electric-picture {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .gauss-electric-text {
-    width: full;
-  }
-
-  .speed-torque-container {
-    flex-direction: column;
-  }
-
-  .gauss-charge-container {
-    flex-direction: column;
-  }
-
-.description-text {
-  font-size: 2.2rem;
-}
-
   
+
+  .description-gauss-motorbike {
+    width: 340px;
+    height: 180px;
+  }
+
+  .description-torque {
+    margin-right: 3vh;
+    margin-left: 10vh;
+  }
+  
+  .description-power {
+    margin-right: 3vh ;
+  }
+  
+  .description-battery {
+    margin-right: 7.2vh;
+  }
+  
+  .description-weight {
+    margin-right: 3vh;
+  }
   
 
 .power-text-power {
