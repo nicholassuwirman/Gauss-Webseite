@@ -298,7 +298,17 @@ margin-bottom: 1rem;      /* Add spacing between images */
     width: full;
   }
 
-  
+  .speed-torque-container {
+    flex-direction: column;
+  }
+
+  .gauss-charge-container {
+    flex-direction: column;
+  }
+
+.description-text {
+  font-size: 2.2rem;
+}
 
   .description-gauss-motorbike {
     width: 340px;
