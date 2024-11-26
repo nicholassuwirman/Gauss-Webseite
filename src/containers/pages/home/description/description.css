@@ -355,7 +355,9 @@ margin-bottom: 1rem;      /* Add spacing between images */
 .logo-footer-container {
 margin-right: 3vh;
 }
-
+.speed-torque-container {
+  flex-direction: row;
+}
 @keyframes glowing {
   0% { background-position: 0 0; }
   50% { background-position: 400% 0; }
@@ -512,46 +514,7 @@ margin-right: 3vh;
     width: 90%;
   }
 }
-
-/* Reset margin, padding, and box-sizing for consistency */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Fix navbar background and borders */
-.navbar {
-  background: transparent; /* Remove any background that might be causing a line */
-  border: none; /* Ensure no border */
-  box-shadow: none; /* Remove any shadows */
-}
-
-/* Specific styling to fix black line issue on mobile */
-@media (max-width: 768px) {
-  /* Ensure no unexpected background causing the issue */
-  .navbar {
-    background: transparent !important;
-    border: none;
-    box-shadow: none;
-  }
-  
-  /* Ensure no extra margin or padding is applied */
-  body, html {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Check for any unwanted borders or background on container elements */
-  .gauss-electric-container {
-    background: transparent;
-    border: none;
-  }
-
-  /* Ensure there is no additional shadow or background on the video */
-  .description-battery-swap-video::before {
-    background: transparent;
-  }
+/* Temporary debug borders for layout */
+* {
+  border: 1px solid red; /* Add borders for debugging */
 }
