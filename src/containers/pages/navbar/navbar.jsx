@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { RiMenuLine, RiCloseLine } from "react-icons/ri";
 import "./navbar.css"; // Create a separate CSS file for the Navbar styles
@@ -25,7 +25,20 @@ const Navbar = () => {
   const handleMenuToggle = () => {
     setToggleMenu((prevState) => !prevState);
   };
+  useEffect(() => {
+    if (toggleMenu) {
+      // Disable scrolling
+      document.body.style.overflow = 'hidden';
+    } else {
+      // Enable scrolling
+      document.body.style.overflow = 'auto';
+    }
 
+    // Cleanup the effect on component unmount
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [toggleMenu]);
   return (
     
 

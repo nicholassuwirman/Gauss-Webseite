@@ -429,11 +429,6 @@ margin-right: 3vh;
 .power-text-power {
   font-size: 1rem;
 }
-
-.gauss-electric-superbike-text {
-  font-size: rem;
-}
-
 .power-text-torque {
   font-size: 1rem;
 }
@@ -482,7 +477,7 @@ margin-right: 3vh;
 
   }
   .gauss-electric-superbike-text {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-top: 3vh;
     margin-bottom: 2vh;
   }
