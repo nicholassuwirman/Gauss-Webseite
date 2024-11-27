@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { RiMenuLine, RiCloseLine } from "react-icons/ri";
-import "./navbar.css"; // Create a separate CSS file for the Navbar styles
-import logoNew from '../../../assets/gauss-logo-new.png'; // Update logo path as necessary
-import gauss1Mobile from '../../../assets/gauss-1-mobile.jpg'; // Update logo path as necessary
-import gauss2Mobile from '../../../assets/gauss-2-mobile.jpg'; // Update logo path as necessary
+import "./navbar.css"; // Ensure your CSS file is correctly imported
+import logoNew from '../../../assets/gauss-logo-new.png'; // Update path as necessary
+import gauss1Mobile from '../../../assets/gauss-1-mobile.jpg'; // Update path as necessary
+import gauss2Mobile from '../../../assets/gauss-2-mobile.jpg'; // Update path as necessary
 
 const Menu = () => {
   return (
@@ -20,60 +20,78 @@ const Menu = () => {
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  // Toggle the mobile menu
-  const handleMenuToggle = () => {
-    setToggleMenu((prevState) => !prevState);
+  // Handle scrolling behavior
+  const handleScroll = () => {
+    if (window.scrollY > window.innerHeight * 0.9) { // You can adjust the value here based on when you want to trigger the navbar change
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
   };
+
+  // Listen for scroll events
   useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    
+    // Cleanup event listener on unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  // Toggle mobile menu visibility
+  const handleMenuToggle = () => {
+    setToggleMenu(prevState => !prevState);
+  };
+
+  useEffect(() => {
+    // Disable scrolling when the mobile menu is open
     if (toggleMenu) {
-      // Disable scrolling
       document.body.style.overflow = 'hidden';
     } else {
-      // Enable scrolling
       document.body.style.overflow = 'auto';
     }
 
-    // Cleanup the effect on component unmount
+    // Cleanup on unmount
     return () => {
       document.body.style.overflow = 'auto';
     };
   }, [toggleMenu]);
-  return (
-    
 
-    <>
-    <div className="navbar-section">
+  return (
+    <div>
+      <div className={`navbar-section ${scrolled ? 'scrolled' : ''}`}>
         <Link to="/home">
-            <img src={logoNew} alt="Gauss Logo" className="logo" />
+          <img src={logoNew} alt="Gauss Logo" className="logo" />
         </Link>
 
         {/* Desktop Menu */}
         <div className="navbar-menu-container hidden md:flex">
-            <Menu />
+          <Menu />
         </div>
 
         {/* Mobile Menu Toggle */}
         <div className="navbar-mobile-menu md:hidden">
-            {toggleMenu ? (
-            <RiCloseLine color="#FFFFFF" size={27} onClick={handleMenuToggle} className="close-logo"/>
-            ) : (
-            <RiMenuLine color="#FFFFFF" size={27} onClick={handleMenuToggle} className="open-logo"/>
-            )}
+          {toggleMenu ? (
+            <RiCloseLine color="#FFFFFF" size={27} onClick={handleMenuToggle} className="close-logo" />
+          ) : (
+            <RiMenuLine color="#FFFFFF" size={27} onClick={handleMenuToggle} className="open-logo" />
+          )}
         </div>
 
-        {/* Sliding Menu */}
+        {/* Sliding Mobile Menu */}
         <div className={`navbar-mobile-container ${toggleMenu ? "visible" : ""}`}>
-            <div className="navbar-mobile-content">
-            <Menu />
-            </div>
+          <div className="navbar-mobile-content">
+          </div>
         </div>
-    </div>
+      </div>
 
-        <div className="navbar-white-line hidden sm:block ml-20 mt-[11px] w-[91%] border-b-2 border-[#F9F7F7] h-[4px] relative"></div>
-    
-    {/* Sliding Menu */}
-    <div className={`navbar-mobile-container ${toggleMenu ? 'visible' : ''}`}>
+      <div className="navbar-white-line hidden sm:block ml-20 mt-[11px] w-[91%] border-b-2 border-[#F9F7F7] h-[4px] relative"></div>
+
+      {/* Sliding Mobile Menu */}
+      <div className={`navbar-mobile-container ${toggleMenu ? 'visible' : ''}`}>
         <div className="navbar-mobile-content">
           <div className="navbar-menu-bikes-mobile">
             <Link to="/" className="navbar-menu-text-bikes">Bikes</Link>
@@ -82,7 +100,7 @@ const Navbar = () => {
               <img src={gauss2Mobile} alt="Gauss 2 Image" className="gauss-bikes-mobile" />
             </div>
           </div>
-          <Link to="/" className="navbar-menu-text-about">About</Link>
+          <Link to="/about" className="navbar-menu-text-about">About</Link>
           <Link to="/" className="navbar-menu-text-history">History</Link>
           <Link to="/" className="navbar-menu-text-team">Team</Link>
           <Link to="/" className="navbar-menu-text-partners">Partners</Link>
@@ -90,7 +108,7 @@ const Navbar = () => {
           <Link to="/" className="navbar-menu-text-imprint">Imprint</Link>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

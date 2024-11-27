@@ -41,6 +41,8 @@ import torqueLogo from '../../../../assets/torque_.png';
 import batteryLogo from '../../../../assets/battery-charging.png';
 import powerLogo from '../../../../assets/power-logo.png';
 
+import gaussDescriptionImage from '../../../../assets/gauss-description-2.jpg';
+
 import copyrightLogo from '../../../../assets/copyright_.png';
 import youtubeLogo from '../../../../assets/youtube_.png';
 import instagramLogo from '../../../../assets/instagram_.png';
@@ -201,11 +203,11 @@ const Description = () => {
         <div className=" description-text justify-center flex text-[#EAEAEA] text-[1rem] font-semibold sm:text-[3rem]">
         <p className='description-text-header'>Description</p>
         </div>
-          <img src={bikePic1} className="description-gauss-motorbike" alt="Motorbike" />
+          <img src={gaussDescriptionImage} className="description-gauss-motorbike" alt="Motorbike" />
           
           <div className="description-text-container">
             <div className="description-text-item"> 200 kW Max. Power</div>
-            <div className="description-text-item">500 Nm Max Torque</div>
+            <div className="description-text-item">500 Nm Max. Torque</div>
             <div className="description-text-item">16 – 20 kWh / 700 V Battery System</div>
             <div className="description-text-item">220 kg Weight</div>
             <div className="description-text-item">250 km/h Max. Speed</div>
@@ -230,8 +232,8 @@ const Description = () => {
     </div>
 
 
-    <div className="h-[100vh] w-[100%] flex flex-col items-center justify-center space-y-6 pb-[30vh]">
-        <div className='flex flex-col items-start justify-start'>
+    <div className="description-lightning-container flex flex-col items-start justify-start">
+        <div className='lightning-fast-container flex flex-col items-start justify-start'>
           <p className="lightning-fast-text text-white font-exo font-medium">
             Lightning-Fast Battery Swap
           </p>
@@ -241,7 +243,7 @@ const Description = () => {
             <div className="video-shadow"></div>
 
         <video
-          className="description-battery-swap-video"
+          className="description-battery-swap-video m-0"
           autoPlay
           muted
           loop
