@@ -299,7 +299,7 @@
     font-family: 'Michroma';
     margin-left: 2.5rem;
     text-decoration: none;
-    margin-top: 7vh;
+    margin-top: 3vh;
     font-size: 1.5rem;
   }
   .navbar-menu-text-bikes {
@@ -312,7 +312,7 @@
   }
   .navbar-menu-text-history{
     font-family: 'Exo 2';
-    color: #F5F5DC;
+    color: white;
     margin-left: 5vh;
     text-decoration: none;
     font-weight: 600;
@@ -322,7 +322,7 @@
   }
   .navbar-menu-text-team{
     font-family: 'Exo 2';
-    color: #F5F5DC;
+    color: white;
     margin-left: 5vh;
     text-decoration: none;
     font-weight: 600;
@@ -360,7 +360,7 @@
   .bikes-picture-container {
     width: 100%;
     padding-left: 2vh;
-    margin-top: 2vh;
+    margin-top: 3vh;
   }
 
   .navbar-menu-text-imprint {
@@ -397,7 +397,12 @@
     .navbar-menu-container {
       display: none;
     }
-
+    .navbar-mobile-content {
+      z-index: 100000000000;
+    }
+    .navbar-mobile-container.visible {
+      z-index: 300; /* Move to the screen */
+    }
     .navbar-menu-text-imprint {
         display: flex;
       }

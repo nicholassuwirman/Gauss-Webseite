@@ -13,7 +13,7 @@
   align-items: center; /* Horizontally center the content */
   justify-content: center; /* Center content vertically if needed */
   height: 80vh; /* Full viewport height */
-  margin-top: 20vh; /* Adjust top margin */
+  margin-top: 13vh; /* Adjust top margin */
 }
 
 /* Image styles */
@@ -50,7 +50,7 @@
 }
 .minimize-downtime-text {
   font-size: 1.2rem;
-  margin-bottom: 0vh;
+  margin-bottom: 3vh;
 }
 /* Adjustments for mobile */
 @media (max-width: 768px) {
@@ -115,6 +115,7 @@ justify-content: space-between;
 height: 100vh;      /* Full viewport height */
 overflow: hidden;   /* Hide anything that overflows */
 position: relative;
+z-index: 0;
 }
 
 /* Each column will take equal space */
@@ -306,7 +307,7 @@ margin-bottom: 1rem;      /* Add spacing between images */
   padding-left: 2rem;
   margin-bottom: 20vh;
   padding-right: 4rem;
-  margin-top: 4vh;
+  margin-top: 10vh;
 }
 
 .description-torque {
@@ -330,7 +331,7 @@ margin-bottom: 1rem;      /* Add spacing between images */
 }
 .lightning-fast-text {
   font-size: 3rem;
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 .description-weight {
   margin-right: 5vh;
@@ -353,7 +354,7 @@ margin-bottom: 1rem;      /* Add spacing between images */
   padding-right: 2rem;
   padding-left: 4rem;
   margin-bottom: 13rem;
-  margin-top: 20vh;
+  margin-top: 10vh;
 }
 .logo-footer-container {
 margin-right: 3vh;
@@ -369,10 +370,10 @@ margin-right: 3vh;
 @media (max-width: 768px) {
   .gauss-electric-container {
     flex-direction: column;
-    padding-right: 5vh;
-    padding-left: 5vh;
-    margin-bottom: 10vh;
-    margin-top: 30vh;
+    padding-right: 4vh;
+    padding-left: 4vh;
+    margin-bottom: 5vh;
+    margin-top: 10vh;
   }
   .gauss-electric-picture {
     width: 100%;
@@ -386,7 +387,7 @@ margin-right: 3vh;
 
   .minimize-downtime-text {
     font-size: 1rem;
-    margin-bottom: 2vh;
+    margin-bottom: 3vh;
   }
   .description-datasheet-container {
     display: flex;
@@ -400,6 +401,9 @@ margin-right: 3vh;
   .gauss-charge-container {
     flex-direction: column;  /* Stack the items vertically */
     align-items: center;      /* Center align the items */
+    padding-left: 5vh;
+    padding-right: 5vh;
+    margin-bottom: 10vh;
   }
 
 .description-text {
@@ -481,12 +485,13 @@ width: 100%;
   .gauss-electric-description {
     font-size: 1rem;
     line-height: 1.7;
-
+    width: 100%;
   }
   .gauss-electric-superbike-text {
     font-size: 1.6rem;
     margin-top: 3vh;
     margin-bottom: 2vh;
+    width: 105%;
   }
 
   .description-container {
@@ -494,6 +499,7 @@ width: 100%;
   }
 .lightning-fast-text {
   font-size: 1.6rem;
+  margin-bottom: 0;
 }
 
   .image2-container {
@@ -501,7 +507,7 @@ width: 100%;
     height: 100%;
     width: 97%;
     margin: 0;
-    order: 2;
+    order: -1; /* Move the image to the top */
   }
   .description-charging-container  {
     width: 100%;
@@ -510,18 +516,30 @@ width: 100%;
   .description-charging-text {
     font-size: 1.5rem;
   }
+
+  .description-charging-description {
+    font-size: 1rem;
+  }
  .lightning-fast-container{
   justify-content: center;
   text-align: center;
   align-items: center;
- }
+  padding-left: 3.5vh;
+  }
   .lightning-fast-text-description {
     font-size: 1rem;  
     width: 90%;
   }
-
-
-
+  .parallax-container {
+    height: 70vh;
+  }
+  .sponsor-image {
+    margin-left: 2vh;
+    margin-right: 2vh;
+  }
+  .history-text {
+    z-index: 1;
+  }
 }
 /* Temporary debug borders for layout 
 * {

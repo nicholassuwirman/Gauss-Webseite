@@ -51,6 +51,7 @@
   color:  #b3ddff;
   font-size: 6.7rem;
   margin-left: -1vh;
+  margin-bottom: 0;
 }
 
   .hero-shadow-bottom {
@@ -106,6 +107,7 @@
   color: white;
   padding: 0;
   margin: 0;
+  margin-bottom: 2vh;
 }
 
 

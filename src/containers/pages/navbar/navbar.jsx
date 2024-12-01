@@ -81,11 +81,7 @@ const Navbar = () => {
           )}
         </div>
 
-        {/* Sliding Mobile Menu */}
-        <div className={`navbar-mobile-container ${toggleMenu ? "visible" : ""}`}>
-          <div className="navbar-mobile-content">
-          </div>
-        </div>
+        
       </div>
 
       <div className="navbar-white-line hidden sm:block ml-20 mt-[11px] w-[91%] border-b-2 border-[#F9F7F7] h-[4px] relative"></div>
