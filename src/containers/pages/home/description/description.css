@@ -372,7 +372,7 @@ margin-right: 3vh;
     flex-direction: column;
     padding-right: 4vh;
     padding-left: 4vh;
-    margin-bottom: 5vh;
+    margin-bottom: 7vh;
     margin-top: 10vh;
   }
   .gauss-electric-picture {
@@ -503,7 +503,6 @@ width: 100%;
 }
 
   .image2-container {
-    order: -1; /* Move the image to the top */
     height: 100%;
     width: 97%;
     margin: 0;
