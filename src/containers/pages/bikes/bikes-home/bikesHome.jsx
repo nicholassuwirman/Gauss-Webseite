@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import Navbar from '../../navbar/navbar';  // Importing Navbar component
 import Footer from '../../footer/footer';  // Importing Footer component
-import './BikesHome.css';  // Optional, for styling the home page
+import './bikesHome.css';  // Optional, for styling the home page
 
 const BikesHome = () => {
   return (
