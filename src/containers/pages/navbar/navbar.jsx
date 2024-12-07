@@ -9,7 +9,7 @@ import gauss2Mobile from '../../../assets/gauss-2-mobile.jpg'; // Update path as
 const Menu = () => {
   return (
     <>
-      <Link to="/" className="navbar-menu-text">Bikes</Link>
+      <Link to="/bikesHome" className="navbar-menu-text">Bikes</Link>
       <Link to="/about" className="navbar-menu-text">About</Link>
       <Link to="/" className="navbar-menu-text">Partners</Link>
       <Link to="/" className="navbar-menu-text">Participate</Link>
@@ -63,7 +63,7 @@ const Navbar = () => {
   return (
     <div>
       <div className={`navbar-section ${scrolled ? 'scrolled' : ''}`}>
-        <Link to="/home">
+        <Link to="/">
           <img src={logoNew} alt="Gauss Logo" className="logo" />
         </Link>
 

@@ -8,6 +8,7 @@ import Hero from './containers/pages/home/hero/hero';  // Correct path for Hero.
 import About from './containers/pages/about/about';    // Correct path for About.jsx
 import Home from './containers/pages/home/home';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import BikesHome from './containers/pages/bikes/bikes-home/bikesHome';  // Import BikesHome component
 
 const App = () => {
   return (
@@ -15,8 +16,8 @@ const App = () => {
       <Routes>
         {/* Define routes for Hero (Home) and About pages */}
         <Route path="/" element={<Home />} />  {/* Home route, Hero container */}
+        <Route path="/bikesHome" element={<BikesHome />} />
 
-        <Route path="/home" element={<Hero />} />
         <Route path="/about" element={<About />} />  {/* About page route */}
       </Routes>
     </Router>

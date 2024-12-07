@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './description.css';
 import bikePic1 from '../../../../assets/gauss_image_1.png';
+import Footer from '../../footer/footer';
 
 import sponsorHatronix from '../../../../assets/sponsor-hatronix.jpg';
 import sponsorBechtle from '../../../../assets/sponsor-bechtle.png';
@@ -238,7 +239,7 @@ const Description = () => {
             Lightning-Fast Battery Swap
           </p>
           <p className="minimize-downtime-text text-white font-exo mt-3">
-          minimize downtime, maximize efficiency.          </p>
+          minimizing downtime, maximizing efficiency.          </p>
         </div>
             <div className="video-shadow"></div>
 
@@ -456,53 +457,7 @@ const Description = () => {
   </div>
   </div>
 
-  <div className='flex justify-between items-center'>
-    <div className='flex items-center mt-[18rem] ml-[2.4rem]' >
-      <img src={copyrightLogo} className='h-[1.5rem] mr-2 '/>    
-      <p className='text-white pt-[1rem]'>Gauss Project</p>
-    </div>
-
-    <div className="logo-footer-container flex mt-[18.2rem] items-center">
-      <a
-        href="https://www.youtube.com/@gauss-project7686"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group"
-      >
-        <img
-          src={youtubeLogo}
-          className="social-icon h-[1.5rem] mr-2 ml-[0.5rem] group-hover:translate-y-[-4px] transition-transform duration-200"
-          alt="YouTube"
-        />
-      </a>
-      <a
-        href="https://www.instagram.com/gauss_project?igsh=cnJsNjdrN3RyN3Vr"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group"
-      >
-        <img
-          src={instagramLogo}
-          className="social-icon h-[1.5rem] mr-2 ml-[0.7rem] group-hover:translate-y-[-4px] transition-transform duration-200"
-          alt="Instagram"
-        />
-      </a>
-      <a
-        href="https://www.linkedin.com/company/gauss-project/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group"
-      >
-        <img
-          src={linkedinLogo}
-          className="social-icon h-[1.5rem] mr-2 ml-[0.5rem] group-hover:translate-y-[-4px] transition-transform duration-200"
-          alt="LinkedIn"
-        />
-      </a>
-    </div>
-
-
-  </div>
+  <Footer />
   
 </div>
   );

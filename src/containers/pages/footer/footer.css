@@ -1,0 +1,40 @@
+.description-copyright-text {
+    color: white;
+    padding-top: 1rem;
+  }
+  .copyright-logo-pic {
+    display: flex;
+    align-items: center;
+    margin-top: 18rem;
+    margin-left: 2.4rem;
+  }
+  
+  .social-icon {
+    height: 1.5rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    transition: transform 0.2s; /* Smooth transform effect over 200ms */
+  
+  }.social-icon:hover {
+    transform: translateY(-4px); /* Move the element up by 4px on hover */
+  
+  }
+  .logo-footer-container {
+    margin-right: 3vh;
+    display: flex;
+    margin-top: 18.2rem;
+    align-items: center;
+    }
+
+  @media (max-width: 768px) {
+    .copyright-logo-pic {
+      margin-left: 1rem;
+      margin-top: 19rem;
+    }
+
+    .logo-footer-container {
+      margin-right: 1rem;
+      margin-top: 19rem;
+
+    }
+  }

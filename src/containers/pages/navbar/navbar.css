@@ -158,7 +158,7 @@
 /* Navbar Mobile Menu */
 .navbar-mobile-container {
   position: fixed;
-  top: -110%;
+  top: -105%;
   left: 0;
   width: 100%;
   height: 100vh;
@@ -358,7 +358,7 @@
   }
 
   .bikes-picture-container {
-    width: 100%;
+    width: 98%;
     padding-left: 2vh;
     margin-top: 3vh;
   }
@@ -382,6 +382,9 @@
   .navbar-mobile-container.visible {
     right: 0; /* Move to the screen */
   }
+
+
+  
 
   /* Show Mobile Menu Icon */
   @media screen and (max-width: 768px) {

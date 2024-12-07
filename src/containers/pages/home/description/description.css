@@ -356,12 +356,12 @@ margin-bottom: 1rem;      /* Add spacing between images */
   margin-bottom: 13rem;
   margin-top: 10vh;
 }
-.logo-footer-container {
-margin-right: 3vh;
-}
+
 .speed-torque-container {
   flex-direction: row;
 }
+
+
 @keyframes glowing {
   0% { background-position: 0 0; }
   50% { background-position: 400% 0; }
@@ -403,7 +403,7 @@ margin-right: 3vh;
     align-items: center;      /* Center align the items */
     padding-left: 5vh;
     padding-right: 5vh;
-    margin-bottom: 10vh;
+    margin-bottom: 15vh;
   }
 
 .description-text {
