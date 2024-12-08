@@ -90,7 +90,7 @@ const Navbar = () => {
       <div className={`navbar-mobile-container ${toggleMenu ? 'visible' : ''}`}>
         <div className="navbar-mobile-content">
           <div className="navbar-menu-bikes-mobile">
-            <Link to="/" className="navbar-menu-text-bikes">Bikes</Link>
+            <Link to="/bikesHome" className="navbar-menu-text-bikes">Bikes</Link>
             <div className="bikes-picture-container flex flex-row">
               <img src={gauss1Mobile} alt="Gauss 1 Image" className="gauss-bikes-mobile" />
               <img src={gauss2Mobile} alt="Gauss 2 Image" className="gauss-bikes-mobile" />
