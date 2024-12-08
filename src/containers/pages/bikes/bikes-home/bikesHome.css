@@ -1,10 +1,138 @@
 /* bikes/bikes-home/BikesHome.css */
 .bikes-home-container {
     font-family: Arial, sans-serif;
-    height: 100vh;
     width: 100%;
     background-color: black;
+}
+
+.bikes-pictures-container {
+  padding-left: 15vh;
+  padding-right: 12.5vh;
+  padding-top: 5vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bikes-gauss1-container,
+.bikes-gauss2-container {
+  cursor: pointer;
+  height: 75vh;
+  width: 47%;
+  padding-top: 4vh;
+  background-color: #2a2a2a;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  position: relative; /* Make sure the shard effect is positioned relative to the container */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Add the shard effect on the left side of each container */
+.bikes-gauss1-container::after {
+  background: linear-gradient(
+    transparent,
+    #b3ddff,
+    transparent
+  );
+  height: 70px;
+  width: 1.5px;
+  position: absolute;
+  left: 0;  /* Positioned at the left of the container */
+  top: 65%; /* Positioned near the middle of the container */
+  content: "";
+  opacity: 0;  /* Initially hidden */
+  transition: top 600ms ease, opacity 600ms ease; /* Smooth transition for the shard */
+}
+
+.bikes-gauss2-container::after {
+  background: linear-gradient(
+    transparent,
+    red,
+    transparent
+  );
+  height: 70px;
+  width: 1.5px;
+  position: absolute;
+  left: 0;  /* Positioned at the left of the container */
+  top: 65%; /* Positioned near the middle of the container */
+  content: "";
+  opacity: 0;  /* Initially hidden */
+  transition: top 600ms ease, opacity 600ms ease; /* Smooth transition for the shard */
+}
+
+/* Hover effect for both containers */
+.bikes-gauss1-container:hover,
+.bikes-gauss2-container:hover {
+  transform: scale(1.02); /* Slightly enlarge the container */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Add shadow effect on hover */
+}
+
+/* Make the shard visible on hover */
+.bikes-gauss1-container:hover::after,
+.bikes-gauss2-container:hover::after {
+  top: 20%; /* Move the shard up */
+  opacity: 1; /* Make the shard visible */
+}
+
+
+.bikes-gauss1-picture {
+  height: 68%;
+}
+
+.bikes-gauss2-picture {
+  height: 68%;
+}
+
+.bikesHome-gauss-text {
+  color: whitesmoke;
+  font-size: 3rem;
+  font-family: 'Exo 2';
+  margin-bottom: 0;
+  margin-top: 1vh;
+}
+
+.bikesHome-gauss-description {
+  color: whitesmoke;
+  font-size: 2rem;
+  font-family: 'Exo 2';
+}
+
+#bikesHome .logo-footer-container {
+  margin-top: 10rem;
+}
+
+#bikesHome .copyright-logo-pic {
+  margin-top: 10rem;
+}
+
+@media (max-width: 768px) {
+  .bikes-pictures-container {
+    flex-direction: column;
   }
+
+  .bikes-gauss1-container,
+  .bikes-gauss2-container {
+    width: 100%;
+    height: 50vh;
+
+  }
+
+  .bikes-gauss1-container{
+    margin-bottom: 5vh;
+  }
+
+  .bikes-pictures-container {
+    padding-left: 3vh;
+    padding-right: 3vh;
+  }
+
+  .bikes-gauss1-picture {
+    height: 50%;
+  }
+  .bikes-gauss2-picture {
+    height: 50%;
+  }
+
   
-  
-  
+}

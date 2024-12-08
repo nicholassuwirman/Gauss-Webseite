@@ -22,39 +22,33 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // Handle scrolling behavior
   const handleScroll = () => {
-    if (window.scrollY > window.innerHeight * 0.9) { // You can adjust the value here based on when you want to trigger the navbar change
+    if (window.scrollY > window.innerHeight * 0.9) { 
       setScrolled(true);
     } else {
       setScrolled(false);
     }
   };
 
-  // Listen for scroll events
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     
-    // Cleanup event listener on unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-  // Toggle mobile menu visibility
   const handleMenuToggle = () => {
     setToggleMenu(prevState => !prevState);
   };
 
   useEffect(() => {
-    // Disable scrolling when the mobile menu is open
     if (toggleMenu) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'auto';
     }
 
-    // Cleanup on unmount
     return () => {
       document.body.style.overflow = 'auto';
     };
