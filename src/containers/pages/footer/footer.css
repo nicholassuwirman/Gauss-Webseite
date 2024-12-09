@@ -37,4 +37,16 @@
       margin-top: 19rem;
 
     }
+
+    .description-copyright-text {
+      font-size: 1rem;
+    }
+
+    .copyright-logo-picture {
+      height: 1.3rem;
+    }
+
+    .social-icon {
+      height: 1.3rem;
+    }
   }
