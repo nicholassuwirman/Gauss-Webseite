@@ -2,6 +2,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './output.css';
+import { ApolloProvider } from '@apollo/client'; // Add this line
+
+import client from '../apolloClient';
+
 
 // Import containers with correct paths based on your folder structure
 import Hero from './containers/pages/home/hero/hero';  // Correct path for Hero.jsx
@@ -12,6 +16,7 @@ import BikesHome from './containers/pages/bikes/bikes-home/bikesHome';  // Impor
 
 const App = () => {
   return (
+  <ApolloProvider client={client}>
     <Router>
       <Routes>
         {/* Define routes for Hero (Home) and About pages */}
@@ -21,6 +26,7 @@ const App = () => {
         <Route path="/about" element={<About />} />  {/* About page route */}
       </Routes>
     </Router>
+  </ApolloProvider>
   );
 }
 
