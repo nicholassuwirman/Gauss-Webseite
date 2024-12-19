@@ -1,0 +1,141 @@
+.gauss1-page-container {
+    background-color: black;
+}
+
+.gauss1-hero-container {
+  height: 100vh;
+
+  position: relative; /* Makes the container a positioned parent */
+  display: inline-block;
+}
+
+.gauss1-hero {
+  height: auto;
+  width: 100%;
+  
+}
+
+.gauss1-hero-text-overlay {
+  position: absolute; /* Positions the text absolutely inside the container */
+  top: 50%; /* Centers the text vertically */
+  left: 75%; /* Centers the text horizontally */
+  transform: translate(-50%, -50%); /* Fine-tunes the centering */
+  color: white; /* Text color */
+  text-align: center; /* Centers the text horizontally */
+  width: 80vh;
+}
+
+.gauss1-hero-title {
+  font-family: 'Exo 2';
+  font-size: 6rem;
+  margin: 0;
+}
+
+.gauss1-hero-title-description {
+  font-family: 'Exo 2';
+  font-size: 1.5rem;
+}
+
+.gauss1-text-below-hero {
+  display: flex;
+  text-align: center;
+  padding-left: 50vh;
+  padding-right: 50vh;
+  margin-top: 10vh;
+  color: white;
+  font-size: 1.1rem;
+
+}
+
+.gauss1-systems-container {
+  display: flex; /* Enables Flexbox layout */
+  justify-content: center; /* Centers items horizontally */
+  gap: 30px; /* Adds space between the two divs */
+  width: 100%;
+  margin-top: 10vh;
+  margin-bottom: 15vh;
+}
+
+.gauss1-systems-left-container {
+  justify-content: start;
+  width: 40%;
+}
+
+.gauss1-systems-right-container {
+  justify-content: start;
+  align-items: start;
+  width: 40%;
+}
+
+.gauss1-systems-title {
+  color: white;
+  font-size: 2.1rem;
+  margin-top: 2vh;
+}
+
+.gauss1-systems-description {
+  color: white;
+  width: 95%;
+}
+/* Carousel Container */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Hide overflow to only show images within the container */
+}
+
+/* Images wrapper that holds all images */
+.carousel-images-wrapper {
+  display: flex;  /* Use flex to align images horizontally */
+  transition: transform 0.5s ease;  /* Smooth transition */
+}
+
+/* Individual image style */
+.carousel-image {
+  width: 20%;  /* Display 4 images, each taking up 25% of the container width */
+  height: auto;
+  object-fit: cover; /* Ensures images cover the space */
+  flex-shrink: 0; /* Prevent images from shrinking */
+  margin-right: 6vh;
+}
+
+/* Carousel Button */
+.carousel-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem; /* Adjust font size for the arrow */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Vertically centers the button */
+  cursor: pointer;
+  z-index: 10; /* Ensure buttons appear above images */
+  width: 40px; /* Set the width of the round button */
+  height: 40px; /* Set the height of the round button */
+  border-radius: 50%; /* Make the button round */
+  display: flex;
+  align-items: center; /* Vertically centers the arrow */
+  justify-content: center; /* Horizontally centers the arrow */
+  text-align: center; /* Ensure the text is centered */
+  font-weight: bold; /* Optional: Make the arrow bold */
+  padding: 0; /* Ensure no padding */
+}
+
+/* Previous Button */
+.carousel-button.prev {
+  left: 10px; /* Position for the left button */
+}
+
+/* Next Button */
+.carousel-button.next {
+  right: 10px; /* Position for the right button */
+}
+
+/* Hover Effect */
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+

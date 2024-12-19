@@ -13,6 +13,7 @@ import About from './containers/pages/about/about';    // Correct path for About
 import Home from './containers/pages/home/home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BikesHome from './containers/pages/bikes/bikes-home/bikesHome';  // Import BikesHome component
+import Gauss1 from './containers/pages/bikes/gauss1/gauss1';  // Import Gauss1 component
 
 const App = () => {
   return (
@@ -24,6 +25,9 @@ const App = () => {
         <Route path="/bikesHome" element={<BikesHome />} />
 
         <Route path="/about" element={<About />} />  {/* About page route */}
+
+        <Route path="/gauss1" element={<Gauss1 />} /> {/* Gauss1 page */}
+
       </Routes>
     </Router>
   </ApolloProvider>

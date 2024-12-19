@@ -33,7 +33,6 @@
   margin-top: 20px; /* Space between image and text */
 }
 .description-lightning-container {
-  padding-left: 14vh;
 }
 /* Individual text items */
 .description-text-item {
@@ -372,8 +371,8 @@ margin-bottom: 1rem;      /* Add spacing between images */
     flex-direction: column;
     padding-right: 4vh;
     padding-left: 4vh;
-    margin-bottom: 7vh;
-    margin-top: 12vh;
+    margin-bottom: 5vh;
+    margin-top: 7vh;
   }
   .gauss-electric-picture {
     width: 100%;
@@ -404,6 +403,7 @@ margin-bottom: 1rem;      /* Add spacing between images */
     padding-left: 5vh;
     padding-right: 5vh;
     margin-bottom: 15vh;
+    margin-top: 5vh;
   }
 
 .description-text {
@@ -495,7 +495,7 @@ width: 100%;
   }
 
   .description-container {
-    padding-top: 15vh;
+    padding-top: 4vh;
   }
 .lightning-fast-text {
   font-size: 1.6rem;
@@ -522,7 +522,6 @@ width: 100%;
   justify-content: center;
   text-align: center;
   align-items: center;
-  padding-left: 3.5vh;
   }
   .lightning-fast-text-description {
     font-size: 1rem;  

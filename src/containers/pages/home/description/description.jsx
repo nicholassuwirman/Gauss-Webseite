@@ -227,14 +227,13 @@ const Description = () => {
             GAUSS - Electric Superbike
           </p>
           <p className='gauss-electric-description text-white font-exo'>
-          The GAUSS superbike is the world’s first fully electric endurance motorcycle. Its new high-performance, fast-exchange battery system pushes the limits, while the adjustable chassis and components (steering angle, height, and swingarm length) are designed for optimal track and rider customization.
-          </p>
+          The GAUSS superbike is the world’s first fully electric endurance motorcycle designed and built by students. Its adjustable chassis and components (steering angle, height, and swingarm length) are designed for optimal track and rider customization.          </p>
       </div>
     </div>
 
 
-    <div className="description-lightning-container flex flex-col items-start justify-start">
-        <div className='lightning-fast-container flex flex-col items-start justify-start'>
+    <div className="description-lightning-container flex flex-col items-center justify-start">
+        <div className='lightning-fast-container flex flex-col items-center justify-start'>
           <p className="lightning-fast-text text-white font-exo font-medium">
             Lightning-Fast Battery Swap
           </p>
