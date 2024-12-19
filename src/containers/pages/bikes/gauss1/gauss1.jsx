@@ -5,8 +5,7 @@ import React, { useState } from 'react';
 import Navbar from '../../navbar/navbar';  // Importing Navbar component
 import Footer from '../../footer/footer';  // Importing Footer component
 
-import gauss1Hero from '../../../../assets/gauss1/gauss-1-hero.jpg';
-import gauss1Hero3 from '../../../../assets/gauss1/gauss-1-hero3desaturate-cut.jpg';
+import gauss1Hero from '../../../../assets/gauss1/gauss-1-hero3desaturate-cut-upscaled.jpg';
 import gauss1cooling from '../../../../assets/gauss1/gauss1-cooling-pic-textremoved.jpg';
 import gauss1recovery from '../../../../assets/gauss1/gauss1-recovery-pic-textremoved.jpg';
 
@@ -48,7 +47,7 @@ const Gauss1 = () => {
     <div className='gauss1-page-container'>
      <Navbar />
      <div className='gauss1-hero-container'>
-        <img src={gauss1Hero3} alt="Gauss 1 image" className='gauss1-hero' />
+        <img src={gauss1Hero} alt="Gauss 1 image" className='gauss1-hero' />
         <div className="gauss1-hero-text-overlay">
           <p className='gauss1-hero-title'>Gauss 1</p>
           <p className='gauss1-hero-title-description'>The one that started it all</p>
