@@ -18,7 +18,7 @@ import sponsorMobilityAcWhite from '../../../../assets/sponsor-mobility-academy-
 
 import sponsorStaubli from '../../../../assets/sponsor-staubli.png';
 import sponsorInnovatiq from '../../../../assets/sponsot-innovatiq.png';
-import sponsorGftn from '../../../../assets/sponsor-gftn.GIF';
+import sponsorGftn from '../../../../assets/sponsor-gftn.jpg';
 
 import bikeChargingStation from '../../../../assets/gauss-charging-station.png';
 
