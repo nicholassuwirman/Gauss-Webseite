@@ -22,7 +22,6 @@ const Gauss1 = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Array of images for the carousel
   const images = [
     gauss1carousel3,
     gauss1carousel1, 
@@ -34,12 +33,10 @@ const Gauss1 = () => {
     gauss1carousel8,
   ];
 
-  // Next button functionality: slide to the next set of images
   const nextImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % (images.length - 3));  // Adjust based on number of images
   };
 
-  // Previous button functionality: slide to the previous set of images
   const prevImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + (images.length - 3)) % (images.length - 3)); // Adjust based on number of images
   };

@@ -107,80 +107,6 @@
   margin-left: 2rem;
 }
 
-/* The container holding all the columns */
-.parallax-container {
-display: flex;
-justify-content: space-between;
-height: 100vh;      /* Full viewport height */
-overflow: hidden;   /* Hide anything that overflows */
-position: relative;
-z-index: 0;
-}
-
-/* Each column will take equal space */
-.parallax-column {
-flex: 1;                /* Each column takes up equal space */        
-overflow: hidden;       /* Hide anything that overflows */
-display: flex;
-flex-direction: column;
-justify-content: flex-start; /* Align images from the top */
-position: relative;
-width: 100%;  /* Make it fill the width */
-}
-
-/* The images inside each column */
-.parallax-images-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-  animation: scrollVertical 40s linear infinite; /* Infinite smooth scrolling */
-}
-
-.parallax-images-2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-  animation: scrollVertical 67s linear infinite; /* Infinite smooth scrolling */
-}
-
-.parallax-images-3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-  animation: scrollVertical 55s linear infinite; /* Infinite smooth scrolling */
-}
-
-.parallax-images-4 {
-  display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
-    animation: scrollVertical 65s linear infinite; /* Infinite smooth scrolling */
-}
-
-/* Image set inside each column */
-.parallax-image-set {
-display: flex;
-justify-content: center;
-flex-direction: column;
-height: 100%;  /* Ensure the images take full height of the container */
-}
-
-/* Styling the images */
-.parallax-images img {
-width: 100%;              /* Make images take full width */
-height: auto;             /* Maintain aspect ratio */
-object-fit: cover;        /* Ensure images are cropped correctly */
-margin-bottom: 1rem;      /* Add spacing between images */
-}
-
 /* Keyframes for vertical scrolling effect */
 @keyframes scrollVertical {
 0% {
@@ -189,30 +115,6 @@ margin-bottom: 1rem;      /* Add spacing between images */
 100% {
   transform: translateY(0%);  /* Scroll to the bottom, and stop exactly at halfway point */
 }
-}
-
-/* Style for the "Be a part of history" text */
-.history-text {
-  font-size: 4rem; /* Adjust text size */
-  font-weight: bold;
-  color: white;
-  text-align: center;
-  font-family: 'Exo 2';
-  text-transform: uppercase; /* Optional - for a more impactful look */
-  z-index: 10; /* Ensure the text stays above all parallax images */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Centering the text in the middle */
-  padding: 20px;
-
-  /* Radial gradient background */
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 70%, transparent 100%);
-  border-radius: 90px; /* Rounded corners */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); /* Shadow effect around the text */
-
-  /* Optional: Add subtle text shadow for depth */
-  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .scroll-button-container {
@@ -352,13 +254,128 @@ margin-bottom: 1rem;      /* Add spacing between images */
   flex-wrap: wrap;
   padding-right: 2rem;
   padding-left: 4rem;
-  margin-bottom: 13rem;
+  margin-bottom: 15vh;
   margin-top: 10vh;
 }
 
 .speed-torque-container {
   flex-direction: row;
 }
+
+.description-sponsors-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15vh;
+  padding-right: 15vh;
+  margin: 0; /* Ensure no additional margin on the container */
+  align-items: center; /* Center the container horizontally */
+  gap: 3vh;
+}
+
+/* Desktop Layout - Keep as is */
+.description-sponsors-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  gap: 4vh; /* Consistent gap between inside-row blocks */
+  flex-wrap: wrap;
+}
+
+.description-sponsor-inside-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 4vh;
+  flex-wrap: wrap;
+}
+
+.description-sponsor-image {
+  width: 270px; /* Set desired size */
+  height: 180px; /* Consistent aspect ratio */
+  border-radius: 10px; /* Round borders */
+}
+
+/* For Mobile (below 768px) */
+@media (max-width: 768px) {
+  .description-sponsors-container {
+  padding-left: 5vh;
+  padding-right: 5vh;
+  }
+
+  .description-sponsors-row {
+    display: flex;
+    flex-direction: column; /* Stack rows on top of each other */
+    gap: 5vh; /* Adjust gap between rows */
+    width: 100%; /* Ensure each row takes full width */
+  }
+
+  .description-sponsor-inside-row {
+    display: flex;
+    flex-direction: row; /* Ensure images are side by side */
+    justify-content: space-between; /* Space the images evenly */
+    gap: 2vh; /* Adjust gap between images */
+    width: 100%; /* Full width for each inside row */
+    padding-left: 2vh;
+    padding-right: 2vh;
+  }
+
+  .description-sponsor-image {
+    width: 48%; /* Images take up 48% of the width on mobile */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .description-sponsor-image {
+    width: 135px; /* 270px * 0.5 = 135px */
+    height: 90px; /* 180px * 0.5 = 90px */
+  }
+
+  
+}
+
+
+
+
+
+.description-sponsored-by-text {
+  color: white;
+  font-size: 2.5rem;
+  font-family: 'Exo 2';
+  text-align: center;
+  margin-bottom: 2vh; /* Space below the "Sponsored by" text */
+}
+.history-text {
+  font-family: 'Exo 2';
+  font-size: 1.2rem; /* Font size */
+
+}
+
+.history-button {
+  margin-top: 2vh;
+  background-color: maroon; /* Orange-red background color (offered background) */
+  color: white; /* White text */
+  padding: 12px 24px; /* Padding to make the button bigger */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+  font-family: 'Exo 2' /* Font family */
+}
+
+.history-button:hover {
+  background-color: #FF4500; /* Darker shade of orange-red when hovered */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.history-button:focus {
+  outline: none; /* Remove focus outline */
+}
+
+.history-button:active {
+  background-color: #E63946; /* Even darker shade when the button is clicked */
+}
+
+
+
+
 
 
 @keyframes glowing {
@@ -367,6 +384,7 @@ margin-bottom: 1rem;      /* Add spacing between images */
   100% { background-position: 0 0; }
 }
 @media (max-width: 768px) {
+
   .gauss-electric-container {
     flex-direction: column;
     padding-right: 4vh;
@@ -527,16 +545,12 @@ width: 100%;
     font-size: 1rem;  
     width: 90%;
   }
-  .parallax-container {
-    height: 70vh;
-  }
+ 
   .sponsor-image {
     margin-left: 2vh;
     margin-right: 2vh;
   }
-  .history-text {
-    z-index: 1;
-  }
+ 
 }
 /* Temporary debug borders for layout 
 * {

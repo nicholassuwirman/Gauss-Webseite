@@ -4,16 +4,21 @@ import bikePic1 from '../../../../assets/gauss_image_1.png';
 import Footer from '../../footer/footer';
 
 import sponsorHatronix from '../../../../assets/sponsor-hatronix.jpg';
-import sponsorBechtle from '../../../../assets/sponsor-bechtle.png';
+import sponsorBechtle from '../../../../assets/sponsor-bechtle-cropped.png';
 import sponsorBmz from '../../../../assets/sponsor-bmz.jpg';
 import sponsorCarbon from '../../../../assets/sponsor-carbon-sigl.jpg';
 import sponsorHda from '../../../../assets/sponsor-hda.png';
 import sponsorIbh from '../../../../assets/sponsor-ibh.png';
 import sponsorKerfaol from '../../../../assets/sponsor-kerfaol.jpg';
 import sponsorKrah from '../../../../assets/sponsor-krah.webp';
+import sponsorKrahWhite from '../../../../assets/sponsor-krah-white.png';
+
 import sponsorMobilityAc from '../../../../assets/sponsor-mobility-academy.png';
+import sponsorMobilityAcWhite from '../../../../assets/sponsor-mobility-academy-white.png';
+
 import sponsorStaubli from '../../../../assets/sponsor-staubli.png';
 import sponsorInnovatiq from '../../../../assets/sponsot-innovatiq.png';
+import sponsorGftn from '../../../../assets/sponsor-gftn.GIF';
 
 import bikeChargingStation from '../../../../assets/gauss-charging-station.png';
 
@@ -270,191 +275,53 @@ const Description = () => {
       />
     </div>
  
+    <div className='description-sponsors-container'>
+      <p className='description-sponsored-by-text'>Sponsored by</p>
 
+
+      <div className='description-sponsors-row'>
+        <div className='description-sponsor-inside-row'>
+          <img src={sponsorHatronix} alt="Gauss sponsor image" className='description-sponsor-image' />
+          <img src={sponsorGftn} alt="Gauss sponsor image" className='description-sponsor-image' />
+        </div>
+        <div className='description-sponsor-inside-row'>
+          <img src={sponsorBmz} alt="Gauss sponsor image" className='description-sponsor-image' />
+          <img src={sponsorCarbon} alt="Gauss sponsor image" className='description-sponsor-image' />
+        </div>
+      </div>
+
+      <div className='description-sponsors-row'>
+        <div className='description-sponsor-inside-row'>
+          <img src={sponsorIbh} alt="Gauss sponsor image" className='description-sponsor-image' />
+          <img src={sponsorKerfaol} alt="Gauss sponsor image" className='description-sponsor-image' />
+        </div>
+        <div className='description-sponsor-inside-row'>
+          <img src={sponsorHda} alt="Gauss sponsor image" className='description-sponsor-image' />
+          <img src={sponsorBechtle} alt="Gauss sponsor image" className='description-sponsor-image' />
+
+        </div>
+      </div>
+
+      <div className='description-sponsors-row'>
+
+        <div className='description-sponsor-inside-row'>
+          <img src={sponsorStaubli} alt="Gauss sponsor image" className='description-sponsor-image' />
+          <img src={sponsorMobilityAcWhite} alt="Gauss sponsor image" className='description-sponsor-image' />
+        </div>
+        <div className='description-sponsor-inside-row'>
+          <img src={sponsorInnovatiq} alt="Gauss sponsor image" className='description-sponsor-image' />
+          <img src={sponsorKrahWhite} alt="Gauss sponsor image" className='description-sponsor-image' />
+
+        </div>
+      </div>
+
+      <button className="history-button">Be a part of history</button>
+
+    </div>
 
       
       
-      <div className='flex w-[100%]'>
-  
-
-  <div className='flex flex-col'>
-  <div class="parallax-container flex flex-row w-[100%]">
-    <p class=" history-text absolute  transform text-5xl mb-10 z-10">
-      Be a part of history
-    </p>
-
-    <div class="parallax-column" data-speed="5">
-      <div class="parallax-images-1 justify-end">
-        <div class="parallax-image-set">
-          <img src={sponsorHda} alt="Image 1" className='sponsor-image' />
-          <img src={sponsorHatronix} alt="Image 2" className='sponsor-image' />
-          <img src={sponsorBechtle} alt="Image 3" className='sponsor-image' />
-          <img src={sponsorBmz} alt="Image 4" className='sponsor-image' />
-          <img src={sponsorCarbon} alt="Image 5"  className='sponsor-image'/>
-          <img src={sponsorHda} alt="Image 1" className='sponsor-image' />
-          <img src={sponsorHatronix} alt="Image 2" className='sponsor-image' />
-          <img src={sponsorBechtle} alt="Image 3" className='sponsor-image' />
-          <img src={sponsorBmz} alt="Image 4" className='sponsor-image' />
-          <img src={sponsorCarbon} alt="Image 5"  className='sponsor-image'/>
-        </div>
-        <div class="parallax-image-set">
-        </div>
-
-        <div class="parallax-image-set">
-          <img src={sponsorHda} alt="Image 1" className='sponsor-image' />
-          <img src={sponsorHatronix} alt="Image 2" className='sponsor-image' />
-          <img src={sponsorBechtle} alt="Image 3" className='sponsor-image' />
-          <img src={sponsorBmz} alt="Image 4" className='sponsor-image' />
-          <img src={sponsorCarbon} alt="Image 5"  className='sponsor-image'/>
-          <img src={sponsorHda} alt="Image 1" className='sponsor-image' />
-          <img src={sponsorHatronix} alt="Image 2" className='sponsor-image' />
-          <img src={sponsorBechtle} alt="Image 3" className='sponsor-image' />
-          <img src={sponsorBmz} alt="Image 4" className='sponsor-image' />
-          <img src={sponsorCarbon} alt="Image 5"  className='sponsor-image'/>
-        </div>
-        <div class="parallax-image-set">
-        </div>
-      </div>
-    </div>
-
-    <div class="parallax-column" data-speed="5">
-      <div class="parallax-images-2 justify-end">
-        <div class="parallax-image-set">
-          <img src={gaussPar1} alt="Image 1" className='sponsor-image' />
-          <img src={gaussPar2} alt="Image 2" className='sponsor-image' />
-          <img src={gaussPar3} alt="Image 3" className='sponsor-image' />
-          <img src={gaussPar4} alt="Image 4" className='sponsor-image' />
-          <img src={gaussPar5} alt="Image 5"  className='sponsor-image'/>
-
-        </div>
-        <div class="parallax-image-set">
-        <img src={gaussPar1} alt="Image 1" className='sponsor-image' />
-          <img src={gaussPar2} alt="Image 2" className='sponsor-image' />
-          <img src={gaussPar3} alt="Image 3" className='sponsor-image' />
-          <img src={gaussPar4} alt="Image 4" className='sponsor-image' />
-          <img src={gaussPar5} alt="Image 5"  className='sponsor-image'/>
-
-        </div>
-
-        <div class="parallax-image-set">
-        <img src={gaussPar1} alt="Image 1" className='sponsor-image' />
-          <img src={gaussPar2} alt="Image 2" className='sponsor-image' />
-          <img src={gaussPar3} alt="Image 3" className='sponsor-image' />
-          <img src={gaussPar4} alt="Image 4" className='sponsor-image' />
-          <img src={gaussPar5} alt="Image 5"  className='sponsor-image'/>
-
-        </div>
-        <div class="parallax-image-set">
-          <img src={gaussPar1} alt="Image 1" className='sponsor-image' />
-          <img src={gaussPar2} alt="Image 2" className='sponsor-image' />
-          <img src={gaussPar3} alt="Image 3" className='sponsor-image' />
-          <img src={gaussPar4} alt="Image 4" className='sponsor-image' />
-          <img src={gaussPar5} alt="Image 5"  className='sponsor-image'/>
-
-        </div>
-      </div>
-    </div>
-    
-    <div class="parallax-column" data-speed="5">
-      <div class="parallax-images-3 justify-end">
-        <div class="parallax-image-set">
-          <img src={gaussPar6} alt="Image 1" className='sponsor-image' />
-          <img src={gaussPar7} alt="Image 2" className='sponsor-image' />
-          <img src={gaussPar8} alt="Image 3" className='sponsor-image' />
-          <img src={gaussPar9} alt="Image 4" className='sponsor-image' />
-          <img src={gaussPar10} alt="Image 5"  className='sponsor-image'/>
-        </div>
-        <div class="parallax-image-set">
-        <img src={gaussPar6} alt="Image 1" className='sponsor-image' />
-          <img src={gaussPar7} alt="Image 2" className='sponsor-image' />
-          <img src={gaussPar8} alt="Image 3" className='sponsor-image' />
-          <img src={gaussPar9} alt="Image 4" className='sponsor-image' />
-          <img src={gaussPar10} alt="Image 5"  className='sponsor-image'/>
-        </div>
-
-        <div class="parallax-image-set">
-        <img src={gaussPar6} alt="Image 1" className='sponsor-image' />
-          <img src={gaussPar7} alt="Image 2" className='sponsor-image' />
-          <img src={gaussPar8} alt="Image 3" className='sponsor-image' />
-          <img src={gaussPar9} alt="Image 4" className='sponsor-image' />
-          <img src={gaussPar10} alt="Image 5"  className='sponsor-image'/>
-        </div>
-        <div class="parallax-image-set">
-        <img src={gaussPar6} alt="Image 1" className='sponsor-image' />
-          <img src={gaussPar7} alt="Image 2" className='sponsor-image' />
-          <img src={gaussPar8} alt="Image 3" className='sponsor-image' />
-          <img src={gaussPar9} alt="Image 4" className='sponsor-image' />
-          <img src={gaussPar10} alt="Image 5"  className='sponsor-image'/>
-        </div>
-      </div>
-    </div>
-
-    <div class="parallax-column" data-speed="9S">
-      <div class="parallax-images-4 justify-end">
-        <div class="parallax-image-set">
-          <img src={sponsorKrah} alt="Image 9" className='sponsor-image' />
-          <img src={sponsorMobilityAc} alt="Image 10" className='sponsor-image' />
-
-          <img src={sponsorStaubli} alt="Image 11" className='sponsor-image' />
-          <img src={sponsorInnovatiq} alt="Image 12" className='sponsor-image' />
-          <img src={sponsorIbh} alt="Image 7" className='sponsor-image' />
-          <img src={sponsorKerfaol} alt="Image 8" className='sponsor-image' />
-          <img src={sponsorKrah} alt="Image 9" className='sponsor-image' />
-          <img src={sponsorMobilityAc} alt="Image 10" className='sponsor-image' />
-
-          <img src={sponsorStaubli} alt="Image 11" className='sponsor-image' />
-          <img src={sponsorInnovatiq} alt="Image 12" className='sponsor-image' />
-          <img src={sponsorIbh} alt="Image 7" className='sponsor-image' />
-          <img src={sponsorKerfaol} alt="Image 8" className='sponsor-image' />
-        </div>
-        <div class="parallax-image-set">
-          <img src={sponsorMobilityAc} alt="Image 10" className='sponsor-image' />
-          <img src={sponsorStaubli} alt="Image 11" className='sponsor-image' />
-          <img src={sponsorKrah} alt="Image 9" className='sponsor-image' />
-          <img src={sponsorMobilityAc} alt="Image 10" className='sponsor-image' />
-          <img src={sponsorStaubli} alt="Image 11" className='sponsor-image' />
-          <img src={sponsorKrah} alt="Image 9" className='sponsor-image' />
-
-        </div>
-
-        <div class="parallax-image-set">
-          <img src={sponsorInnovatiq} alt="Image 12" className='sponsor-image' />
-          <img src={sponsorIbh} alt="Image 7" className='sponsor-image' />
-          <img src={sponsorMobilityAc} alt="Image 10" className='sponsor-image' />
-          <img src={sponsorKerfaol} alt="Image 8" className='sponsor-image' />
-          <img src={sponsorInnovatiq} alt="Image 12" className='sponsor-image' />
-          <img src={sponsorIbh} alt="Image 7" className='sponsor-image' />
-          <img src={sponsorMobilityAc} alt="Image 10" className='sponsor-image' />
-          <img src={sponsorKerfaol} alt="Image 8" className='sponsor-image' />
-        </div>
-        <div class="parallax-image-set">
-          
-          <img src={sponsorStaubli} alt="Image 11" className='sponsor-image' />
-          <img src={sponsorKrah} alt="Image 9" className='sponsor-image' />
-          <img src={sponsorInnovatiq} alt="Image 12" className='sponsor-image' />
-          <img src={sponsorMobilityAc} alt="Image 10" className='sponsor-image' />
-          <img src={sponsorStaubli} alt="Image 11" className='sponsor-image' />
-          <img src={sponsorKrah} alt="Image 9" className='sponsor-image' />
-          <img src={sponsorInnovatiq} alt="Image 12" className='sponsor-image' />
-          <img src={sponsorMobilityAc} alt="Image 10" className='sponsor-image' />
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <div className="scroll-button-container">
-      <button
-        className="scroll-to-hero-button"
-        onClick={() => {
-          document.getElementById('hero').scrollIntoView({ behavior: 'smooth' });
-        }}
-      >
-        <p className='contact-text'>Contact us</p>
-      </button>
-    </div>
-  </div>
-  </div>
+      
 
   <Footer />
   
