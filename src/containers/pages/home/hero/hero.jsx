@@ -10,6 +10,7 @@ import gauss1Mobile from '../../../../assets/gauss-1-mobile.jpg'; // Update logo
 import gauss2Mobile from '../../../../assets/gauss-2-mobile.jpg'; // Update logo path as necessary
 
 import gaussVideoWotext from '../../../../assets/gauss-video-wotext-compressed.mp4'; // Update video path
+import gaussHeroVideo from '../../../../assets/gauss-hero-video-compressed.mp4'; // Update video path
 
 const Menu = () => {
   return (
@@ -41,7 +42,7 @@ const Hero = () => {
         autoPlay
         muted
         loop
-        src={gaussVideoWotext}
+        src={gaussHeroVideo}
         type="video/mp4"
       />
 
@@ -52,7 +53,6 @@ const Hero = () => {
       {/* Hero Title Section */}
       <div className="hero-title-container">
         <p className="hero-title-fuel">Charge the Future</p>
-        <p className="hero-title-partner"><span className="highlight-text"></span></p>
         <p className="hero-title-highlight">Gauss 2</p>
         <p className="hero-title-search-partner">Seeking sponsors for our electric superbike. </p>
         <div className="hero-title-partner-mobile-container">

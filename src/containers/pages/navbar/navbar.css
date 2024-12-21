@@ -1,3 +1,6 @@
+
+
+
 .bikes-link {
   position: relative; /* Ensures images can be positioned inside the container */
   display: inline-block;
@@ -131,27 +134,10 @@
 }
 
 
-.navbar-menu-text:hover {
-  color: #b3ddff;
-}
-
-.navbar-menu-text::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 100%;
-  height: 2px;
-  background-color: #b3ddff;
-  opacity: 0;
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
 .navbar-menu-text:hover::after {
   opacity: 1;
   transform: scaleX(1);
+  background-color: var(--color-primary-red-light);
 }
 
 /* Navbar Mobile Menu */
@@ -208,7 +194,7 @@
 .navbar-menu-text-team,
 .navbar-menu-text-partners,
 .navbar-menu-text-participate,
-.navbar-menu-text-imprint {
+.navbar-menu-text-department {
   z-index: 1000; /* Ensure text stays above the images */
 }
 
@@ -225,44 +211,47 @@
     background-color: transparent;
     z-index: -3;
   }
-  
   .navbar-menu-text {
-    display: flex;            /* Use flexbox to align content */
-    justify-content: center;  /* Center horizontally */
-    align-items: center;      /* Center vertically */
     position: relative;
-    color: white;
+    color: white; /* Text color */
     font-family: 'Michroma';
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; /* Transition for text color */
     margin-left: 6.5vh;
     font-size: 1.15rem;
-    z-index: 1000;            /* Ensure text stays above other content */
-    height: 100%;             /* Make sure the element takes full height */
+    z-index: 1000;
+    height: 100%;
+    display: inline-block; /* Ensure it behaves like an inline element */
   }
   
-  .navbar-menu-text:hover {
-    color: #b3ddff;
-  }
-  
+ 
+  /* Initial state for the underline */
   .navbar-menu-text::after {
     content: "";
     position: absolute;
     left: 0;
     bottom: -5px;
-    width: 100%;
+    width: 100%; /* Ensure the width is always 100% */
     height: 2px;
-    background-color: #b3ddff;
+    background-color: var(--color-primary-red-light); /* Start with red color */
     opacity: 0;
-    transform: scaleX(0);
+    transform: scaleX(0); /* Initially, it's scaled to 0 (invisible) */
     transform-origin: center;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transition for the underline */
   }
   
+  /* Hover state for the underline */
   .navbar-menu-text:hover::after {
-    opacity: 1; /*keknya inig asih bugnys*/
-    transform: scaleX(1);
+    opacity: 1;
+    transform: scaleX(1); /* Expand the underline to full width */
   }
+  
+  /* Ensure the line stays red even when fading out */
+  .navbar-menu-text:not(:hover)::after {
+    background-color: var(--color-primary-red-light); /* Keep the line red */
+  }
+  
+
     /* DEBUG KE Mobile Menu */
 
   /* Navbar Mobile Menu */
@@ -362,7 +351,7 @@
     margin-top: 3vh;
   }
 
-  .navbar-menu-text-imprint {
+  .navbar-menu-text-department {
     position: relative;
     color: white;
     font-family: 'Michroma';
@@ -387,15 +376,82 @@
 
   /* Show Mobile Menu Icon */
   @media screen and (max-width: 768px) {
-    .navbar-mobile-menu {
-    }
-    
     .navbar-menu-container {
       display: none; /* Hide the desktop menu */
     }
 
   }
+
+  /* Tablets */
+  @media screen and (min-width: 600px) and (max-width: 1024px) {
+    .navbar-menu-container {
+      display: none;
+    }
+    .navbar-mobile-menu {
+      display: block;
+    }
+    .navbar-mobile-content {
+      z-index: 100000000000;
+    }
+    .navbar-mobile-container.visible {
+      z-index: 300; /* Move to the screen */
+    }
+    .navbar-menu-text-imprint {
+        display: flex;
+      }
+      .navbar-menu-text-participate {
+        display: flex;
+      }
+      .navbar-menu-text-partners {
+        display: flex;
+      }
+      .navbar-section {
+          padding-left: 1rem;
+          padding-right: 2rem;
+      }
+      .navbar-section.scrolled {
+        padding-left: 2.6vh !important;
+        padding-right: 5vh !important;
+      }
+
+      .navbar-white-line {
+        left: -5%;
+      }
+      .navbar-menu-text-bikes {
+        margin-left: 4vh;
+        font-size: 2rem;
+      }
+      .navbar-menu-text-partners {
+        margin-left: 4vh;
+        font-size: 2rem;
+
+      }
+      .navbar-menu-text-about {
+        margin-left: 4vh;
+        font-size: 2rem;
+
+      }
+      .navbar-menu-text-department {
+        margin-left: 4vh;
+        font-size: 2rem;
+
+      }
+      .navbar-menu-text-participate {
+        margin-left: 4vh;
+        font-size: 2rem;
+
+      }
+      .gauss-bikes-mobile {
+        width: 300px;
+        height: 200px;
+      }
+  }
+  
   @media screen and (max-width: 768px) {
+    .gauss-bikes-mobile {
+      width: 160px;
+      height: 100%;
+    }
     .navbar-menu-container {
       display: none;
     }
@@ -405,7 +461,8 @@
     .navbar-mobile-container.visible {
       z-index: 300; /* Move to the screen */
     }
-    .navbar-menu-text-imprint {
+    
+    .navbar-menu-text-department {
         display: flex;
       }
       .navbar-menu-text-participate {
@@ -426,4 +483,3 @@
         padding-right: 5vh !important;
       }
   }
-  

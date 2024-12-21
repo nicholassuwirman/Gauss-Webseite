@@ -319,9 +319,6 @@ const Description = () => {
 
     </div>
 
-      
-      
-      
 
   <Footer />
   

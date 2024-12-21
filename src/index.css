@@ -20,6 +20,16 @@ p {
     margin: 0;
     padding: 0;
 }
+:root {
+  --color-primary-red-very-light: #FC9780;
+  --color-primary-red-light: #FD623A;
+  --color-primary-red: #E73A1C;
+  --color-primary-red-dark: #A91714;
+
+  --color-secondary-blue: #1491D1;
+  --color-secondary-light-blue: #b3ddff;
+
+}
 
 /* Global Custom Scrollbar Styles */
 ::-webkit-scrollbar {

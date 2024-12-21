@@ -335,6 +335,15 @@
   text-align: center;
   margin-bottom: 2vh; /* Space below the "Sponsored by" text */
 }
+@media (max-width: 439px) {
+  .description-sponsor-image {
+    width: 108px; /* 270px * 0.5 = 135px */
+    height: 72px; /* 180px * 0.5 = 90px */
+  }
+  .description-sponsored-by-text {
+    font-size: 2rem;
+  }
+}
 @media (max-width: 398px) {
   .description-sponsor-image {
     width: 108px; /* 270px * 0.5 = 135px */
@@ -344,13 +353,13 @@
     font-size: 2rem;
   }
 }
-@media (max-width: 344px) {
+@media (max-width: 385px) {
   .description-sponsor-image {
     width: 95px; /* 270px * 0.5 = 135px */
     height: 63px; /* 180px * 0.5 = 90px */
   }
 }
-@media (max-width: 317px) {
+@media (max-width: 359px) {
   .description-sponsor-image {
     width: 81px; /* 270px * 0.5 = 135px */
     height: 54px; /* 180px * 0.5 = 90px */
@@ -368,7 +377,7 @@
 
 .history-button {
   margin-top: 2vh;
-  background-color: maroon; /* Orange-red background color (offered background) */
+  background-color: var(--color-primary-red-dark); /* Orange-red background color (offered background) */
   color: white; /* White text */
   padding: 12px 24px; /* Padding to make the button bigger */
   border: none; /* Remove border */
@@ -379,7 +388,7 @@
 }
 
 .history-button:hover {
-  background-color: #FF4500; /* Darker shade of orange-red when hovered */
+  background-color: var(--color-primary-red); /* Darker shade of orange-red when hovered */
   transform: scale(1.05); /* Slightly enlarge the button on hover */
 }
 
@@ -388,7 +397,7 @@
 }
 
 .history-button:active {
-  background-color: #E63946; /* Even darker shade when the button is clicked */
+  background-color: var(--color-primary-red); /* Even darker shade when the button is clicked */
 }
 
 
@@ -407,7 +416,7 @@
     flex-direction: column;
     padding-right: 4vh;
     padding-left: 4vh;
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
     margin-top: 7vh;
   }
   .gauss-electric-picture {
@@ -438,8 +447,8 @@
     align-items: center;      /* Center align the items */
     padding-left: 5vh;
     padding-right: 5vh;
-    margin-bottom: 15vh;
-    margin-top: 5vh;
+    margin-bottom: 10vh;
+    margin-top: 2vh;
   }
 
 .description-text {

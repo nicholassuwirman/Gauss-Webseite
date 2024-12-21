@@ -43,12 +43,9 @@
     flex-direction: row;
   }
   
-.highlight-text {
-    color:  #b3ddff;
-}
 
 .hero-title-highlight {
-  color:  #b3ddff;
+  color:  var(--color-primary-red-light);
   font-size: 6.7rem;
   margin-left: -1vh;
   margin-bottom: 0;
@@ -130,7 +127,7 @@
   .hero-sponsor-button {
     width: 35%;
     height: 50px;
-    background: #1491D1;
+    background: var(--color-primary-red);
     color: white;
     font-size: 15px;
     font-family: 'Michroma';
