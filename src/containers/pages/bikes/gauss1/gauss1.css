@@ -1,27 +1,26 @@
 .gauss1-page-container {
-    background-color: black;
+  background-color: black;
 }
 
 .gauss1-hero-container {
   height: 100vh;
-
-  position: relative; /* Makes the container a positioned parent */
+  position: relative;
   display: inline-block;
 }
 
 .gauss1-hero {
-  height: auto;
   width: 100%;
-  
+  height: 100%;  /* Ensure the image occupies the entire container */
+  object-fit: cover; /* Keep the image fully covering the container */
 }
 
 .gauss1-hero-text-overlay {
-  position: absolute; 
-  top: 50%; 
-  left: 75%; 
-  transform: translate(-50%, -50%); 
-  color: white; 
-  text-align: center; 
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
   width: 80vh;
 }
 
@@ -44,27 +43,23 @@
   margin-top: 10vh;
   color: white;
   font-size: 1.1rem;
-
 }
 
 .gauss1-systems-container {
-  display: flex; /* Enables Flexbox layout */
-  justify-content: center; /* Centers items horizontally */
-  gap: 30px; /* Adds space between the two divs */
+  display: flex;
+  justify-content: center;
+  gap: 30px;
   width: 100%;
   margin-top: 10vh;
   margin-bottom: 15vh;
 }
 
-.gauss1-systems-left-container {
-  justify-content: start;
-  width: 40%;
-}
-
+.gauss1-systems-left-container, 
 .gauss1-systems-right-container {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
   justify-content: start;
-  align-items: start;
-  width: 40%;
 }
 
 .gauss1-systems-title {
@@ -77,65 +72,135 @@
   color: white;
   width: 95%;
 }
-/* Carousel Container */
+
 .carousel-container {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   width: 100%;
-  overflow: hidden; /* Hide overflow to only show images within the container */
+  overflow: hidden;
 }
 
-/* Images wrapper that holds all images */
 .carousel-images-wrapper {
-  display: flex;  /* Use flex to align images horizontally */
-  transition: transform 0.5s ease;  /* Smooth transition */
+  display: flex;
+  transition: transform 0.5s ease;
 }
 
-/* Individual image style */
 .carousel-image {
-  width: 20%;  /* Display 4 images, each taking up 25% of the container width */
-  height: auto;
-  object-fit: cover; /* Ensures images cover the space */
-  flex-shrink: 0; /* Prevent images from shrinking */
+  width: 22.7%;
+  margin-left: 1vh;
+  height: 40vh;
+  object-fit: cover;
+  flex-shrink: 0;
   margin-right: 6vh;
 }
 
-/* Carousel Button */
 .carousel-button {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
-  font-size: 2rem; /* Adjust font size for the arrow */
+  font-size: 2rem;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%); /* Vertically centers the button */
+  transform: translateY(-50%);
   cursor: pointer;
-  z-index: 10; /* Ensure buttons appear above images */
-  width: 40px; /* Set the width of the round button */
-  height: 40px; /* Set the height of the round button */
-  border-radius: 50%; /* Make the button round */
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   display: flex;
-  align-items: center; /* Vertically centers the arrow */
-  justify-content: center; /* Horizontally centers the arrow */
-  text-align: center; /* Ensure the text is centered */
-  font-weight: bold; /* Optional: Make the arrow bold */
-  padding: 0; /* Ensure no padding */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  padding: 0;
 }
 
-/* Previous Button */
 .carousel-button.prev {
-  left: 10px; /* Position for the left button */
+  left: 10px;
 }
 
-/* Next Button */
 .carousel-button.next {
-  right: 10px; /* Position for the right button */
+  right: 10px;
 }
 
-/* Hover Effect */
 .carousel-button:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* Fix for the Description Container */
+.gauss1-description-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;  /* Stack the image and text */
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-top: 20px; /* Optional: Adds some padding at the top */
+  margin-top: 10vh;
+}
+
+.gauss1-description-image {
+  height: 400px; /* Set a fixed height for the image */
+  object-fit: cover;
+  position: relative; /* Ensure absolute positioning works within the image container */
+}
+
+.circle-plus-1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  border: 2px solid white; /* Added white border */
+
+}
+
+.circle-plus-2 {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.plus-sign, .arrow-sign {
+  font-weight: bold;
+}
+
+/* Fix for the description text */
+.description-text {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #333;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.1); /* Light background */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}

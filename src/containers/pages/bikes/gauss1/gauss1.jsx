@@ -17,9 +17,11 @@ import gauss1carousel5 from '../../../../assets/gauss1/carousel5.jpg';
 import gauss1carousel6 from '../../../../assets/gauss1/carousel6.jpg';
 import gauss1carousel7 from '../../../../assets/gauss1/carousel7.jpg';
 import gauss1carousel8 from '../../../../assets/gauss1/carousel8.jpg';
+import gauss1carousel9 from '../../../../assets/gauss1/carousel9.jpg';
+
+import gauss1descriptionImage from '../../../../assets/gauss1/gauss-1-description-pic-1.jpg';
 
 const Gauss1 = () => {
-
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
@@ -30,6 +32,7 @@ const Gauss1 = () => {
     gauss1carousel5,
     gauss1carousel6,
     gauss1carousel7,
+    gauss1carousel9,
     gauss1carousel8,
   ];
 
@@ -40,6 +43,20 @@ const Gauss1 = () => {
   const prevImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + (images.length - 3)) % (images.length - 3)); // Adjust based on number of images
   };
+
+  const [showTextForCircle1, setShowTextForCircle1] = useState(false);
+  const [showTextForCircle2, setShowTextForCircle2] = useState(false);
+
+  const toggleTextForCircle1 = () => {
+    setShowTextForCircle1(!showTextForCircle1);
+    setShowTextForCircle2(false);  // Hide the second text if the first is clicked
+  };
+
+  const toggleTextForCircle2 = () => {
+    setShowTextForCircle2(!showTextForCircle2);
+    setShowTextForCircle1(false);  // Hide the first text if the second is clicked
+  };
+
   return (
     <div className='gauss1-page-container'>
      <Navbar />
@@ -49,7 +66,6 @@ const Gauss1 = () => {
           <p className='gauss1-hero-title'>Gauss 1</p>
           <p className='gauss1-hero-title-description'>The one that started it all</p>
         </div>
-
      </div>
     <p className='gauss1-text-below-hero'>GAUSS I was the initiator for the research project and implemented concepts such as the electric brake system, the front wheel energy recovery system and the rear exhaust air system. Step by step, our first superbike was built from individual assemblies into a fully functional electric sports motorcycle.</p>
     <div className='gauss1-systems-container'>
@@ -72,6 +88,29 @@ const Gauss1 = () => {
           ))}
         </div>
         <button className="carousel-button next" onClick={nextImage}>›</button>
+      </div>
+      <div className='gauss1-description-container'>
+        <img src={gauss1descriptionImage} alt="Gauss1 description image" className='gauss1-description-image' />
+        
+        {/* Circle for first text */}
+        <div className="circle-plus-1" onClick={toggleTextForCircle1}>
+          <span className="plus-sign">+</span>
+        </div>
+        
+        {/* Circle for second text */}
+        <div className="circle-plus-2" onClick={toggleTextForCircle2}>
+          <span className="arrow-sign">+</span>
+        </div>
+        
+        {/* Conditional text for first circle */}
+        {showTextForCircle1 && (
+          <p className="description-text">This is the text for the first circle. It describes the functionality of the first circle.</p>
+        )}
+        
+        {/* Conditional text for second circle */}
+        {showTextForCircle2 && (
+          <p className="description-text">This is the text for the second circle. It describes the functionality of the second circle with a different message.</p>
+        )}
       </div>
 
      <Footer />

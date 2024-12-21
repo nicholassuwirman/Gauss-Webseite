@@ -191,7 +191,7 @@
   .bikes-gauss1-container,
   .bikes-gauss2-container {
     width: 90%;
-    height: 40vh;
+    height: 45vh;
 
   }
 
@@ -215,5 +215,17 @@
   }
   .bikesHome-gauss-description {
     font-size: 1.3rem;
+  }
+}
+
+
+
+@media (max-height: 668px) {
+  .bikes-gauss1-container {
+    height: 55vh;
+  }
+
+  .bikes-gauss2-container {
+    height: 55vh;
   }
 }
