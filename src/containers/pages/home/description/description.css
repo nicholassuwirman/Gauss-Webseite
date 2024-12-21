@@ -315,8 +315,7 @@
     justify-content: center;
     gap: 5vh;    
     width: 100%; /* Full width for each inside row */
-    padding-left: 2vh;
-    padding-right: 2vh;
+
   }
 
   .description-sponsor-image {
@@ -324,8 +323,8 @@
     height: auto; /* Maintain aspect ratio */
   }
   .description-sponsor-image {
-    width: 135px; /* 270px * 0.5 = 135px */
-    height: 90px; /* 180px * 0.5 = 90px */
+    width: 162px; /* 270px * 0.5 = 135px */
+    height: 108px; /* 180px * 0.5 = 90px */
   }
 }
 .description-sponsored-by-text {
@@ -335,34 +334,55 @@
   text-align: center;
   margin-bottom: 2vh; /* Space below the "Sponsored by" text */
 }
+@media (max-width: 465px) {
+  .description-sponsor-image {
+    width: 135px; /* 270px * 0.5 = 135px */
+    height: 90px; /* 180px * 0.5 = 90px */
+  }
+  .description-sponsored-by-text {
+    font-size: 2.5rem;
+  }
+}
+
 @media (max-width: 439px) {
   .description-sponsor-image {
-    width: 108px; /* 270px * 0.5 = 135px */
-    height: 72px; /* 180px * 0.5 = 90px */
+    width: 148.5; /* 270px * 0.5 = 135px */
+    height: 99px; /* 180px * 0.5 = 90px */
+  }
+  .description-sponsored-by-text {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 427px) {
+  .description-sponsor-image {
+    width: 135px; /* 270px * 0.5 = 135px */
+    height: 90px; /* 180px * 0.5 = 90px */
   }
   .description-sponsored-by-text {
     font-size: 2rem;
   }
 }
-@media (max-width: 398px) {
+
+@media (max-width: 410px) {
   .description-sponsor-image {
-    width: 108px; /* 270px * 0.5 = 135px */
-    height: 72px; /* 180px * 0.5 = 90px */
-  }
-  .description-sponsored-by-text {
-    font-size: 2rem;
+    width: 126.9px;
+  height: 84.6px;
+
   }
 }
-@media (max-width: 385px) {
+
+@media (max-width: 391px) {
   .description-sponsor-image {
-    width: 95px; /* 270px * 0.5 = 135px */
-    height: 63px; /* 180px * 0.5 = 90px */
+    width: 121.5px;
+    height: 81px;
+
   }
 }
 @media (max-width: 359px) {
   .description-sponsor-image {
-    width: 81px; /* 270px * 0.5 = 135px */
-    height: 54px; /* 180px * 0.5 = 90px */
+    width: 108px;
+    height: 72px;
+
   }
 }
 
@@ -400,7 +420,36 @@
   background-color: var(--color-primary-red); /* Even darker shade when the button is clicked */
 }
 
+/* tablet */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .description-datasheet-container {
+    margin-top: 10vh;
+    height: 60vh;
+  }
 
+  .gauss-electric-container {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  .description-battery-swap-video {
+    height:30vh;
+  }
+
+  .image2-container {
+    margin-top: 8vh;
+  }
+
+  .gauss-charge-container {
+    margin-top: 7vh;
+    margin-bottom: 10vh;
+  }
+
+  .history-button {
+    padding: 20px 40px;
+    font-size: 1.5rem;
+  }
+}
 
 
 
@@ -540,7 +589,7 @@ width: 100%;
   }
 
   .description-container {
-    padding-top: 4vh;
+    padding-top: 2rem;
   }
 .lightning-fast-text {
   font-size: 1.6rem;
@@ -579,6 +628,28 @@ width: 100%;
   }
  
 }
+@media screen and (max-height: 840px) {
+  .description-container {
+    padding-top: 10vh;
+  }
+
+  .gauss-electric-container {
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+  }
+}
+
+@media screen and (max-height: 668px) {
+  .description-container {
+    padding-top: 15vh;
+  }
+
+  .gauss-electric-container {
+    margin-top: 15vh;
+    margin-bottom: 2vh;
+  }
+}
+
 /* Temporary debug borders for layout 
 * {
   border: 1px solid red; 

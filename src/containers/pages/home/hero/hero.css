@@ -245,10 +245,6 @@
         font-size: 1rem;
     }
 
-    .hero-title-partner-highlight-mobile-container {
-
-    }
-
     .hero-title-partner-mobile-container {
         margin-bottom: 0.3vh;
         margin-top: 1vh;
@@ -337,3 +333,10 @@
       top: 55%;
     }
   }
+  
+  @media screen and (min-width: 600px) and (max-width: 1024px) {
+    .hero-title-fuel {
+      margin-bottom: -1vh;
+    }
+  }
+  
