@@ -72,7 +72,7 @@ const Gauss1 = () => {
     if (view === 'front') {
       return [
         { top: isMobile ? '52%' : '50%', left: isMobile ? '42%' : '47%', text: 'Front-Wheel Regenerative Braking System' },
-        { top: isMobile ? '32%' : '26%', left: isMobile ? '55%' : '52.2%', text: 'three steering dampers for improved handling' },
+        { top: isMobile ? '32%' : '26%', left: isMobile ? '55%' : '52.2%', text: 'Three steering dampers for improved handling' },
         { top: isMobile ? '65%' : '65%', left: isMobile ? '61%' : '55%', text: '200 Nm torque and 210 km/h max speed' },
       ];
     }
