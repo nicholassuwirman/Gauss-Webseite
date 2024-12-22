@@ -347,9 +347,12 @@
   }
 
   .gauss1-hero-text-overlay {
-    left: 0%;
-    top: 81.8%;
-    padding-left: 45vh;
+    left: 50%;
+    top: 70%;
+    padding-left: 47vh;
+    position: absolute;
+    transform: translateX(-80%); /* Adjusts for the exact center */
+
   }
 
   .gauss1-hero-title {
@@ -416,5 +419,9 @@
   .circle-test {
     width: 25px;
     height: 25px;
+  }
+
+  .plus-sign {
+    margin-bottom: 0.5vh;
   }
 }
