@@ -27,8 +27,9 @@ const BikesHome = () => {
           <img src={gauss2bikesHomePicture} alt="Gauss 1 Image" className="bikes-gauss2-picture" />
             <p className='bikesHome-gauss-text'>Gauss 2</p>
             <p className='bikesHome-gauss-description'>Advance the Vision</p>
-            <button className="bikes-learn-more-button-gauss2">Learn More</button>
-
+            <Link to="/gauss2">
+              <button className="bikes-learn-more-button-gauss2">Learn More</button>
+            </Link>
         </div>
       </div>
      <Footer />

@@ -314,4 +314,107 @@
 .circle-text-style {
   margin: 0;
 }
+.gauss1-hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 2%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%); 
+  z-index: 1; 
+}
+@media (max-width: 768px) {
+  .gauss1-text-below-hero {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
+  .gauss1-hero {
+    width:100vw;
+    margin-top: 2vh;
+    left: 1;
+    object-position:-300px; /* Focuses the image on the left side */
+    position: relative; /* Ensures alignment adjustments work */
+    height: 90vh;
+    
+  }
+
+  .gauss1-hero-shadow {
+    z-index: 100;
+    height: 10%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0) 100%);
+
+  }
+
+  .gauss1-hero-text-overlay {
+    left: 0%;
+    top: 81.8%;
+    padding-left: 45vh;
+  }
+
+  .gauss1-hero-title {
+    font-size: 4rem;
+  }
+
+  .gauss1-hero-title-description {
+    font-size: 1.2rem;
+  }
+
+  .gauss1-text-below-hero {
+    margin-top: 5vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .gauss1-systems-container {
+    flex-direction: column;
+    margin-bottom: 8vh;
+  }
+
+  .gauss1-systems-left-container {
+    width: 100%;
+    padding-left: 4vh;
+    padding-right: 4vh;
+  }
+
+  .gauss1-systems-title {
+    font-size: 1.8rem;
+  }
+
+  .gauss1-systems-description {
+    font-size: 0.9rem;
+  }
+
+  .gauss1-systems-right-container {
+    width: 100%;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    margin-top: 2vh;
+  }
+
+  .carousel-image {
+    width: 50%;
+    height: auto;
+    margin-right: 1.5vh;
+    margin-left: 0;
+  }
+
+  .gauss1-description-container {
+    margin-top: 8vh;
+  }
+
+  .gauss1-description-image {
+    height: 265px;
+  }
+
+  .circle-text-container {
+    width: 100%;
+  }
+
+  .circle-test {
+    width: 25px;
+    height: 25px;
+  }
+}
