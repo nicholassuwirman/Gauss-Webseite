@@ -467,7 +467,7 @@
     padding-right: 4vh;
     padding-left: 4vh;
     margin-bottom: 2vh;
-    margin-top: 10vh;
+    margin-top: 7vh;
   }
   .gauss-electric-picture {
     width: 100%;
@@ -590,7 +590,7 @@ width: 100%;
   }
 
   .description-container {
-    padding-top: 3.5rem;
+    padding-top: 2rem;
   }
 .lightning-fast-text {
   font-size: 1.6rem;
@@ -636,8 +636,17 @@ width: 100%;
   }
 
   .gauss-electric-container {
-    margin-top: 15vh;
+    margin-top: 18vh;
     margin-bottom: 2vh;
+  }
+}
+@media screen and (max-height: 825px) {
+  .description-container {
+    padding-top: 8vh;
+  }
+
+  .gauss-electric-container {
+    margin-top: 10vh;
   }
 }
 
