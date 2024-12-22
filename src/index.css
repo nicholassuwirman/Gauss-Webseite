@@ -26,8 +26,9 @@ p {
   --color-primary-red: #E73A1C;
   --color-primary-red-dark: #A91714;
 
-  --color-secondary-blue: #1491D1;
-  --color-secondary-light-blue: #b3ddff;
+  --color-secondary-blue:#007bff;
+  --color-secondary-blue-light: #1491D1;
+  --color-secondary-blue-very-light: #b3ddff;
 
 }
 

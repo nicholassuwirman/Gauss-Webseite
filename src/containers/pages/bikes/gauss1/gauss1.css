@@ -9,7 +9,7 @@
 }
 
 .gauss1-hero {
-  width: 100%;
+  width: 100vw;
   height: 100%;  /* Ensure the image occupies the entire container */
   object-fit: cover; /* Keep the image fully covering the container */
 }
@@ -56,7 +56,7 @@
 
 .gauss1-systems-left-container, 
 .gauss1-systems-right-container {
-  width: 45%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -71,6 +71,10 @@
 .gauss1-systems-description {
   color: white;
   width: 95%;
+}
+
+.gauss1-description-picture {
+  width: 100%;
 }
 
 .carousel-container {
@@ -128,33 +132,20 @@
 .carousel-button:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+/* Container for the image and circles */
 
-/* Fix for the Description Container */
-.gauss1-description-container {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;  /* Stack the image and text */
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  padding-top: 20px; /* Optional: Adds some padding at the top */
-  margin-top: 10vh;
+.arrow-sign {
+  margin-bottom: 1vh;
 }
 
-.gauss1-description-image {
-  height: 400px; /* Set a fixed height for the image */
-  object-fit: cover;
-  position: relative; /* Ensure absolute positioning works within the image container */
-}
 
-.circle-plus-1 {
+/* First circle positioning */
+.circle-plus-frame {
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 35px;
-  height: 35px;
+  top: 20%; /* This will be 20% from the top of the image */
+  left: 10%; /* This will be 10% from the left of the image */
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -163,44 +154,164 @@
   color: white;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  z-index: 10;
-  border: 2px solid white; /* Added white border */
-
+  z-index: 10; /* Ensure circle is above the image */
+  border: 2px solid white;
 }
 
-.circle-plus-2 {
+/* Second circle positioning */
+.circle-plus-battery {
   position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
+  top: 50% ; /* This will be 50% from the top of the image */
+  left: 40%; /* This will be 40% from the left of the image */
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
-  color: black;
+  font-size: 20px;
+  color: white;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  z-index: 10;
+  z-index: 10; /* Ensure circle is above the image */
+  border: 2px solid white;
 }
 
-.plus-sign, .arrow-sign {
-  font-weight: bold;
-}
 
-/* Fix for the description text */
+
+
+
+/* Styling for text that appears below the image */
 .description-text {
   margin-top: 20px;
   font-size: 1rem;
   color: #333;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.1); /* Light background */
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3vh;
+}
+
+.view-rear-front-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 1px solid ; /* Blue border */
+  color: white; /* Text color */
+  font-family: 'Michroma';
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+/* Active state styling */
+.view-rear-front-button.active {
+  background-color: var(--color-secondary-blue); /* Keep background blue */
+  color: white; /* Keep text color white when active */
+}
+
+/* On hover, change background color */
+.view-rear-front-button:hover {
+  background-color: var(--color-secondary-blue);
+  color: white;
+}
+
+.view-rear-front-button:focus {
+  outline: none;
+}
+
+.circles-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adjust space between the image and circles */
+}
+
+.circle-plus {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+  text-align: center;
+  line-height: 40px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.circle-plus-frame {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.circle-plus-battery {
+  background-color: rgba(0, 255, 0, 0.5);
+}
+
+.plus-sign {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 0.5vh;
+}
+
+
+
+.gauss1-description-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 10vh;
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+.gauss1-description-image {
+  height: 400px;
+  object-fit: cover;
+  z-index: 1; /* Keep circles and text above the image */
+}
+
+/* Circle buttons */
+.circle-test {
+  position: absolute; /* Position circles absolutely relative to the container */
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white; /* Add a white border with 2px thickness */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 2; /* Ensure circles are on top of the image */
+}
+
+/* Text container below the image */
+.circle-text-container {
+  width: 60%; /* Set a reasonable width for the text container */
+  margin-top: 1vh; /* Space between the image and text */
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  z-index: 10; /* Ensure text is visible */
+  height: 50px; /* Reserve space to prevent movement */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  white-space: nowrap; /* Prevent text wrapping */
+  text-overflow: ellipsis; /* Add ellipsis for long text */
+}
+.circle-text-style {
+  margin: 0;
+}
+

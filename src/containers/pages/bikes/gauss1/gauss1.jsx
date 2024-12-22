@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './gauss1.css';  
+import './gauss1.css';
 import React, { useState } from 'react';
 
 import Navbar from '../../navbar/navbar';  // Importing Navbar component
@@ -19,10 +19,13 @@ import gauss1carousel7 from '../../../../assets/gauss1/carousel7.jpg';
 import gauss1carousel8 from '../../../../assets/gauss1/carousel8.jpg';
 import gauss1carousel9 from '../../../../assets/gauss1/carousel9.jpg';
 
-import gauss1descriptionImage from '../../../../assets/gauss1/gauss-1-description-pic-1.jpg';
+import gauss1sideImage from '../../../../assets/gauss1/gauss-1-description-pic-1.jpg';
+import gauss1frontImage from '../../../../assets/gauss1/gauss-1-description-pic-2.jpg';
 
 const Gauss1 = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [view, setView] = useState('rear'); // State to toggle between front and rear views
+  const [circleText, setCircleText] = useState('');  // State to store the text for the clicked circle
 
   const images = [
     gauss1carousel3,
@@ -37,83 +40,118 @@ const Gauss1 = () => {
   ];
 
   const nextImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % (images.length - 3));  // Adjust based on number of images
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
   const prevImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + (images.length - 3)) % (images.length - 3)); // Adjust based on number of images
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
-  const [showTextForCircle1, setShowTextForCircle1] = useState(false);
-  const [showTextForCircle2, setShowTextForCircle2] = useState(false);
-
-  const toggleTextForCircle1 = () => {
-    setShowTextForCircle1(!showTextForCircle1);
-    setShowTextForCircle2(false);  // Hide the second text if the first is clicked
+  // Handle circle click and set text for the clicked circle
+  const handleCircleClick = (text) => {
+    setCircleText(text); // Set the text for the clicked circle
   };
 
-  const toggleTextForCircle2 = () => {
-    setShowTextForCircle2(!showTextForCircle2);
-    setShowTextForCircle1(false);  // Hide the first text if the second is clicked
-  };
+  // Select the active image based on the view (front or rear)
+  const activeImage = view === 'front' ? gauss1frontImage : gauss1sideImage;
+
+  // Circle positions for the front and rear views
+  const frontCircles = [
+    { top: '50%', left: '47%', text: 'Front-Wheel Regenerative Braking System' },
+    { top: '26%', left: '52.2%', text: 'three steering dampers for improved handling' },
+    { top: '65%', left: '55%', text: '200 Nm torque and 210 km/h max speed' },
+
+  ];
+
+  const rearCircles = [
+    { top: '42%',  left: '50.5%',  text: ' 363V nominal voltage and 16-20 kWh capacity' },
+    { top: '50%',  left: '56%',text: 'Honda-CRF250R-based Enduro Frame' },
+    { top: '62%',  left: '49%',text: '55kW continuous/100kW peak power output' },
+  ];
+
+  const activeCircles = view === 'front' ? frontCircles : rearCircles;
 
   return (
     <div className='gauss1-page-container'>
-     <Navbar />
-     <div className='gauss1-hero-container'>
+      <Navbar />
+      <div className='gauss1-hero-container'>
         <img src={gauss1Hero} alt="Gauss 1 image" className='gauss1-hero' />
         <div className="gauss1-hero-text-overlay">
           <p className='gauss1-hero-title'>Gauss 1</p>
           <p className='gauss1-hero-title-description'>The one that started it all</p>
         </div>
-     </div>
-    <p className='gauss1-text-below-hero'>GAUSS I was the initiator for the research project and implemented concepts such as the electric brake system, the front wheel energy recovery system and the rear exhaust air system. Step by step, our first superbike was built from individual assemblies into a fully functional electric sports motorcycle.</p>
-    <div className='gauss1-systems-container'>
-      <div className='gauss1-systems-left-container'>
-        <img src={gauss1recovery} alt="Gauss1 cooling image" className='gauss1-cooling' />
-        <p className='gauss1-systems-title'>Energy Recovery Braking</p>
-        <p className='gauss1-systems-description'>We developed an innovative drivetrain with an electrical front brake. While braking with the front wheel, kinetic energy is transferred to the electrical engine. The engine is positioned in the middle of the motorcycle and during breaking works in generator mode like a bicycle dynamo. It converts kinetic energy into electrical energy. The recovered energy is used for charging the batteries.</p>
       </div>
-      <div className='gauss1-systems-right-container'>
-        <img src={gauss1cooling} alt="Gauss1 cooling image" className='gauss1-cooling' />
-        <p className='gauss1-systems-title'>Advanced Air Cooling</p>
-        <p className='gauss1-systems-description'>The PSM engine is built for racing purposes and needs an efficient cooling system. Therefore GAUSS I provides an air cooling system that draws the air from front and underseat pipes.</p>
+      <p className='gauss1-text-below-hero'>
+        GAUSS I was the initiator for the research project and implemented concepts such as the electric brake system, the front wheel energy recovery system and the rear exhaust air system. Step by step, our first superbike was built from individual assemblies into a fully functional electric sports motorcycle.
+      </p>
+
+      <div className='gauss1-systems-container'>
+        <div className='gauss1-systems-left-container'>
+          <img src={gauss1recovery} alt="Gauss1 cooling image" className='gauss1-description-picture' />
+          <p className='gauss1-systems-title'>Energy Recovery Braking</p>
+          <p className='gauss1-systems-description'>
+          We developed an innovative drivetrain with an electric front brake that recovers kinetic energy during braking. The engine acts as a generator, converting energy into electricity to recharge the batteries.</p>
+        </div>
+        <div className='gauss1-systems-right-container'>
+          <img src={gauss1cooling} alt="Gauss1 cooling image" className='gauss1-description-picture' />
+          <p className='gauss1-systems-title'>Advanced Air Cooling</p>
+          <p className='gauss1-systems-description'>The PSM engine is built for racing purposes and needs an efficient cooling system. Therefore GAUSS I provides an air cooling system that draws the air from front and underseat pipes.</p>
+        </div>
       </div>
-    </div>
-    <div className="carousel-container">
-        <button className="carousel-button prev" onClick={prevImage}>‹</button>
-        <div className="carousel-images-wrapper" style={{ transform: `translateX(-${currentIndex * 25}%)` }}>
+
+      <div className="carousel-container">
+        <button className="carousel-button prev" onClick={prevImage}><span className="arrow-sign">‹</span></button>
+        <div className="carousel-images-wrapper" style={{ transform: `translateX(-${currentIndex * 16}%)` }}>
           {images.map((image, index) => (
             <img key={index} src={image} alt={`carousel-${index}`} className="carousel-image" />
           ))}
         </div>
-        <button className="carousel-button next" onClick={nextImage}>›</button>
-      </div>
-      <div className='gauss1-description-container'>
-        <img src={gauss1descriptionImage} alt="Gauss1 description image" className='gauss1-description-image' />
-        
-        {/* Circle for first text */}
-        <div className="circle-plus-1" onClick={toggleTextForCircle1}>
-          <span className="plus-sign">+</span>
-        </div>
-        
-        {/* Circle for second text */}
-        <div className="circle-plus-2" onClick={toggleTextForCircle2}>
-          <span className="arrow-sign">+</span>
-        </div>
-        
-        {/* Conditional text for first circle */}
-        {showTextForCircle1 && (
-          <p className="description-text">This is the text for the first circle. It describes the functionality of the first circle.</p>
-        )}
-        
-        {/* Conditional text for second circle */}
-        {showTextForCircle2 && (
-          <p className="description-text">This is the text for the second circle. It describes the functionality of the second circle with a different message.</p>
-        )}
+        <button className="carousel-button next" onClick={nextImage}><span className="arrow-sign">›</span></button>
       </div>
 
-     <Footer />
+  <div className='gauss1-description-container'>
+  <div className="toggle-buttons">
+      <button
+        className={`view-rear-front-button ${view === 'rear' ? 'active' : ''}`}
+        onClick={() => setView('rear')}
+      >
+        Rear
+      </button>
+
+      <button
+        className={`view-rear-front-button ${view === 'front' ? 'active' : ''}`}
+        onClick={() => setView('front')}
+      >
+        Front
+      </button>
+    </div>
+  <img src={activeImage} alt="Gauss1 description image" className='gauss1-description-image' />
+
+  {/* Circle buttons */}
+  {activeCircles.map((circle, index) => (
+    <div
+      key={index}
+      className="circle-test"
+      style={{
+        top: circle.top,  // Dynamically set top based on the circle object
+        left: circle.left, // Dynamically set left based on the circle object
+      }}
+      onClick={() => handleCircleClick(circle.text)}
+    >
+      <span className="plus-sign">+</span>
+    </div>
+  ))}
+
+  {/* Text description below the image */}
+  <div className="circle-text-container">
+    <p className='circle-text-style'>{circleText}</p>
+  </div>
+</div>
+
+
+ 
+
+      <Footer />
     </div>
   );
 };
