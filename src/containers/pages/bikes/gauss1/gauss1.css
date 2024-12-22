@@ -445,6 +445,10 @@
     height: 25px;
   }
 
+  .circle-text-style {
+    font-size: 1.1rem;
+  }
+
   .plus-sign {
   }
 }
