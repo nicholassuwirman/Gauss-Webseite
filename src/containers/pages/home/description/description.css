@@ -467,7 +467,7 @@
     padding-right: 4vh;
     padding-left: 4vh;
     margin-bottom: 2vh;
-    margin-top: 7vh;
+    margin-top: 10vh;
   }
   .gauss-electric-picture {
     width: 100%;
@@ -590,7 +590,7 @@ width: 100%;
   }
 
   .description-container {
-    padding-top: 2rem;
+    padding-top: 3.5rem;
   }
 .lightning-fast-text {
   font-size: 1.6rem;
