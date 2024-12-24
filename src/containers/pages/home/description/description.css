@@ -13,7 +13,7 @@
   align-items: center; /* Horizontally center the content */
   justify-content: center; /* Center content vertically if needed */
   height: 80vh; /* Full viewport height */
-  margin-top: 13vh; /* Adjust top margin */
+  margin-top: 5vh; /* Adjust top margin */
 }
 
 /* Image styles */
@@ -206,9 +206,8 @@
   flex-direction: row;
   width: 100%;
   padding-left: 2rem;
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
   padding-right: 4rem;
-  margin-top: 10vh;
 }
 
 .description-torque {
@@ -387,7 +386,9 @@
   }
 }
 
-
+.gauss-electric-picture {
+  width: 700px;
+}
 
 
 .history-text {
@@ -467,7 +468,7 @@
     padding-right: 4vh;
     padding-left: 4vh;
     margin-bottom: 2vh;
-    margin-top: 7vh;
+    margin-top: 10vh;
   }
   .gauss-electric-picture {
     width: 100%;
@@ -489,6 +490,7 @@
     align-items: center; /* Vertically center the content */
     justify-content: center; /* Horizontally center the content */
     height: 55vh; /* Optional: Ensures the container takes full viewport height */
+    margin-top: 10vh;
   }
   
 

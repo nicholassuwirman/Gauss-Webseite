@@ -1,6 +1,54 @@
 .gauss2-page-container {
-    height: 100vh;
     background-color: black; /* Set background color to black */
     color: white; /* Optional: Make text color white for contrast */
-  }
+}
   
+
+
+.gauss2-hero-text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  width: 70vh;
+  padding: 1vh;
+  box-shadow: 0px 4px 10px rgba(1, 1, 1, 1); /* Shadow behind the div */
+  border-radius: 10px; /* Optional: Makes corners rounded */
+  background-color: rgba(0, 0, 0, 0.6); /* Optional background to enhance shadow visibility */
+
+}
+.gauss2-systems-title {
+  color: white;
+  font-size: 2.1rem;
+  margin-top: 2vh;
+}
+
+.gauss2-hero-title {
+  font-family: 'Exo 2';
+  font-size: 6rem;
+  margin: 0;
+}
+  
+.gauss2-hero-title-description {
+  font-family: 'Exo 2';
+  font-size: 1.5rem;
+}
+  
+.gauss2-description-picture {
+  width: 100%; /* Make the image take up the full width of the container */
+  height: 45.9vh; /* Set the height of the image to 40vh */
+  object-fit: cover; /* Ensure the image covers the frame without stretching */
+  margin-bottom: 15px; /* Adds space between the image and text */
+}
+
+@media (max-width: 768px) {
+  .gauss2-description-picture {
+    height: auto;
+  }
+
+  .gauss2-systems-title {
+    font-size: 1.6rem;
+  }
+}

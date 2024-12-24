@@ -89,10 +89,10 @@ const Navbar = () => {
           <div className="navbar-menu-bikes-mobile">
             <Link to="/bikesHome" className="navbar-menu-text-bikes">Bikes</Link>
             <div className="bikes-picture-container flex flex-row">
-              <Link to="/gauss1">  {/* Add the path where you want to navigate */}
+              <Link to="/gauss1" className="bikes-link">  {/* Add the path where you want to navigate */}
                 <img src={gauss1Mobile} alt="Gauss 1 Image" className="gauss-bikes-mobile" />
               </Link>              
-              <Link to="/gauss1">  {/* Add the path where you want to navigate */}
+              <Link to="/gauss2" className="bikes-link">  {/* Add the path where you want to navigate */}
                 <img src={gauss2Mobile} alt="Gauss 2 Image" className="gauss-bikes-mobile" />
               </Link>  
             </div>

@@ -22,7 +22,7 @@ import sponsorGftn from '../../../../assets/sponsor-gftn.jpg';
 
 import bikeChargingStation from '../../../../assets/gauss-charging-station.png';
 
-import bikePic2uncut from '../../../../assets/gauss_image_2_uncut.png';
+import bikePic2uncut from '../../../../assets/gauss_image_2.png';
 import gaussGroupImage from '../../../../assets/gauss-group-image.jpg';
 import gaussGroupImage2 from '../../../../assets/gauss-group-image2.jpg';
 import gaussGroupImage3 from '../../../../assets/gauss-group3.jpg';

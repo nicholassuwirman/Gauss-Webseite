@@ -10,7 +10,7 @@
 
 .gauss1-hero {
   width: 100vw;
-  height: 100%;  /* Ensure the image occupies the entire container */
+  height: 103%;  /* Ensure the image occupies the entire container */
   object-fit: cover; /* Keep the image fully covering the container */
 }
 
@@ -347,6 +347,47 @@
   font-size: 1.3rem;
 }
 
+.gauss1-footer-hero {
+  padding-left: 20vh;
+  padding-right: 20vh;
+  margin-top: 13vh;
+  display: flex;
+}
+
+.gauss1-hero-footer-right {
+  padding-left: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Horizontally center (optional if needed) */
+  width: 50%;
+}
+
+.gauss1-footer-hero-image {
+  width: 50%;
+}
+
+.gauss1-footer-hero-text-title {
+  color: white;
+  font-family: 'Michroma';
+  font-size: 2rem;
+}
+.gauss1-footer-hero-text {
+  color: white;
+  font-family: 'Exo 2';
+  font-size: 1rem;
+}
+.gauss1-partner-button {
+  width: 35%;
+  height: 50px;
+  color: white;
+  font-size: 15px;
+  font-family: 'Michroma';
+  margin-top: 3vh;
+  border-radius: 4px;
+  border: 1px solid white;
+  transition: all 0.3s ease;
+}
+
 @media (max-width: 768px) {
   .gauss1-text-below-hero {
     padding-left: 0;
@@ -449,6 +490,28 @@
     font-size: 1.1rem;
   }
 
-  .plus-sign {
+  .gauss1-footer-hero {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .gauss1-footer-hero-image {
+    width: 100%;
+    height: 300px;
+  }
+
+  .gauss1-hero-footer-right {
+    width: 100%;
+    padding-right: 4vh;
+    margin-top: 3vh;
+    padding-left: 4vh;
+  }
+
+  .gauss1-footer-hero-text-title {
+    font-size: 2.1rem;
+  }
+
+  .gauss1-footer-hero {
+    margin-top: 8vh;
   }
 }

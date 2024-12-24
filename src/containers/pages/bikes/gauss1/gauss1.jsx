@@ -22,7 +22,7 @@ import gauss1carousel9 from '../../../../assets/gauss1/carousel9.jpg';
 import gauss1sideImage from '../../../../assets/gauss1/gauss-1-description-pic-1.jpg';
 import gauss1frontImage from '../../../../assets/gauss1/gauss-1-description-pic-2.jpg';
 
-import gauss1footerHero from '../../../../assets/gauss1/gauss-1-footer-hero.jpg';
+import gauss1footerHero from '../../../../assets/gauss1/gauss-1-footer-image.jpg';
 
 const Gauss1 = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -98,8 +98,8 @@ const Gauss1 = () => {
       </div>
 
       <p className='gauss1-text-below-hero'>
-        GAUSS I was the initiator for the research project and implemented concepts such as the electric brake system, the front wheel energy recovery system and the rear exhaust air system. Step by step, our first superbike was built from individual assemblies into a fully functional electric sports motorcycle.
-      </p>
+
+      GAUSS I pioneered our research, introducing the electric brake, front-wheel energy recovery, and rear air cooling systems, evolving into our first fully functional electric superbike.      </p>
 
       <div className='gauss1-systems-container'>
         <div className='gauss1-systems-left-container'>
@@ -168,6 +168,16 @@ const Gauss1 = () => {
         </div>
       </div>
 
+        <div className='gauss1-footer-hero'>
+          <img src={gauss1footerHero} alt="Gauss1 footer hero image" className='gauss1-footer-hero-image' />
+          <div className='gauss1-hero-footer-right'>
+            <p className='gauss1-footer-hero-text-title'>Fuel the Future With Us</p>
+            <p className='gauss1-footer-hero-text'>Partner with us to drive innovation and shape the future of electric mobility. Together, we can achieve groundbreaking advancements in sustainable technology.</p>
+
+            <button className="gauss1-partner-button">Contact Us</button>
+
+          </div>
+        </div>
       <Footer />
     </div>
   );
