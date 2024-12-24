@@ -4,7 +4,9 @@
 }
   
 .gauss2-hero {
-
+  width: 100vw;
+  height: 103%;  /* Ensure the image occupies the entire container */
+  object-fit: cover; /* Keep the image fully covering the container */
 }
 
 .gauss2-hero-text-overlay {
@@ -37,7 +39,9 @@
   font-family: 'Exo 2';
   font-size: 1.5rem;
 }
-  
+
+
+
 .gauss2-description-picture {
   width: 100%; /* Make the image take up the full width of the container */
   height: 45.9vh; /* Set the height of the image to 40vh */
@@ -112,9 +116,23 @@
     width:100vw;
     margin-top: 2vh;
     left: 1;
-    object-position:-100px; /* Focuses the image on the left side */
+    object-position:-840px; /* Focuses the image on the left side */
     position: relative; /* Ensures alignment adjustments work */
     height: 90vh;
-    
+  }
+
+  .gauss2-hero-text-overlay { 
+    top: 78.3%;
+    left: 50%;
+    padding: 0;
+    width: 90%;
+  }
+
+  .gauss2-hero-title {
+    font-size: 4rem;
+  }
+
+  .gauss2-hero-title-description {
+    font-size: 1.2rem;
   }
 }

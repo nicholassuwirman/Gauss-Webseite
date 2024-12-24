@@ -59,7 +59,7 @@
   }
 
   .description-text-item {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     border-left: none; /* Remove vertical borders on mobile */
     width: 100%; /* Make items take full width */
     text-align: left; /* Align text to the left on mobile */
@@ -507,12 +507,14 @@
   font-size: 2.2rem;
 }
 .description-text-header {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
+  margin-bottom: 4vh;
 
 }
   .description-gauss-motorbike {
     width: 340px;
     height: 180px;
+    margin-bottom: 1vh;
   }
 
   .description-torque {
@@ -644,11 +646,11 @@ width: 100%;
 }
 @media screen and (max-height: 825px) {
   .description-container {
-    padding-top: 8vh;
+    padding-top: 13vh;
   }
 
   .gauss-electric-container {
-    margin-top: 10vh;
+    margin-top: 15vh;
   }
 }
 
