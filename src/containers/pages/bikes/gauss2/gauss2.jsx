@@ -21,6 +21,8 @@ import gauss2carousel9 from '../../../../assets/gauss2/gauss2-carousel9.jpg';
 import gauss2side from '../../../../assets/gauss2/gauss2-side.jpeg';
 import gauss2front from '../../../../assets/gauss2/gauss2-front.jpg';
 
+import gauss2footerHero from '../../../../assets/gauss2/gauss2-footer-image.jpg';
+
 const Gauss2 = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [view, setView] = useState('rear');  // Add this state
@@ -65,15 +67,15 @@ const Gauss2 = () => {
     const isMobile = windowWidth <= 768;
     if (view === 'front') {
       return [
-        { top: isMobile ? '52%' : '68%', left: isMobile ? '42%' : '47%', text: 'Real-time Telemetry ' },
-        { top: isMobile ? '32%' : '37%', left: isMobile ? '55%' : '54%', text: 'In-house developed frame' },
-        { top: isMobile ? '65%' : '59%', left: isMobile ? '61%' : '54.5%', text: '500 Nm torque and 250 km/h max speed' },
+        { top: isMobile ? '66%' : '68%', left: isMobile ? '41%' : '47%', text: 'Real-time telemetry ' },
+        { top: isMobile ? '39%' : '37%', left: isMobile ? '58.5%' : '54%', text: 'In-house developed frame' },
+        { top: isMobile ? '58%' : '59%', left: isMobile ? '60.5%' : '54.5%', text: '500 Nm torque and 250 km/h max speed' },
       ];
     }
     return [
-      { top: isMobile ? '45%' : '43.5%', left: isMobile ? '50%' : '51.5%', text: '16-25 kWh battery capacity' },
-      { top: isMobile ? '52%' : '48%', left: isMobile ? '63%' : '57%', text: 'Carbon fibre cover' },
-      { top: isMobile ? '60%' : '56%', left: isMobile ? '46%' : '46%', text: '110kW continuous/200kW peak power output' },
+      { top: isMobile ? '45%' : '43.5%', left: isMobile ? '52%' : '51.5%', text: '16-25 kWh battery capacity' },
+      { top: isMobile ? '48%' : '48%', left: isMobile ? '67%' : '57%', text: 'Carbon fibre cover' },
+      { top: isMobile ? '56.5%' : '56.5%', left: isMobile ? '39.7%' : '46.5%', text: '110kW continuous/200kW peak power output' },
     ];
   };
 
@@ -93,7 +95,7 @@ const Gauss2 = () => {
         </div>
       </div>
 
-      <p className='gauss1-text-below-hero'>
+      <p className='gauss2-text-below-hero'>
         GAUSS II advances the legacy of GAUSS I, enhancing performance and technology with an upgraded frame and groundbreaking innovations, setting a new standard for electric superbikes.
       </p>
 
@@ -102,7 +104,7 @@ const Gauss2 = () => {
           <img src={gauss2cooling} alt="Gauss1 cooling image" className='gauss2-description-picture' />
           <p className='gauss2-systems-title'>Efficient Thermal Management</p>
           <p className='gauss1-systems-description'>
-            High-energy cylindrical cells are complemented by a motorbike featuring three independent cooling circuits for maximum performance. Thermal isolation protects the battery against extreme temperatures, while preconditioning optimizes efficiency for peak performance.
+            High-energy cylindrical cells are complemented by featuring three independent cooling circuits for maximum performance. Thermal isolation protects the battery against extreme temperatures, while preconditioning optimizes efficiency for peak performance.
           </p>
         </div>
         <div className='gauss1-systems-right-container'>
@@ -164,6 +166,15 @@ const Gauss2 = () => {
         </div>
       </div>
 
+      <div className='gauss1-footer-hero'>
+        <img src={gauss2footerHero} alt="Gauss1 footer hero image" className='gauss1-footer-hero-image' />
+        <div className='gauss1-hero-footer-right'>
+          <p className='gauss1-footer-hero-text-title'>Fuel the Future With Us</p>
+          <p className='gauss1-footer-hero-text'>Partner with us to drive innovation and shape the future of electric mobility. Together, we can achieve groundbreaking advancements in sustainable technology.</p>
+
+          <button className="gauss1-partner-button">Contact Us</button>
+        </div>
+      </div>
       <Footer />
     </div>
   );

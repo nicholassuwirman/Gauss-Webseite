@@ -106,9 +106,9 @@
   gap: 10px; /* Adjust spacing between images */
 }
 
-/* When scrolled, the navbar should stick to the top with a blue background */
+/* When scrolled, the navbar should stick to the top with a background */
 .navbar-section.scrolled {
-  background-color: #1C1C1C !important;
+  background-color: var(--color-gray-light) !important;
   position: fixed;
   top: 0;
   left: 0;

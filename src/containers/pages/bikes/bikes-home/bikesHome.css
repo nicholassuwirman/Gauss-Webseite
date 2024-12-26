@@ -19,7 +19,7 @@
   height: 75vh;
   width: 43%;
   padding-top: 4vh;
-  background-color: #2a2a2a;
+  background-color: var(--color-gray-light);
   display: flex;
   align-items: center;
   flex-direction: column;

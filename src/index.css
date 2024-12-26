@@ -30,6 +30,8 @@ p {
   --color-secondary-blue-light: #1491D1;
   --color-secondary-blue-very-light: #b3ddff;
 
+  --color-gray: #151515;
+  --color-gray-light: #1f1f1f;
 }
 
 /* Global Custom Scrollbar Styles */

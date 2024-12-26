@@ -355,7 +355,7 @@
 }
 
 .gauss1-hero-footer-right {
-  padding-left: 5vh;
+  padding-left: 7vh;
   display: flex;
   flex-direction: column;
   justify-content: center; /* Horizontally center (optional if needed) */
@@ -398,7 +398,7 @@
     width:100vw;
     margin-top: 2vh;
     left: 1;
-    object-position:-300px; /* Focuses the image on the left side */
+    object-position:-36vh; /* Focuses the image on the left side */
     position: relative; /* Ensures alignment adjustments work */
     height: 90vh;
     
@@ -449,10 +449,11 @@
 
   .gauss1-systems-title {
     font-size: 1.8rem;
+    margin-top: 0;
   }
 
   .gauss1-systems-description {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
   .gauss1-systems-right-container {

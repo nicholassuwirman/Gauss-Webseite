@@ -102,12 +102,34 @@
   border: 2px solid var(--color-primary-red);  /* Blue border when clicked */
 }
 
+.gauss2-text-below-hero {
+  display: flex;
+  text-align: center;
+  padding-left: 50vh;
+  padding-right: 50vh;
+  margin-top: 10vh;
+  color: white;
+  font-size: 1.1rem;
+}
 
 @media (max-width: 768px) {
   .gauss2-description-picture {
     height: auto;
   }
 
+  .gauss2-systems-title {
+    margin-top: 0;
+  }
+
+  .gauss2-text-below-hero {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 5vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    font-size: 0.9rem;
+    text-align: center;
+  }
   .gauss2-systems-title {
     font-size: 1.6rem;
   }
@@ -116,7 +138,7 @@
     width:100vw;
     margin-top: 2vh;
     left: 1;
-    object-position:-840px; /* Focuses the image on the left side */
+    object-position:-99vh; /* Focuses the image on the left side */
     position: relative; /* Ensures alignment adjustments work */
     height: 90vh;
   }
