@@ -5,14 +5,14 @@ import { ApolloProvider } from '@apollo/client'; // ApolloProvider to wrap the a
 
 import client from '../apolloClient'; // Apollo Client instance
 
-
-// Lazy load the components
-const Hero = React.lazy(() => import('./containers/pages/home/hero/hero'));  // Correct path for Hero.jsx
-const About = React.lazy(() => import('./containers/pages/about/about'));    // Correct path for About.jsx
-const Home = React.lazy(() => import('./containers/pages/home/home'));
-const BikesHome = React.lazy(() => import('./containers/pages/bikes/bikes-home/bikesHome'));  // Import BikesHome component
-const Gauss1 = React.lazy(() => import('./containers/pages/bikes/gauss1/gauss1'));  // Import Gauss1 component
-const Gauss2 = React.lazy(() => import('./containers/pages/bikes/gauss2/gauss2'));  // Import Gauss2 component
+// Import containers with correct paths based on your folder structure
+import Hero from './containers/pages/home/hero/hero';  // Correct path for Hero.jsx
+import About from './containers/pages/about/about';    // Correct path for About.jsx
+import Home from './containers/pages/home/home';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import BikesHome from './containers/pages/bikes/bikes-home/bikesHome';  // Import BikesHome component
+import Gauss1 from './containers/pages/bikes/gauss1/gauss1';  // Import Gauss1 component
+import Gauss2 from './containers/pages/bikes/gauss2/gauss2';  
 
 const App = () => {
   return (
