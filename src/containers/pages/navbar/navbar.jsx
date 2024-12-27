@@ -1,21 +1,25 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";  // Import `useLocation` to track route changes
+import { Link } from "react-router-dom";
 import { RiMenuLine, RiCloseLine } from "react-icons/ri";
-import "./navbar.css";
-import logoNew from '../../../assets/gauss-logo-new.png';
-import gaussLogoRed from '../../../assets/gauss-logo-red-transparent.png';
+import "./navbar.css"; // Ensure your CSS file is correctly imported
+import logoNew from '../../../assets/gauss-logo-new.png'; // Update path as necessary
+import gaussLogoRed from '../../../assets/gauss-logo-red-transparent.png'; // Update path as necessary
 
-import gauss1Mobile from '../../../assets/gauss-1-mobile.jpg';
-import gauss2Mobile from '../../../assets/gauss-2-mobile.jpg';
+import gauss1Mobile from '../../../assets/gauss-1-mobile.jpg'; // Update path as necessary
+import gauss2Mobile from '../../../assets/gauss-2-mobile.jpg'; // Update path as necessary
 
 const Menu = () => {
+  const handleScrollToTop = () => {
+    window.scrollTo(0, 0); // Scroll to top
+  };
+
   return (
     <>
-      <Link to="/bikesHome" className="navbar-menu-text">Bikes</Link>
-      <Link to="/about" className="navbar-menu-text">About</Link>
-      <Link to="/" className="navbar-menu-text">Partners</Link>
-      <Link to="/" className="navbar-menu-text">Department</Link>
-      <Link to="/" className="navbar-menu-text">Participate</Link>
+      <Link to="/bikesHome" className="navbar-menu-text" onClick={handleScrollToTop}>Bikes</Link>
+      <Link to="/about" className="navbar-menu-text" onClick={handleScrollToTop}>About</Link>
+      <Link to="/" className="navbar-menu-text" onClick={handleScrollToTop}>Partners</Link>
+      <Link to="/" className="navbar-menu-text" onClick={handleScrollToTop}>Department</Link>
+      <Link to="/" className="navbar-menu-text" onClick={handleScrollToTop}>Participate</Link>
     </>
   );
 };
@@ -23,13 +27,6 @@ const Menu = () => {
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
-  const location = useLocation(); // Track the current location (route)
-  
-  // Scroll to top when route changes
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
 
   const handleScroll = () => {
     if (window.scrollY > window.innerHeight * 0.9) { 
@@ -63,10 +60,14 @@ const Navbar = () => {
     };
   }, [toggleMenu]);
 
+  const handleScrollToTop = () => {
+    window.scrollTo(0, 0); // Scroll to top when menu is toggled
+  };
+
   return (
     <div>
       <div className={`navbar-section ${scrolled ? 'scrolled' : ''}`}>
-        <Link to="/">
+        <Link to="/" onClick={handleScrollToTop}>
           <img src={gaussLogoRed} alt="Gauss Logo" className="logo" />
         </Link>
 
@@ -91,20 +92,20 @@ const Navbar = () => {
       <div className={`navbar-mobile-container ${toggleMenu ? 'visible' : ''}`}>
         <div className="navbar-mobile-content">
           <div className="navbar-menu-bikes-mobile">
-            <Link to="/bikesHome" className="navbar-menu-text-bikes">Bikes</Link>
+            <Link to="/bikesHome" className="navbar-menu-text-bikes" onClick={handleScrollToTop}>Bikes</Link>
             <div className="bikes-picture-container flex flex-row">
-              <Link to="/gauss1" className="bikes-link">
+              <Link to="/gauss1" className="bikes-link" onClick={handleScrollToTop}>
                 <img src={gauss1Mobile} alt="Gauss 1 Image" className="gauss-bikes-mobile" />
-              </Link>
-              <Link to="/gauss2" className="bikes-link">
+              </Link>              
+              <Link to="/gauss2" className="bikes-link" onClick={handleScrollToTop}>
                 <img src={gauss2Mobile} alt="Gauss 2 Image" className="gauss-bikes-mobile" />
-              </Link>
+              </Link>  
             </div>
           </div>
-          <Link to="/about" className="navbar-menu-text-about">About</Link>
-          <Link to="/" className="navbar-menu-text-partners">Partners</Link>
-          <Link to="/" className="navbar-menu-text-partners">Department</Link>
-          <Link to="/" className="navbar-menu-text-participate">Participate</Link>
+          <Link to="/about" className="navbar-menu-text-about" onClick={handleScrollToTop}>About</Link>
+          <Link to="/" className="navbar-menu-text-partners" onClick={handleScrollToTop}>Partners</Link>
+          <Link to="/" className="navbar-menu-text-partners" onClick={handleScrollToTop}>Department</Link>
+          <Link to="/" className="navbar-menu-text-participate" onClick={handleScrollToTop}>Participate</Link>
         </div>
       </div>
     </div>
