@@ -89,7 +89,7 @@ const Gauss1 = () => {
     <div className='gauss1-page-container'>
       <Navbar />
       <div className='gauss1-hero-container'>
-        <img src={gauss1Hero} alt="Gauss 1 hero" className='gauss1-hero' loading="lazy"/>
+        <img src={gauss1Hero} alt="Gauss 1 hero" className='gauss1-hero'/>
         <div className='gauss1-hero-shadow'></div>
         <div className="gauss1-hero-text-overlay">
           <p className='gauss1-hero-title'>Gauss 1</p>
