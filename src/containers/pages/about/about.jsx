@@ -45,7 +45,7 @@ const About = () => {
           <div className='about-card-container-left'>
             <div>
               <p className='about-card-title'>Imprint</p>
-              <p className='about-card-description'>Find out more about our information</p>
+              <p className='about-card-description'>Legal information and contact details for Hochschule Darmstadt and the Gauss Project.</p>
             </div>
             <button className="about-button">Learn More</button>
           </div>

@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";  // Import `useLocation` to track route changes
 import { RiMenuLine, RiCloseLine } from "react-icons/ri";
-import "./navbar.css"; // Ensure your CSS file is correctly imported
-import logoNew from '../../../assets/gauss-logo-new.png'; // Update path as necessary
-import gaussLogoRed from '../../../assets/gauss-logo-red-transparent.png'; // Update path as necessary
+import "./navbar.css";
+import logoNew from '../../../assets/gauss-logo-new.png';
+import gaussLogoRed from '../../../assets/gauss-logo-red-transparent.png';
 
-import gauss1Mobile from '../../../assets/gauss-1-mobile.jpg'; // Update path as necessary
-import gauss2Mobile from '../../../assets/gauss-2-mobile.jpg'; // Update path as necessary
+import gauss1Mobile from '../../../assets/gauss-1-mobile.jpg';
+import gauss2Mobile from '../../../assets/gauss-2-mobile.jpg';
 
 const Menu = () => {
   return (
@@ -15,7 +15,6 @@ const Menu = () => {
       <Link to="/about" className="navbar-menu-text">About</Link>
       <Link to="/" className="navbar-menu-text">Partners</Link>
       <Link to="/" className="navbar-menu-text">Department</Link>
-
       <Link to="/" className="navbar-menu-text">Participate</Link>
     </>
   );
@@ -24,6 +23,13 @@ const Menu = () => {
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const location = useLocation(); // Track the current location (route)
+  
+  // Scroll to top when route changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   const handleScroll = () => {
     if (window.scrollY > window.innerHeight * 0.9) { 
@@ -77,8 +83,6 @@ const Navbar = () => {
             <RiMenuLine color="#FFFFFF" size={27} onClick={handleMenuToggle} className="open-logo" />
           )}
         </div>
-
-        
       </div>
 
       <div className="navbar-white-line hidden sm:block ml-20 mt-[11px] w-[91%] border-b-2 border-[#F9F7F7] h-[4px] relative"></div>
@@ -89,19 +93,17 @@ const Navbar = () => {
           <div className="navbar-menu-bikes-mobile">
             <Link to="/bikesHome" className="navbar-menu-text-bikes">Bikes</Link>
             <div className="bikes-picture-container flex flex-row">
-              <Link to="/gauss1" className="bikes-link">  {/* Add the path where you want to navigate */}
+              <Link to="/gauss1" className="bikes-link">
                 <img src={gauss1Mobile} alt="Gauss 1 Image" className="gauss-bikes-mobile" />
-              </Link>              
-              <Link to="/gauss2" className="bikes-link">  {/* Add the path where you want to navigate */}
+              </Link>
+              <Link to="/gauss2" className="bikes-link">
                 <img src={gauss2Mobile} alt="Gauss 2 Image" className="gauss-bikes-mobile" />
-              </Link>  
+              </Link>
             </div>
           </div>
           <Link to="/about" className="navbar-menu-text-about">About</Link>
-
           <Link to="/" className="navbar-menu-text-partners">Partners</Link>
           <Link to="/" className="navbar-menu-text-partners">Department</Link>
-
           <Link to="/" className="navbar-menu-text-participate">Participate</Link>
         </div>
       </div>

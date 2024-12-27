@@ -56,15 +56,21 @@
   .description-text-container {
     flex-direction: column; /* Stack items vertically on mobile */
     justify-content: start;
+    margin-top: 0;
+    text-align: center;
   }
 
   .description-text-item {
-    font-size: 1.1rem;
+    display: flex;
+    justify-content: center; /* Horizontally center the text */
+    align-items: center; /* Vertically center the text */
+    text-align: center; /* Ensure the text is centered */
+    font-size: 1rem;
     border-left: none; /* Remove vertical borders on mobile */
     width: 100%; /* Make items take full width */
     text-align: left; /* Align text to the left on mobile */
-    padding: 15px 20px; /* Add extra padding on mobile */
-    width: 80%; /* Limit the width of each text item */
+    padding: 10px 20px; /* Add extra padding on mobile */
+    width: 100%; /* Limit the width of each text item */
     max-width: 500px;
   }
 
@@ -507,7 +513,7 @@
   font-size: 2.2rem;
 }
 .description-text-header {
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   margin-bottom: 4vh;
 
 }
@@ -582,12 +588,12 @@ width: 100%;
     margin: 0;
   }
   .gauss-electric-description {
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.7;
     width: 100%;
   }
   .gauss-electric-superbike-text {
-    font-size: 1.6rem;
+    font-size: 1.65rem;
     margin-top: 3vh;
     margin-bottom: 2vh;
     width: 105%;
@@ -611,11 +617,11 @@ width: 100%;
     margin-left: 0;
   }
   .description-charging-text {
-    font-size: 1.5rem;
+    font-size: 1.65rem;
   }
 
   .description-charging-description {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
  .lightning-fast-container{
   justify-content: center;

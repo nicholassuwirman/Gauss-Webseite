@@ -214,7 +214,7 @@ const Description = () => {
           <div className="description-text-container">
             <div className="description-text-item"> 200 kW Max. Power</div>
             <div className="description-text-item">500 Nm Max. Torque</div>
-            <div className="description-text-item">16 – 20 kWh / 700 V Battery System</div>
+            <div className="description-text-item">16 – 25 kWh Battery System</div>
             <div className="description-text-item">220 kg Weight</div>
             <div className="description-text-item">250 km/h Max. Speed</div>
           </div>
@@ -232,7 +232,7 @@ const Description = () => {
             GAUSS - Electric Superbike
           </p>
           <p className='gauss-electric-description text-white font-exo'>
-          The GAUSS superbike is the world’s first fully electric endurance motorcycle designed and built by students. Its adjustable chassis and components (steering angle, height, and swingarm length) are designed for optimal track and rider customization.          </p>
+          Designed and built by students, the GAUSS superbike is the world’s first fully electric endurance motorcycle. Its adjustable chassis and components are designed for optimal track and rider customization.          </p>
       </div>
     </div>
 
@@ -263,9 +263,7 @@ const Description = () => {
             Special Charging Station
           </p>
           <p className='description-charging-description power-text text-white font-exo'>
-          The core of the electric superbike is its Li-Ion energy storage system. The energy storage system can be charged 
-          with a GAUSS fast charging station either off board or on board. The GAUSS charging station also supports 
-          data recording software to analyze telemetry data of the vehicle.
+          The GAUSS superbike’s core is its Li-Ion energy storage system, which can be charged via an off-board or on-board GAUSS fast charging station and also supporting telemetry data analysis.
           </p>
       </div>
 

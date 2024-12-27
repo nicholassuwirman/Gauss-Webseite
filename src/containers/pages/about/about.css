@@ -38,7 +38,7 @@
 .about-card-title {
   color: white;
   font-family: 'Exo 2';
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 600;
 }
 
@@ -58,6 +58,11 @@
   border: 1px solid white;
   transition: all 0.3s ease;
 }
+
+.about-button:hover {
+  transform: scale(1.05); /* Grows the button by 10% */
+}
+
 
 @media (max-width: 768px) {
   .about-card-container {
@@ -83,7 +88,7 @@
   }
 
   .about-card-description {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 
   .about-card-title {
