@@ -209,7 +209,7 @@ const Description = () => {
         <div className=" description-text justify-center flex text-[#EAEAEA] text-[1rem] font-semibold sm:text-[3rem]">
         <p className='description-text-header'>Description</p>
         </div>
-          <img src={gaussDescriptionImage} className="description-gauss-motorbike" alt="Motorbike" />
+          <img src={gaussDescriptionImage} className="description-gauss-motorbike" loading="lazy" alt="Motorbike" />
           
           <div className="description-text-container">
             <div className="description-text-item"> 200 kW Max. Power</div>
@@ -222,7 +222,7 @@ const Description = () => {
 
 
     <div className='gauss-electric-container'>
-      <img
+      <img loading="lazy"
         src={bikePic2uncut}
         className='gauss-electric-picture h-full ml-6 mr-7 max-w-full rounded-lg w-[50%]'
       />
@@ -267,7 +267,7 @@ const Description = () => {
           </p>
       </div>
 
-      <img
+      <img loading="lazy"
         src={bikeChargingStation}
         className='image2-container h-[70%] w-[45%] rounded-lg ml-12'
       />
@@ -279,36 +279,36 @@ const Description = () => {
 
       <div className='description-sponsors-row'>
         <div className='description-sponsor-inside-row'>
-          <img src={sponsorHatronix} alt="Gauss sponsor image" className='description-sponsor-image' />
-          <img src={sponsorGftn} alt="Gauss sponsor image" className='description-sponsor-image' />
+          <img src={sponsorHatronix} alt="Gauss sponsor image" className='description-sponsor-image' loading="lazy"/>
+          <img src={sponsorGftn} alt="Gauss sponsor image" className='description-sponsor-image'loading="lazy" />
         </div>
         <div className='description-sponsor-inside-row'>
-          <img src={sponsorBmz} alt="Gauss sponsor image" className='description-sponsor-image' />
-          <img src={sponsorCarbon} alt="Gauss sponsor image" className='description-sponsor-image' />
-        </div>
-      </div>
-
-      <div className='description-sponsors-row'>
-        <div className='description-sponsor-inside-row'>
-          <img src={sponsorIbh} alt="Gauss sponsor image" className='description-sponsor-image' />
-          <img src={sponsorKerfaol} alt="Gauss sponsor image" className='description-sponsor-image' />
-        </div>
-        <div className='description-sponsor-inside-row'>
-          <img src={sponsorHda} alt="Gauss sponsor image" className='description-sponsor-image' />
-          <img src={sponsorBechtle} alt="Gauss sponsor image" className='description-sponsor-image' />
-
+          <img src={sponsorBmz} alt="Gauss sponsor image" className='description-sponsor-image' loading="lazy"/>
+          <img src={sponsorCarbon} alt="Gauss sponsor image" className='description-sponsor-image' loading="lazy"/>
         </div>
       </div>
 
       <div className='description-sponsors-row'>
-
         <div className='description-sponsor-inside-row'>
-          <img src={sponsorStaubli} alt="Gauss sponsor image" className='description-sponsor-image' />
-          <img src={sponsorMobilityAcWhite} alt="Gauss sponsor image" className='description-sponsor-image' />
+          <img src={sponsorIbh} alt="Gauss sponsor image" className='description-sponsor-image' loading="lazy"/>
+          <img src={sponsorKerfaol} alt="Gauss sponsor image" className='description-sponsor-image' loading="lazy" />
         </div>
         <div className='description-sponsor-inside-row'>
-          <img src={sponsorInnovatiq} alt="Gauss sponsor image" className='description-sponsor-image' />
-          <img src={sponsorKrahWhite} alt="Gauss sponsor image" className='description-sponsor-image' />
+          <img src={sponsorHda} alt="Gauss sponsor image" className='description-sponsor-image' loading="lazy"/>
+          <img src={sponsorBechtle} alt="Gauss sponsor image" className='description-sponsor-image' loading="lazy"/>
+
+        </div>
+      </div>
+
+      <div className='description-sponsors-row'>
+
+        <div className='description-sponsor-inside-row'>
+          <img src={sponsorStaubli} alt="Gauss sponsor image" className='description-sponsor-image' loading="lazy"/>
+          <img src={sponsorMobilityAcWhite} alt="Gauss sponsor image" className='description-sponsor-image' loading="lazy"/>
+        </div>
+        <div className='description-sponsor-inside-row'>
+          <img src={sponsorInnovatiq} alt="Gauss sponsor image" className='description-sponsor-image' loading="lazy"/>
+          <img src={sponsorKrahWhite} alt="Gauss sponsor image" className='description-sponsor-image' loading="lazy"/>
 
         </div>
       </div>

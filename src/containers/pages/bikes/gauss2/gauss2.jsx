@@ -87,7 +87,7 @@ const Gauss2 = () => {
     <div className="gauss2-page-container">
       <Navbar />
       <div className='gauss1-hero-container'>
-        <img src={gauss2Hero} alt="Gauss 2 hero" className='gauss2-hero' />
+        <img src={gauss2Hero} alt="Gauss 2 hero" className='gauss2-hero' loading="lazy"/>
         <div className='gauss1-hero-shadow'></div>
         <div className="gauss2-hero-text-overlay">
           <p className='gauss2-hero-title'>Gauss 2</p>
@@ -101,14 +101,14 @@ const Gauss2 = () => {
 
       <div className='gauss1-systems-container'>
         <div className='gauss1-systems-left-container'>
-          <img src={gauss2cooling} alt="Gauss1 cooling image" className='gauss2-description-picture' />
+          <img src={gauss2cooling} alt="Gauss1 cooling image" className='gauss2-description-picture' loading="lazy"/>
           <p className='gauss2-systems-title'>Efficient Thermal Management</p>
           <p className='gauss1-systems-description'>
             High-energy cylindrical cells are complemented by featuring three independent cooling circuits for maximum performance. Thermal isolation protects the battery against extreme temperatures, while preconditioning optimizes efficiency for peak performance.
           </p>
         </div>
         <div className='gauss1-systems-right-container'>
-          <img src={gauss2battery} alt="Gauss1 cooling image" className='gauss2-description-picture' />
+          <img src={gauss2battery} alt="Gauss1 cooling image" className='gauss2-description-picture' loading="lazy"/>
           <p className='gauss1-systems-title'>Quick-Swap Battery System</p>
           <p className='gauss1-systems-description'>
             Our main focus of research for GAUSS II was developing a high-performance, exchangeable battery system. The system features modular cells, allowing up to 12 modules to be easily swapped for maintenance, ensuring long-lasting performance.
@@ -120,7 +120,7 @@ const Gauss2 = () => {
         <button className="carousel-button prev" onClick={prevImage}><span className="arrow-sign">‹</span></button>
         <div className="carousel-images-wrapper" style={{ transform: `translateX(-${currentIndex * itemWidth}%)` }}>
           {images.map((image, index) => (
-            <img key={index} src={image} alt={`carousel-${index}`} className="carousel-image" />
+            <img key={index} src={image} alt={`carousel-${index}`} className="carousel-image" loading="lazy"/>
           ))}
         </div>
         <button className="carousel-button next" onClick={nextImage}><span className="arrow-sign">›</span></button>
@@ -143,7 +143,7 @@ const Gauss2 = () => {
           </button>
         </div>
 
-        <img src={activeImage} alt="Gauss1 description image" className='gauss1-description-image' />
+        <img src={activeImage} alt="Gauss1 description image" className='gauss1-description-image' loading="lazy"/>
 
         {/* Circle buttons */}
         {activeCircles.map((circle, index) => (
@@ -167,7 +167,7 @@ const Gauss2 = () => {
       </div>
 
       <div className='gauss1-footer-hero'>
-        <img src={gauss2footerHero} alt="Gauss1 footer hero image" className='gauss1-footer-hero-image' />
+        <img src={gauss2footerHero} alt="Gauss1 footer hero image" className='gauss1-footer-hero-image' loading="lazy" />
         <div className='gauss1-hero-footer-right'>
           <p className='gauss1-footer-hero-text-title'>Fuel the Future With Us</p>
           <p className='gauss1-footer-hero-text'>Partner with us to drive innovation and shape the future of electric mobility. Together, we can achieve groundbreaking advancements in sustainable technology.</p>

@@ -89,7 +89,7 @@ const Gauss1 = () => {
     <div className='gauss1-page-container'>
       <Navbar />
       <div className='gauss1-hero-container'>
-        <img src={gauss1Hero} alt="Gauss 1 image" className='gauss1-hero' />
+        <img src={gauss1Hero} alt="Gauss 1 hero" className='gauss1-hero' loading="lazy"/>
         <div className='gauss1-hero-shadow'></div>
         <div className="gauss1-hero-text-overlay">
           <p className='gauss1-hero-title'>Gauss 1</p>
@@ -98,19 +98,19 @@ const Gauss1 = () => {
       </div>
 
       <p className='gauss1-text-below-hero'>
-
-      GAUSS I pioneered our research, introducing the electric brake, front-wheel energy recovery, and rear air cooling systems, evolving into our first fully functional electric superbike.      </p>
+        GAUSS I pioneered our research, introducing the electric brake, front-wheel energy recovery, and rear air cooling systems, evolving into our first fully functional electric superbike.     
+      </p>
 
       <div className='gauss1-systems-container'>
         <div className='gauss1-systems-left-container'>
-          <img src={gauss1recovery} alt="Gauss1 cooling image" className='gauss1-description-picture' />
+          <img src={gauss1recovery} alt="Gauss1 cooling image" className='gauss1-description-picture' loading="lazy"/>
           <p className='gauss1-systems-title'>Energy Recovery Braking</p>
           <p className='gauss1-systems-description'>
             We developed an innovative drivetrain with an electric front brake that recovers kinetic energy during braking. The engine acts as a generator, converting energy into electricity to recharge the batteries.
           </p>
         </div>
         <div className='gauss1-systems-right-container'>
-          <img src={gauss1cooling} alt="Gauss1 cooling image" className='gauss1-description-picture' />
+          <img src={gauss1cooling} alt="Gauss1 cooling image" className='gauss1-description-picture' loading="lazy"/>
           <p className='gauss1-systems-title'>Advanced Air Cooling</p>
           <p className='gauss1-systems-description'>
             The PSM engine is built for racing purposes and needs an efficient cooling system. Therefore GAUSS I provides an air cooling system that draws the air from front and underseat pipes.
@@ -122,7 +122,7 @@ const Gauss1 = () => {
         <button className="carousel-button prev" onClick={prevImage}><span className="arrow-sign">‹</span></button>
         <div className="carousel-images-wrapper" style={{ transform: `translateX(-${currentIndex * itemWidth}%)` }}>
           {images.map((image, index) => (
-            <img key={index} src={image} alt={`carousel-${index}`} className="carousel-image" />
+            <img key={index} src={image} alt={`carousel-${index}`} className="carousel-image" loading="lazy"/>
           ))}
         </div>
         <button className="carousel-button next" onClick={nextImage}><span className="arrow-sign">›</span></button>
@@ -145,7 +145,7 @@ const Gauss1 = () => {
           </button>
         </div>
 
-        <img src={activeImage} alt="Gauss1 description image" className='gauss1-description-image' />
+        <img src={activeImage} alt="Gauss1 description image" className='gauss1-description-image' loading="lazy"/>
 
         {/* Circle buttons */}
         {activeCircles.map((circle, index) => (
@@ -168,16 +168,15 @@ const Gauss1 = () => {
         </div>
       </div>
 
-        <div className='gauss1-footer-hero'>
-          <img src={gauss1footerHero} alt="Gauss1 footer hero image" className='gauss1-footer-hero-image' />
-          <div className='gauss1-hero-footer-right'>
-            <p className='gauss1-footer-hero-text-title'>Fuel the Future With Us</p>
-            <p className='gauss1-footer-hero-text'>Partner with us to drive innovation and shape the future of electric mobility. Together, we can achieve groundbreaking advancements in sustainable technology.</p>
+      <div className='gauss1-footer-hero'>
+        <img src={gauss1footerHero} alt="Gauss1 footer hero image" className='gauss1-footer-hero-image' loading="lazy"/>
+        <div className='gauss1-hero-footer-right'>
+          <p className='gauss1-footer-hero-text-title'>Fuel the Future With Us</p>
+          <p className='gauss1-footer-hero-text'>Partner with us to drive innovation and shape the future of electric mobility. Together, we can achieve groundbreaking advancements in sustainable technology.</p>
 
-            <button className="gauss1-partner-button">Contact Us</button>
-
-          </div>
+          <button className="gauss1-partner-button">Contact Us</button>
         </div>
+      </div>
       <Footer />
     </div>
   );
