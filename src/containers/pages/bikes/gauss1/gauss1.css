@@ -258,7 +258,7 @@
 .plus-sign {
   font-size: 20px;
   color: white;
-  margin-bottom: 0.5vh;
+  margin-bottom: 0.2vh;
 
   transition: border-color 0.2s ease; /* Transition for the border color */
 
@@ -449,7 +449,8 @@
 
   .gauss1-systems-title {
     font-size: 1.8rem;
-    margin-top: 0;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
   }
 
   .gauss1-systems-description {
@@ -509,15 +510,17 @@
   }
 
   .gauss1-footer-hero-text-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
-
+  .gauss1-footer-hero-text {
+    font-size: 0.85rem;
+  }
   .gauss1-footer-hero {
     margin-top: 8vh;
   }
 
   .gauss1-partner-button {
-    width: 45%;
+    width: 100%;
     margin-top: 2vh;
   }
 }

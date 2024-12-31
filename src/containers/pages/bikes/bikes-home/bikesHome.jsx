@@ -14,6 +14,7 @@ const BikesHome = () => {
   return (
     <div id="bikesHome" className="bikes-home-container relative flex flex-col overflow-hidden">
      <Navbar/>
+
       <div className='bikes-pictures-container'>
         <div className='bikes-gauss1-container'>
           <img src={gauss1bikesHomePicture} alt="Gauss 1 Image" className="bikes-gauss1-picture" />

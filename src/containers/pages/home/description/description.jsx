@@ -22,7 +22,7 @@ import sponsorGftn from '../../../../assets/sponsor-gftn.jpg';
 
 import bikeChargingStation from '../../../../assets/gauss-charging-station.png';
 
-import bikePic2uncut from '../../../../assets/gauss_image_2.png';
+import bikePic2uncut from '../../../../assets/gauss2-description-picture.JPG';
 import gaussGroupImage from '../../../../assets/gauss-group-image.jpg';
 import gaussGroupImage2 from '../../../../assets/gauss-group-image2.jpg';
 import gaussGroupImage3 from '../../../../assets/gauss-group3.jpg';
@@ -224,10 +224,10 @@ const Description = () => {
     <div className='gauss-electric-container'>
       <img loading="lazy"
         src={bikePic2uncut}
-        className='gauss-electric-picture h-full ml-6 mr-7 max-w-full rounded-lg w-[50%]'
+        className='gauss-electric-picture'
       />
 
-      <div className='gauss-electric-text flex flex-col justify-center w-[50%] sm:ml-8 mt-8'>
+      <div className='gauss-electric-text flex flex-col justify-center w-[50%]'>
           <p className='gauss-electric-superbike-text text-white font-exo text-lg font-medium sm:text-5xl'>
             GAUSS - Electric Superbike
           </p>

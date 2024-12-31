@@ -1,0 +1,153 @@
+
+/* team.css */
+.team-container {
+    background-color: black;
+  }
+  
+
+  .team-hero-title {
+    color: white;
+    font-size: 6rem;
+    font-family: 'Michroma';
+    font-weight: 600;
+    margin-bottom: 30vh;
+  }
+
+  .team-hero-container {
+    display: flex;
+    margin-top: 3vh;
+  }
+
+  .team-hero-picture {
+    width: 57%;
+    border-bottom-left-radius: 50px;
+  }
+
+  .team-hero-left {
+    width: 43%;
+    padding-left: 10vh;
+
+  }
+
+  .team-hero-arrow {
+    height: 10vh;
+  }
+
+  .team-person-picture {
+    width: 74%;
+    border-bottom-right-radius: 50px;
+
+  }
+  .team-person-name {
+    color: white;
+    font-family: 'Exo 2';
+    font-size: 2.2rem;
+    margin-top: 1vh;
+    margin-bottom: 0;
+
+  }
+  .team-person-container {
+    width: 27vw;
+  }
+  .team-leader-container {
+    padding-left: 11vh;
+  }
+
+  .team-person-role {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom:3vh;
+  }
+
+  .team-person-studiengang {
+    color: white;
+  }
+
+  .team-leader-container {
+    display: flex;
+  }
+
+  .team-description-container {
+    width: 80%;
+  }
+.team-leader-2-person-container {
+    display: flex;
+    width: 52%;
+}
+  .team-leaders-text {
+    color: white;
+    font-size: 4rem;
+    font-family: 'Exo 2';
+    padding-left: 10vh;
+    margin-top: 15vh;
+  }
+
+  @media (max-width: 768px) {
+    .team-hero-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .team-hero-left {
+        width: 100%;
+        display: flex;
+        padding-left: 4vh;
+        margin-bottom: 5vh;
+    }
+
+    .team-hero-arrow {
+        height: 5vh;
+        margin-left: 10.5vh;
+    }
+
+    .team-hero-title {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    .team-hero-picture {
+        width: 100%;
+    }
+
+    .team-leader-container {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .team-leaders-text {
+        padding-left: 3vh;
+        font-size: 2rem;
+        margin-top: 5vh;
+    }
+
+    .team-leader-2-person-container {
+        display: flex;
+        width: 100%;
+        padding-left: 3.5vh;
+        margin-bottom: 4vh;
+    }
+    .team-person-container {
+        width: 50%;
+    }
+
+    .team-person-name {
+        font-size: 1.2rem;
+    }
+
+    .team-person-role {
+        font-size: 0.9rem;
+        margin-bottom: 1vh;
+    }
+
+    .team-person-studiengang {
+        font-size: 0.7rem;
+    }
+
+    .team-description-container {
+        width: 80%;
+    }
+
+    .team-person-picture { 
+        width: 85%;
+    }
+  }

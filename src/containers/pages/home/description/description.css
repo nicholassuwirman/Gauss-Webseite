@@ -14,6 +14,7 @@
   justify-content: center; /* Center content vertically if needed */
   height: 80vh; /* Full viewport height */
   margin-top: 5vh; /* Adjust top margin */
+  margin-bottom: 10vh;
 }
 
 /* Image styles */
@@ -33,6 +34,7 @@
   margin-top: 20px; /* Space between image and text */
 }
 .description-lightning-container {
+  margin-top: 8vh;
 }
 /* Individual text items */
 .description-text-item {
@@ -41,7 +43,7 @@
   font-size: 1.4rem; /* Adjust font size */
   color: white; /* Text color */
   border-left: 2px solid #fff; /* Vertical white line between items */
-  
+
 }
 
 .description-text-item:first-child {
@@ -211,9 +213,8 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  padding-left: 2rem;
-  margin-bottom: 10vh;
-  padding-right: 4rem;
+  padding-left: 10vh;
+  padding-right: 10vh;
 }
 
 .description-torque {
@@ -304,8 +305,8 @@
 /* For Mobile (below 768px) */
 @media (max-width: 768px) {
   .description-sponsors-container {
-  padding-left: 5vh;
-  padding-right: 5vh;
+  padding-left: 4vh;
+  padding-right: 4vh;
   }
 
   .description-sponsors-row {
@@ -394,6 +395,9 @@
 
 .gauss-electric-picture {
   width: 700px;
+  width: 50%;
+  margin-right: 5vh;
+  margin-left: 3vh;
 }
 
 
@@ -503,8 +507,8 @@
   .gauss-charge-container {
     flex-direction: column;  /* Stack the items vertically */
     align-items: center;      /* Center align the items */
-    padding-left: 5vh;
-    padding-right: 5vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
     margin-bottom: 10vh;
     margin-top: 2vh;
   }
@@ -588,7 +592,7 @@ width: 100%;
     margin: 0;
   }
   .gauss-electric-description {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     line-height: 1.7;
     width: 100%;
   }
@@ -622,7 +626,7 @@ width: 100%;
   }
 
   .description-charging-description {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
  .lightning-fast-container{
   justify-content: center;
