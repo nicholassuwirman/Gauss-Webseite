@@ -487,7 +487,7 @@
   }
 
   .minimize-downtime-text {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-bottom: 3vh;
   }
   .description-datasheet-container {
@@ -588,12 +588,12 @@ width: 100%;
     margin: 0;
   }
   .gauss-electric-description {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 1.7;
     width: 100%;
   }
   .gauss-electric-superbike-text {
-    font-size: 1.65rem;
+    font-size: 1.6rem;
     margin-top: 3vh;
     margin-bottom: 2vh;
     width: 105%;
@@ -603,7 +603,7 @@ width: 100%;
     padding-top: 2rem;
   }
 .lightning-fast-text {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   margin-bottom: 0;
 }
 
@@ -618,10 +618,11 @@ width: 100%;
   }
   .description-charging-text {
     font-size: 1.65rem;
+    margin-bottom: 2vh;
   }
 
   .description-charging-description {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
  .lightning-fast-container{
   justify-content: center;
@@ -652,11 +653,12 @@ width: 100%;
 }
 @media screen and (max-height: 825px) {
   .description-container {
-    padding-top: 13vh;
+    padding-top: 0vh;
   }
 
   .gauss-electric-container {
-    margin-top: 15vh;
+    margin-top: 7vh;
+    margin-bottom: 4vh;
   }
 }
 
