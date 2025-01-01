@@ -20,6 +20,7 @@ const Menu = () => {
       <Link to="/" className="navbar-menu-text" onClick={handleScrollToTop}>Partners</Link>
       <Link to="/" className="navbar-menu-text" onClick={handleScrollToTop}>Department</Link>
       <Link to="/" className="navbar-menu-text" onClick={handleScrollToTop}>Participate</Link>
+      
     </>
   );
 };

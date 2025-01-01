@@ -478,7 +478,7 @@
     padding-right: 4vh;
     padding-left: 4vh;
     margin-bottom: 2vh;
-    margin-top: 10vh;
+    margin-top: -5vh;
   }
   .gauss-electric-picture {
     width: 100%;
@@ -500,7 +500,7 @@
     align-items: center; /* Vertically center the content */
     justify-content: center; /* Horizontally center the content */
     height: 55vh; /* Optional: Ensures the container takes full viewport height */
-    margin-top: 10vh;
+    margin-top: 3vh;
   }
   
 
@@ -656,11 +656,11 @@ width: 100%;
 }
 @media screen and (max-height: 825px) {
   .description-container {
-    padding-top: 0vh;
+    padding-top: 3vh;
   }
 
   .gauss-electric-container {
-    margin-top: -3vh;
+    margin-top: 0vh;
     margin-bottom: 4vh;
   }
 }

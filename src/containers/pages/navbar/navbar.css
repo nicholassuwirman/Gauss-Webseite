@@ -184,7 +184,7 @@
 
 .navbar-white-line {
   background-color: transparent;
-  z-index: -1; /* Move the line behind the navbar */
+  z-index: 0; /* Move the line behind the navbar */
 }
 
 /* Update other text styles if necessary */
@@ -206,11 +206,7 @@
 
 
   
-  /* White Line Below Navbar */
-  .navbar-white-line {
-    background-color: transparent;
-    z-index: -3;
-  }
+
   .navbar-menu-text {
     position: relative;
     color: white; /* Text color */

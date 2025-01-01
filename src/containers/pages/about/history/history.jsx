@@ -9,7 +9,7 @@ import historyAttilla from '../../../../assets/history/history-attilla.jpg'; // 
 
 const History = () => {
   return (
-    <div className="history-container">
+    <div id="history" className="history-container">
       <Navbar /> {/* Include Navbar here */}
         <div className="team-hero-container">
             <div className='team-hero-left'>

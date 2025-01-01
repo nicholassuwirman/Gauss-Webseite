@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { AiOutlineDown } from 'react-icons/ai'; // Import down arrow icon from react-icons
 import './team.css'; // Import the CSS file here
 import Navbar from '../../navbar/navbar';  // Importing Navbar component
@@ -12,8 +12,12 @@ import teamGrosch from '../../../../assets/team/team-felix-grosch.jpg'; // Updat
 import teamBoek from '../../../../assets/team/team-boek.jpg'; // Update path as necessary
 
 const Team = () => {
+    useEffect(() => {
+        // Scroll to the top of the page when the Team section is rendered
+        window.scrollTo(0, 0);
+      }, []);
   return (
-    <div className="team-container">
+    <div id="team" className="team-container">
         <Navbar />  {/* Include Navbar here */}
         <div className="team-hero-container">
             <div className='team-hero-left'>

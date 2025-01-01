@@ -74,12 +74,6 @@
         width: 100%; /* Image takes full width on mobile */
         margin-bottom: 20px; /* Add margin to separate image and text */
     }
-
-    .history-hero-title {
-        font-size: 2rem; /* Adjust font size for mobile */
-        margin-bottom: 10vh; /* Add space below title */
-    }
-
     .history-journey-container {
         flex-direction: column-reverse; /* Reverse the order on mobile to display text above image */
         align-items: flex-start; /* Align content to the left */
@@ -106,17 +100,17 @@
         margin-bottom: 3vh; /* Reduce space between text paragraphs */
     }
     .history-hero-title {
-        font-size: 1.6rem;
+        font-size: 1.75rem;
         margin-bottom: 0;
     }
 
     .history-hero-arrow {
         height: 5vh;
-        margin-left: 12.5vh;
+        margin-left: 10.8vh;
     }
 
     .history-journey-text-container {
         padding-left: 4vh;
-        padding-right: 5vh;
+        padding-right: 4vh;
     }
 }

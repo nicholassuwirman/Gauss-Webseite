@@ -118,6 +118,8 @@
   margin-top: 10vh;
   color: white;
   font-size: 1.1rem;
+  font-family: 'Exo 2';
+
 }
 
 @media (max-width: 768px) {
