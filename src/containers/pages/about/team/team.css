@@ -19,7 +19,7 @@
   }
 
   .team-hero-picture {
-    width: 57%;
+    width: 59.5%;
     border-bottom-left-radius: 50px;
   }
 
@@ -31,10 +31,11 @@
 
   .team-hero-arrow {
     height: 10vh;
+    padding-top: 1vh;
   }
 
   .team-person-picture {
-    width: 74%;
+    width: 80%;
     border-bottom-right-radius: 50px;
 
   }
@@ -47,25 +48,28 @@
 
   }
   .team-person-container {
-    width: 27vw;
+    width: 23vw;
   }
-  .team-leader-container {
-    padding-left: 11vh;
+
+  .team-leader-container-row-1 {
+    display: flex;
+    padding-left: 12vh;
+    margin-bottom: 10vh;
+  }
+
+  .team-leader-container-row-2 {
+    padding-left: 12vh;
   }
 
   .team-person-role {
     color: white;
     font-size: 1.2rem;
     margin-top: 0;
-    margin-bottom:3vh;
+    margin-bottom: 2vh;
   }
 
   .team-person-studiengang {
     color: white;
-  }
-
-  .team-leader-container {
-    display: flex;
   }
 
   .team-description-container {
@@ -73,16 +77,17 @@
   }
 .team-leader-2-person-container {
     display: flex;
-    width: 52%;
 }
   .team-leaders-text {
     color: white;
     font-size: 4rem;
     font-family: 'Exo 2';
-    padding-left: 10vh;
+    padding-left: 12vh;
     margin-top: 15vh;
+    margin-bottom: 3vh;
   }
 
+  
   @media (max-width: 768px) {
     .team-hero-container {
         display: flex;
@@ -109,9 +114,10 @@
         width: 100%;
     }
 
-    .team-leader-container {
+    .team-leader-container-row-1 {
         flex-direction: column;
         padding-left: 0;
+        margin-bottom: 0;
     }
 
     .team-leaders-text {
@@ -149,5 +155,9 @@
 
     .team-person-picture { 
         width: 85%;
+    }
+
+    .team-leader-container-row-2 {
+      padding-left: 3.5vh;
     }
   }

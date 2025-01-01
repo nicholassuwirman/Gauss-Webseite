@@ -453,7 +453,7 @@
   }
 
   .gauss-charge-container {
-    margin-top: 7vh;
+    margin-top: 4vh;
     margin-bottom: 10vh;
   }
 
@@ -509,15 +509,15 @@
     align-items: center;      /* Center align the items */
     padding-left: 4vh;
     padding-right: 4vh;
-    margin-bottom: 10vh;
-    margin-top: 2vh;
+    margin-bottom: 7vh;
+    margin-top: 0vh;
   }
 
 .description-text {
   font-size: 2.2rem;
 }
 .description-text-header {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   margin-bottom: 4vh;
 
 }
@@ -568,7 +568,7 @@ width: 100%;
 .description-lightning-container {
   width: 100%;
   padding: 0;
-  
+  margin-top: -2vh;
 }
 
 .description-battery-swap-video::before {
@@ -651,7 +651,6 @@ width: 100%;
   }
 
   .gauss-electric-container {
-    margin-top: 18vh;
     margin-bottom: 2vh;
   }
 }
@@ -661,7 +660,7 @@ width: 100%;
   }
 
   .gauss-electric-container {
-    margin-top: 7vh;
+    margin-top: -3vh;
     margin-bottom: 4vh;
   }
 }

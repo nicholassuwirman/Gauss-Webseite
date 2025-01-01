@@ -1,0 +1,122 @@
+.history-container {
+    background-color: black;
+}
+
+.history-hero-picture {
+    width: 62%;
+    border-bottom-left-radius: 50px;
+    margin-right: 0;
+    padding-right: 0;
+    object-fit: cover; /* Ensure image fits well */
+}
+.history-hero-picture {
+    width: 59.5%;
+    border-bottom-left-radius: 50px;
+}
+.history-hero-title {
+    color: white;
+    font-size: 5.6rem;
+    font-family: 'Michroma';
+    font-weight: 600;
+    margin-bottom: 30vh;
+}
+
+.history-journey-container {
+    margin-top: 22vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow for wrapping of content */
+}
+
+.history-attilla-picture {
+    width: 55%;
+    border-top-right-radius: 50px;
+    object-fit: cover; /* Ensure the image fits well */
+    margin-bottom: 20px; /* Add bottom margin for spacing between text and image */
+}
+
+.history-journey-text {
+    color: white;
+    font-family: 'Exo 2';
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 4vh;
+}
+
+.history-journey-text-container {
+    margin-left: 4vh;
+    width: 40%;
+}
+
+.history-journey-title {
+    font-size: 2.3rem;
+    color: white;
+    font-family: 'Exo 2';
+    font-weight: 600;
+    letter-spacing: 0.5px; /* Adjust spacing as needed */
+    margin-bottom: 4vh;
+}
+.history-hero-arrow {
+    height: 10vh;
+    padding-top: 1vh;
+}
+@media (max-width: 768px) {
+    .history-hero-picture {
+        width: 100%;
+    }
+    .history-attilla-picture {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 70px;
+
+    }
+    .history-hero-picture {
+        width: 100%; /* Image takes full width on mobile */
+        margin-bottom: 20px; /* Add margin to separate image and text */
+    }
+
+    .history-hero-title {
+        font-size: 2rem; /* Adjust font size for mobile */
+        margin-bottom: 10vh; /* Add space below title */
+    }
+
+    .history-journey-container {
+        flex-direction: column-reverse; /* Reverse the order on mobile to display text above image */
+        align-items: flex-start; /* Align content to the left */
+        margin-top: 4vh;
+    }
+
+    .history-attilla-picture {
+        width: 100%; /* Image takes full width on mobile */
+        margin-bottom: 20px; /* Add spacing between image and text */
+    }
+
+    .history-journey-text-container {
+        width: 100%; /* Text container takes full width on mobile */
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .history-journey-title {
+        font-size: 1.8rem; /* Reduce title size for mobile */
+        margin-bottom: 3vh; /* Adjust bottom margin */
+    }
+
+    .history-journey-text {
+        font-size: 1rem; /* Adjust text size for mobile */
+        margin-bottom: 3vh; /* Reduce space between text paragraphs */
+    }
+    .history-hero-title {
+        font-size: 1.6rem;
+        margin-bottom: 0;
+    }
+
+    .history-hero-arrow {
+        height: 5vh;
+        margin-left: 12.5vh;
+    }
+
+    .history-journey-text-container {
+        padding-left: 4vh;
+        padding-right: 5vh;
+    }
+}

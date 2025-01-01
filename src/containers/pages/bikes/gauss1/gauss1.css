@@ -258,7 +258,7 @@
 .plus-sign {
   font-size: 20px;
   color: white;
-  margin-bottom: 0.2vh;
+  margin-bottom: 0.4vh;
 
   transition: border-color 0.2s ease; /* Transition for the border color */
 
@@ -387,7 +387,9 @@
   border: 1px solid white;
   transition: all 0.3s ease;
 }
-
+.gauss1-partner-button:hover {
+  transform: scale(1.03); /* Scales the button by 10% */
+}
 @media (max-width: 768px) {
   .gauss1-text-below-hero {
     padding-left: 0;

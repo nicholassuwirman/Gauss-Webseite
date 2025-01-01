@@ -222,10 +222,18 @@
 
 @media (max-height: 668px) {
   .bikes-gauss1-container {
-    height: 55vh;
+    height: 75vh;
   }
 
   .bikes-gauss2-container {
-    height: 55vh;
+    height: 75vh;
+  }
+
+  .bikes-gauss1-picture {
+    height: 50%;
+  }
+
+  .bikes-gauss2-picture {
+    height: 50%;
   }
 }

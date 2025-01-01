@@ -9,6 +9,7 @@ import teamStevenSamstag from '../../../../assets/team/team-steven-samstag.jpg';
 import teamDeak from '../../../../assets/team/team-jannis-deak.jpg'; // Update path as necessary
 import teamKettner from '../../../../assets/team/team-tom-kettner.jpg'; // Update path as necessary
 import teamGrosch from '../../../../assets/team/team-felix-grosch.jpg'; // Update path as necessary
+import teamBoek from '../../../../assets/team/team-boek.jpg'; // Update path as necessary
 
 const Team = () => {
   return (
@@ -23,8 +24,10 @@ const Team = () => {
             <div className="down-arrow-container">
             </div>
         </div>
+
         <p className='team-leaders-text'>Team Leaders</p>
-        <div className='team-leader-container'>
+
+        <div className='team-leader-container-row-1'>
             <div className='team-leader-2-person-container'>
                 <div className='team-person-container'>
                     <img src={teamStevenSamstag} alt="Gauss 1 hero" className="team-person-picture" />
@@ -63,7 +66,16 @@ const Team = () => {
             </div>
             
         </div>
-        
+        <div className='team-leader-container-row-2'>
+        <div className='team-person-container'>
+                    <img src={teamBoek} alt="Gauss 1 hero" className="team-person-picture" />
+                    <div className='team-description-container'>
+                        <p className='team-person-name'>Ben Boek</p>
+                        <p className='team-person-role'>Project Leader</p>
+                        <p className='team-person-studiengang'>Wirtschaftsingenieurwesen (Master)</p>
+                    </div>
+                </div>
+        </div>
         <Footer />
     </div>
   );
