@@ -29,6 +29,7 @@ const Menu = () => {
         onClick={handleScrollToTop}>
         About
       </Link>
+
       <Link 
         to="/partners" 
         className={`navbar-menu-text ${isActive("/partners") ? "active-link" : ""}`} 
@@ -121,10 +122,10 @@ const Navbar = () => {
           <div className="navbar-menu-bikes-mobile">
             <Link to="/bikesHome" className="navbar-menu-text-bikes" onClick={handleScrollToTop}>Bikes</Link>
             <div className="bikes-picture-container flex flex-row">
-              <Link to="/gauss1" className="bikes-link" onClick={handleScrollToTop}>
+              <Link to="/bikesHome/gauss1" className="bikes-link" onClick={handleScrollToTop}>
                 <img src={gauss1Mobile} alt="Gauss 1 Image" className="gauss-bikes-mobile" />
               </Link>              
-              <Link to="/gauss2" className="bikes-link" onClick={handleScrollToTop}>
+              <Link to="/bikesHome/gauss2" className="bikes-link" onClick={handleScrollToTop}>
                 <img src={gauss2Mobile} alt="Gauss 2 Image" className="gauss-bikes-mobile" />
               </Link>  
             </div>
