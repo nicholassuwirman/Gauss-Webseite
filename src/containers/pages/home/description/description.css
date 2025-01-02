@@ -2,7 +2,10 @@
   font-family: 'Michroma';
 
 }
-
+.gauss-electric-description {
+  color: white;
+  font-family: 'Exo 2';
+}
 .power-text {
   font-family: 'Exo 2';
 }
@@ -13,7 +16,7 @@
   align-items: center; /* Horizontally center the content */
   justify-content: center; /* Center content vertically if needed */
   height: 80vh; /* Full viewport height */
-  margin-top: 5vh; /* Adjust top margin */
+  margin-top: 10vh; /* Adjust top margin */
   margin-bottom: 10vh;
 }
 
@@ -32,6 +35,7 @@
   align-items: center;
   flex-wrap: wrap; /* Allow wrapping in smaller screens */
   margin-top: 20px; /* Space between image and text */
+  font-family: 'Exo 2';
 }
 .description-lightning-container {
   margin-top: 8vh;
@@ -52,6 +56,8 @@
 .minimize-downtime-text {
   font-size: 1.2rem;
   margin-bottom: 3vh;
+  font-family: 'Exo 2';
+  
 }
 /* Adjustments for mobile */
 @media (max-width: 768px) {
@@ -215,6 +221,7 @@
   width: 100%;
   padding-left: 10vh;
   padding-right: 10vh;
+  margin-top: 5vh;
 }
 
 .description-torque {
@@ -240,6 +247,7 @@
 .lightning-fast-text {
   font-size: 3rem;
   margin-top: 5vh;
+  font-family: 'Exo 2';
 }
 .description-weight {
   margin-right: 5vh;
@@ -250,6 +258,7 @@
 .gauss-electric-superbike-text {
   font-size: 2.5rem;
   margin-bottom: 2rem;
+  font-family: 'Exo 2';
 }
 .lightning-fast-text-description {
   font-size: 1.2rem; 
@@ -346,9 +355,7 @@
     width: 135px; /* 270px * 0.5 = 135px */
     height: 90px; /* 180px * 0.5 = 90px */
   }
-  .description-sponsored-by-text {
-    font-size: 2.5rem;
-  }
+ 
 }
 
 @media (max-width: 439px) {
@@ -356,18 +363,14 @@
     width: 148.5; /* 270px * 0.5 = 135px */
     height: 99px; /* 180px * 0.5 = 90px */
   }
-  .description-sponsored-by-text {
-    font-size: 2.5rem;
-  }
+  
 }
 @media (max-width: 427px) {
   .description-sponsor-image {
     width: 135px; /* 270px * 0.5 = 135px */
     height: 90px; /* 180px * 0.5 = 90px */
   }
-  .description-sponsored-by-text {
-    font-size: 2rem;
-  }
+ 
 }
 
 @media (max-width: 410px) {
@@ -491,7 +494,7 @@
   }
 
   .minimize-downtime-text {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     margin-bottom: 3vh;
   }
   .description-datasheet-container {
@@ -592,12 +595,12 @@ width: 100%;
     margin: 0;
   }
   .gauss-electric-description {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     line-height: 1.7;
     width: 100%;
   }
   .gauss-electric-superbike-text {
-    font-size: 1.6rem;
+    font-size: 1.63rem;
     margin-top: 3vh;
     margin-bottom: 2vh;
     width: 105%;
@@ -607,7 +610,7 @@ width: 100%;
     padding-top: 2rem;
   }
 .lightning-fast-text {
-  font-size: 1.5rem;
+  font-size: 1.65rem;
   margin-bottom: 0;
 }
 
@@ -621,12 +624,12 @@ width: 100%;
     margin-left: 0;
   }
   .description-charging-text {
-    font-size: 1.65rem;
+    font-size: 1.75rem;
     margin-bottom: 2vh;
   }
 
   .description-charging-description {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
   }
  .lightning-fast-container{
   justify-content: center;
@@ -654,16 +657,7 @@ width: 100%;
     margin-bottom: 2vh;
   }
 }
-@media screen and (max-height: 825px) {
-  .description-container {
-    padding-top: 3vh;
-  }
 
-  .gauss-electric-container {
-    margin-top: 0vh;
-    margin-bottom: 4vh;
-  }
-}
 
 /* Temporary debug borders for layout 
 * {

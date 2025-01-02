@@ -231,7 +231,7 @@ const Description = () => {
           <p className='gauss-electric-superbike-text text-white font-exo text-lg font-medium sm:text-5xl'>
             GAUSS - Electric Superbike
           </p>
-          <p className='gauss-electric-description text-white font-exo'>
+          <p className='gauss-electric-description'>
           Designed and built by students, the GAUSS superbike is the world’s first fully electric endurance motorcycle. Its adjustable chassis and components are designed for optimal track and rider customization.          </p>
       </div>
     </div>
