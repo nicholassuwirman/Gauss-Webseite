@@ -86,7 +86,7 @@ const Gauss1 = () => {
   const activeCircles = getCirclePositions(view);
 
   return (
-    <div className='gauss1-page-container'>
+    <div id="gauss1" className='gauss1-page-container'>
       <Navbar />
       <div className='gauss1-hero-container'>
         <img src={gauss1Hero} alt="Gauss 1 hero" className='gauss1-hero'/>
@@ -174,7 +174,7 @@ const Gauss1 = () => {
           <p className='gauss1-footer-hero-text-title'>Fuel the Future With Us</p>
           <p className='gauss1-footer-hero-text'>Partner with us to drive innovation and shape the future of electric mobility. Together, we can achieve groundbreaking advancements in sustainable technology.</p>
 
-          <button className="gauss1-partner-button">Contact Us</button>
+          <button className="gauss1-partner-button">Partner now</button>
         </div>
       </div>
       <Footer />

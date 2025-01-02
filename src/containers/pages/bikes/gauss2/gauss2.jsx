@@ -86,8 +86,8 @@ const Gauss2 = () => {
   return (
     <div className="gauss2-page-container">
       <Navbar />
-      <div className='gauss1-hero-container'>
-        <img src={gauss2Hero} alt="Gauss 2 hero" className='gauss2-hero' loading="lazy"/>
+      <div id="gauss2" className='gauss1-hero-container'>
+        <img src={gauss2Hero} alt="Gauss 2 hero" className='gauss2-hero'/>
         <div className='gauss1-hero-shadow'></div>
         <div className="gauss2-hero-text-overlay">
           <p className='gauss2-hero-title'>Gauss 2</p>
@@ -104,15 +104,13 @@ const Gauss2 = () => {
           <img src={gauss2cooling} alt="Gauss1 cooling image" className='gauss2-description-picture' loading="lazy"/>
           <p className='gauss2-systems-title'>Efficient Thermal Management</p>
           <p className='gauss1-systems-description'>
-            High-energy cylindrical cells are complemented by featuring three independent cooling circuits for maximum performance. Thermal isolation protects the battery against extreme temperatures, while preconditioning optimizes efficiency for peak performance.
-          </p>
+          High-energy cylindrical cells are paired with three cooling circuits for peak performance. Thermal isolation safeguards the battery from extreme temperatures, while preconditioning enhances efficiency.          </p>
         </div>
         <div className='gauss1-systems-right-container'>
           <img src={gauss2battery} alt="Gauss1 cooling image" className='gauss2-description-picture' loading="lazy"/>
           <p className='gauss1-systems-title'>Quick-Swap Battery System</p>
           <p className='gauss1-systems-description'>
-            Our main focus of research for GAUSS II was developing a high-performance, exchangeable battery system. The system features modular cells, allowing up to 12 modules to be easily swapped for maintenance, ensuring long-lasting performance.
-          </p>
+          Our research for GAUSS II focused on creating a high-performance, exchangeable battery system with modular cells, enabling easy swapping of up to 12 modules for maintenance and ensuring long-lasting performance.          </p>
         </div>
       </div>
 
@@ -172,7 +170,7 @@ const Gauss2 = () => {
           <p className='gauss1-footer-hero-text-title'>Fuel the Future With Us</p>
           <p className='gauss1-footer-hero-text'>Partner with us to drive innovation and shape the future of electric mobility. Together, we can achieve groundbreaking advancements in sustainable technology.</p>
 
-          <button className="gauss1-partner-button">Contact Us</button>
+          <button className="gauss2-partner-button">Partner now</button>
         </div>
       </div>
       <Footer />

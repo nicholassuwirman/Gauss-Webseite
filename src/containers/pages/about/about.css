@@ -33,12 +33,13 @@
 .about-card-image {
   width: 90%;
   border-radius: 5px;
+  border-bottom-left-radius: 50px;
 }
 
 .about-card-title {
   color: white;
   font-family: 'Exo 2';
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   font-weight: 600;
 }
 

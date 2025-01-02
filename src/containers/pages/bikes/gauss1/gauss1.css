@@ -391,8 +391,9 @@
   font-family: 'Michroma';
   margin-top: 3vh;
   border-radius: 4px;
-  border: 1px solid white;
+  border: 1px solid black;
   transition: all 0.3s ease;
+  background-color: var(--color-secondary-blue);
 }
 .gauss1-partner-button:hover {
   transform: scale(1.03); /* Scales the button by 10% */
@@ -441,7 +442,7 @@
     margin-top: 5vh;
     padding-left: 3vh;
     padding-right: 3vh;
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-align: center;
   }
 
@@ -457,13 +458,13 @@
   }
 
   .gauss1-systems-title {
-    font-size: 1.8rem;
+    font-size: 2.1rem;
     margin-top: 1vh;
     margin-bottom: 1vh;
   }
 
   .gauss1-systems-description {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
 
   .gauss1-systems-right-container {
@@ -522,7 +523,7 @@
     font-size: 1.8rem;
   }
   .gauss1-footer-hero-text {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
   .gauss1-footer-hero {
     margin-top: 8vh;
