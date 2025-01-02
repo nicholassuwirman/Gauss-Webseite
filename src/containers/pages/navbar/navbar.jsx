@@ -118,24 +118,57 @@ const Navbar = () => {
 
       {/* Sliding Mobile Menu */}
       <div className={`navbar-mobile-container ${toggleMenu ? 'visible' : ''}`}>
-        <div className="navbar-mobile-content">
-          <div className="navbar-menu-bikes-mobile">
-            <Link to="/bikesHome" className="navbar-menu-text-bikes" onClick={handleScrollToTop}>Bikes</Link>
-            <div className="bikes-picture-container flex flex-row">
-              <Link to="/bikesHome/gauss1" className="bikes-link" onClick={handleScrollToTop}>
-                <img src={gauss1Mobile} alt="Gauss 1 Image" className="gauss-bikes-mobile" />
-              </Link>              
-              <Link to="/bikesHome/gauss2" className="bikes-link" onClick={handleScrollToTop}>
-                <img src={gauss2Mobile} alt="Gauss 2 Image" className="gauss-bikes-mobile" />
-              </Link>  
-            </div>
+      <div className="navbar-mobile-content">
+        <div className="navbar-menu-bikes-mobile">
+          <Link 
+            to="/bikesHome" 
+            className={`navbar-menu-text-bikes ${location.pathname.includes("/bikesHome") ? "active-link" : ""}`} 
+            onClick={handleScrollToTop}>
+            Bikes
+          </Link>
+          <div className="bikes-picture-container flex flex-row">
+            <Link 
+              to="/bikesHome/gauss1" 
+              className={`bikes-link ${location.pathname === "/bikesHome/gauss1" ? "active-link" : ""}`} 
+              onClick={handleScrollToTop}>
+              <img src={gauss1Mobile} alt="Gauss 1 Image" className="gauss-bikes-mobile" />
+            </Link>              
+            <Link 
+              to="/bikesHome/gauss2" 
+              className={`bikes-link ${location.pathname === "/bikesHome/gauss2" ? "active-link" : ""}`} 
+              onClick={handleScrollToTop}>
+              <img src={gauss2Mobile} alt="Gauss 2 Image" className="gauss-bikes-mobile" />
+            </Link>  
           </div>
-          <Link to="/about" className="navbar-menu-text-about" onClick={handleScrollToTop}>About</Link>
-          <Link to="/about" className="navbar-menu-text-partners" onClick={handleScrollToTop}>Partners</Link>
-          <Link to="/about" className="navbar-menu-text-partners" onClick={handleScrollToTop}>Department</Link>
-          <Link to="/about" className="navbar-menu-text-participate" onClick={handleScrollToTop}>Participate</Link>
         </div>
+        <Link 
+          to="/about" 
+          className={`navbar-menu-text-about ${location.pathname.startsWith("/about") ? "active-link" : ""}`} 
+          onClick={handleScrollToTop}>
+          About
+        </Link>
+        <Link 
+          to="/partners" 
+          className={`navbar-menu-text-partners ${location.pathname === "/partners" ? "active-link" : ""}`} 
+          onClick={handleScrollToTop}>
+          Partners
+        </Link>
+        <Link 
+          to="/department" 
+          className={`navbar-menu-text-partners ${location.pathname === "/department" ? "active-link" : ""}`} 
+          onClick={handleScrollToTop}>
+          Department
+        </Link>
+        <Link 
+          to="/participate" 
+          className={`navbar-menu-text-participate ${location.pathname === "/participate" ? "active-link" : ""}`} 
+          onClick={handleScrollToTop}>
+          Participate
+        </Link>
       </div>
+      </div>
+
+
     </div>
   );
 };

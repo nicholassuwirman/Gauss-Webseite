@@ -104,6 +104,14 @@
   opacity: 1; /* Show the images */
   pointer-events: auto; /* Allow interaction with images */
 }
+.navbar-menu-text-bikes.active-link,
+.navbar-menu-text-about.active-link,
+.navbar-menu-text-partners.active-link,
+.navbar-menu-text-participate.active-link,
+.bikes-link.active-link {
+  color: var(--color-primary-red-light); /* Match your desktop active link style */
+  font-weight: bold; /* Optional: to emphasize the active link */
+}
 
 .bikes-picture-container {
   display: flex;
