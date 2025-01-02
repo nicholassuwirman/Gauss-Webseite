@@ -25,10 +25,10 @@ const App = () => {
           <Route path="/" element={<Home />} />  {/* Home route, Hero container */}
           <Route path="/bikesHome" element={<BikesHome />} />  {/* Bikes Home route */}
           <Route path="/about" element={<About />} />  {/* About page route */}
-          <Route path="/gauss1" element={<Gauss1 />} />  {/* Gauss1 page */}
-          <Route path="/gauss2" element={<Gauss2 />} />  {/* Gauss2 page */}
-          <Route path="/team" element={<Team />} />  {/* Team page route */}
-          <Route path="/history" element={<History />} /> {/* History page route */}
+          <Route path="/bikesHome/gauss1" element={<Gauss1 />} />  {/* Gauss1 page */}
+          <Route path="/bikesHome/gauss2" element={<Gauss2 />} />  {/* Gauss2 page */}
+          <Route path="/about/team" element={<Team />} />
+          <Route path="/about/history" element={<History />} /> {/* History page route */}
         </Routes>
       </Router>
     </ApolloProvider>

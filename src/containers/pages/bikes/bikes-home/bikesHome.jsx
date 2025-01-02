@@ -20,7 +20,7 @@ const BikesHome = () => {
           <img src={gauss1bikesHomePicture} alt="Gauss 1 Image" className="bikes-gauss1-picture" />
             <p className='bikesHome-gauss-text'>Gauss 1</p>
             <p className='bikesHome-gauss-description'>Vision to Reality</p>
-            <Link to="/gauss1">
+            <Link to="/bikesHome/gauss1">
             <button className="bikes-learn-more-button">Learn More</button>
             </Link>
             </div>
@@ -28,7 +28,7 @@ const BikesHome = () => {
           <img src={gauss2bikesHomePicture} alt="Gauss 1 Image" className="bikes-gauss2-picture" />
             <p className='bikesHome-gauss-text'>Gauss 2</p>
             <p className='bikesHome-gauss-description'>Advance the Vision</p>
-            <Link to="/gauss2">
+            <Link to="/bikesHome/gauss2">
               <button className="bikes-learn-more-button-gauss2">Learn More</button>
             </Link>
         </div>

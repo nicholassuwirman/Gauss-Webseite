@@ -30,7 +30,7 @@ const About = () => {
             </p>
           </div>
           {/* Link to Team page, with scroll-to-top */}
-          <Link to="/team" onClick={handleScrollToTop}>
+          <Link to="/about/team" onClick={handleScrollToTop}>
             <button className="about-button">Learn More</button>
           </Link>
         </div>
@@ -49,7 +49,7 @@ const About = () => {
             </p>
           </div>
           {/* Link to History page, with scroll-to-top */}
-          <Link to="/history" onClick={handleScrollToTop}>
+          <Link to="/about/history" onClick={handleScrollToTop}>
             <button className="about-button">Learn More</button>
           </Link>
         </div>    

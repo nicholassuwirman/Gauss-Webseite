@@ -8,6 +8,11 @@
   color: inherit; /* Keeps the text color unchanged */
 }
 
+/* Active Link Style */
+.navbar-menu-text.active-link {
+  color: var(--color-primary-red-light); /* Highlight active link in red */
+  font-weight: bold;
+}
 
 
 /* Hidden Image container */

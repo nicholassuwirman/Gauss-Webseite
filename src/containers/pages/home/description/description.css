@@ -345,7 +345,7 @@
 }
 .description-sponsored-by-text {
   color: white;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: 'Exo 2';
   text-align: center;
   margin-bottom: 2vh; /* Space below the "Sponsored by" text */
@@ -412,14 +412,15 @@
 
 .history-button {
   margin-top: 2vh;
-  background-color: var(--color-primary-red-dark); /* Orange-red background color (offered background) */
+  background-color: var(--color-primary-red); /* Orange-red background color (offered background) */
   color: white; /* White text */
-  padding: 12px 24px; /* Padding to make the button bigger */
+  padding: 20px 36px; /* Padding to make the button bigger */
   border: none; /* Remove border */
   border-radius: 8px; /* Rounded corners */
   cursor: pointer; /* Change cursor to pointer on hover */
   transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
-  font-family: 'Exo 2' /* Font family */
+  font-family: 'Exo 2' /* Font family */;
+  font-size: 1.5rem;
 }
 
 .history-button:hover {
@@ -480,7 +481,7 @@
     flex-direction: column;
     padding-right: 4vh;
     padding-left: 4vh;
-    margin-bottom: 2vh;
+    margin-bottom: 5vh;
     margin-top: -5vh;
   }
   .gauss-electric-picture {
@@ -504,6 +505,7 @@
     justify-content: center; /* Horizontally center the content */
     height: 55vh; /* Optional: Ensures the container takes full viewport height */
     margin-top: 7vh;
+    margin-bottom: 12vh;
   }
   
 
@@ -512,8 +514,8 @@
     align-items: center;      /* Center align the items */
     padding-left: 4vh;
     padding-right: 4vh;
-    margin-bottom: 7vh;
-    margin-top: 0vh;
+    margin-bottom: 10vh;
+    margin-top: 3vh;
   }
 
 .description-text {

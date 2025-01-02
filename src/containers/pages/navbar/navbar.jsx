@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { RiMenuLine, RiCloseLine } from "react-icons/ri";
 import "./navbar.css"; // Ensure your CSS file is correctly imported
 import logoNew from '../../../assets/gauss-logo-new.png'; // Update path as necessary
@@ -12,15 +12,41 @@ const Menu = () => {
   const handleScrollToTop = () => {
     window.scrollTo(0, 0); // Scroll to top
   };
+  const location = useLocation(); // Get the current route
+  const isActive = (path) => location.pathname.startsWith(path);
 
   return (
     <>
-      <Link to="/bikesHome" className="navbar-menu-text" onClick={handleScrollToTop}>Bikes</Link>
-      <Link to="/about" className="navbar-menu-text" onClick={handleScrollToTop}>About</Link>
-      <Link to="/" className="navbar-menu-text" onClick={handleScrollToTop}>Partners</Link>
-      <Link to="/" className="navbar-menu-text" onClick={handleScrollToTop}>Department</Link>
-      <Link to="/" className="navbar-menu-text" onClick={handleScrollToTop}>Participate</Link>
-      
+      <Link 
+        to="/bikesHome" 
+        className={`navbar-menu-text ${isActive("/bikesHome") ? "active-link" : ""}`} 
+        onClick={handleScrollToTop}>
+        Bikes
+      </Link>
+      <Link 
+        to="/about" 
+        className={`navbar-menu-text ${isActive("/about") ? "active-link" : ""}`} 
+        onClick={handleScrollToTop}>
+        About
+      </Link>
+      <Link 
+        to="/partners" 
+        className={`navbar-menu-text ${isActive("/partners") ? "active-link" : ""}`} 
+        onClick={handleScrollToTop}>
+        Partners
+      </Link>
+      <Link 
+        to="/department" 
+        className={`navbar-menu-text ${isActive("/department") ? "active-link" : ""}`} 
+        onClick={handleScrollToTop}>
+        Department
+      </Link>
+      <Link 
+        to="/participate" 
+        className={`navbar-menu-text ${isActive("/participate") ? "active-link" : ""}`} 
+        onClick={handleScrollToTop}>
+        Participate
+      </Link>
     </>
   );
 };
@@ -104,9 +130,9 @@ const Navbar = () => {
             </div>
           </div>
           <Link to="/about" className="navbar-menu-text-about" onClick={handleScrollToTop}>About</Link>
-          <Link to="/" className="navbar-menu-text-partners" onClick={handleScrollToTop}>Partners</Link>
-          <Link to="/" className="navbar-menu-text-partners" onClick={handleScrollToTop}>Department</Link>
-          <Link to="/" className="navbar-menu-text-participate" onClick={handleScrollToTop}>Participate</Link>
+          <Link to="/about" className="navbar-menu-text-partners" onClick={handleScrollToTop}>Partners</Link>
+          <Link to="/about" className="navbar-menu-text-partners" onClick={handleScrollToTop}>Department</Link>
+          <Link to="/about" className="navbar-menu-text-participate" onClick={handleScrollToTop}>Participate</Link>
         </div>
       </div>
     </div>
