@@ -61,7 +61,7 @@
   padding-top: 2.8vh;
   border: none;
   background: transparent !important; /* Initial state without background */
-  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease; /* Smooth transition */
   z-index: 1000; /* Ensure navbar section has a proper stacking order */
 }
 /* Container for the Bike section */
@@ -132,11 +132,13 @@
   padding-top: 0.75rem !important;
   padding-bottom: 0.75rem !important;
 
+    transform: translateY(0); /* Applied when scrolling */
+
   justify-content: space-between; /* Center horizontally */
   align-items: center; /* Center vertically */
   padding: 0; /* Optional: adjust padding as needed */
   z-index: 1000; /* Ensure navbar stays on top */
-  transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease-in-out;
 }
 
 
@@ -167,6 +169,7 @@
 
 .navbar-mobile-container.visible {
   top: 0;
+
 }
 
 /* Mobile Menu Toggle Button */

@@ -17,7 +17,7 @@
   justify-content: center; /* Center content vertically if needed */
   height: 80vh; /* Full viewport height */
   margin-top: 10vh; /* Adjust top margin */
-  margin-bottom: 10vh;
+  margin-bottom: 7vh;
 }
 
 /* Image styles */
@@ -647,7 +647,14 @@ width: 100%;
     margin-left: 2vh;
     margin-right: 2vh;
   }
- 
+ .history-button {
+    padding: 14px 22px;
+    font-size: 1.2rem;
+  }
+
+  .description-sponsored-by-text {
+    font-size: 2.5rem;
+  }
 }
 
 @media screen and (max-height: 668px) {

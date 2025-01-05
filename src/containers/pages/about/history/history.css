@@ -62,6 +62,20 @@
     height: 10vh;
     padding-top: 1vh;
 }
+
+.history-cards-container{
+    padding-left: 10vh;
+    padding-right: 10vh;
+
+}
+.history-card-picture {
+    width: 20%;
+}
+.history-wip {
+    margin-top: 10vh;
+    color: white;
+}
+
 @media (max-width: 768px) {
     .history-hero-picture {
         width: 100%;

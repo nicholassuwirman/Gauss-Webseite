@@ -376,7 +376,7 @@
 .gauss1-footer-hero-text-title {
   color: white;
   font-family: 'Michroma';
-  font-size: 2rem;
+  font-size: 2.1rem;
 }
 .gauss1-footer-hero-text {
   color: white;
@@ -389,7 +389,7 @@
   color: white;
   font-size: 15px;
   font-family: 'Michroma';
-  margin-top: 3vh;
+  margin-top: 2vh;
   border-radius: 4px;
   border: 1px solid black;
   transition: all 0.3s ease;

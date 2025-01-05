@@ -5,6 +5,7 @@ import './history.css'; // Import the CSS file for styling
 import historyHero from '../../../../assets/history/history-hero-picture.jpg'; // Update path as necessary
 import teamArrow from '../../../../assets/team/team-arrow-down.png'; // Update path as necessary
 import historyAttilla from '../../../../assets/history/history-attilla.jpg'; // Update path as necessary
+import historyGroupPic from '../../../../assets/history/gauss-group3.jpg'; // Update path as necessary
 
 
 const History = () => {
@@ -32,6 +33,10 @@ const History = () => {
                 <p className='history-journey-text'> Mechatronics students Alexander Klein and Markus Herzog further contributed by developing an engine test bench.</p>
             </div>
         </div>
+        
+      <div className='history-cards-container'>
+        <p className='history-wip'>WIP add timeline of years here</p>
+      </div>
       <Footer /> {/* Include Footer here */}
     </div>
   );

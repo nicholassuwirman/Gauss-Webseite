@@ -41,7 +41,7 @@ const BikesHome = () => {
           <div>
             <p className='about-card-title'>Gauss 2</p>
             <p className='about-card-description'>
-            Discover the next evolution in our electric superbikes. With an advanced frame, quick-swap battery system, and efficient thermal management, Gauss 2 sets the new standard for performance and innovation in the world of electric mobility.            </p>
+            Discover the next evolution in our electric superbikes. Gauss 2 features an advanced frame, quick-swap battery, and efficient thermal management, setting a new standard in performance and innovation.            </p>
           </div>
           {/* Link to Team page, with scroll-to-top */}
           <Link to="/bikesHome/gauss2" onClick={handleScrollToTop}>
@@ -50,6 +50,12 @@ const BikesHome = () => {
         </div>
         <div className='about-card-container-right'>
           <img src={gauss2bikesHomePicture} alt="Gauss Team" className='about-card-image' />
+        </div>
+      </div>
+
+      <div className='history-cards-container'>
+        <div className='history-card-container'>
+
         </div>
       </div>
      <Footer />
