@@ -40,7 +40,7 @@ const Menu = () => {
         to="/department" 
         className={`navbar-menu-text ${isActive("/department") ? "active-link" : ""}`} 
         onClick={handleScrollToTop}>
-        Department
+        Departments
       </Link>
       <Link 
         to="/participate" 
@@ -157,7 +157,7 @@ const Navbar = () => {
           to="/department" 
           className={`navbar-menu-text-partners ${location.pathname === "/department" ? "active-link" : ""}`} 
           onClick={handleScrollToTop}>
-          Department
+          Departments
         </Link>
         <Link 
           to="/participate" 

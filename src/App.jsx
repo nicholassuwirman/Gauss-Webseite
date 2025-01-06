@@ -15,6 +15,7 @@ import Gauss1 from './containers/pages/bikes/gauss1/gauss1';  // Import Gauss1 c
 import Gauss2 from './containers/pages/bikes/gauss2/gauss2';  
 import Team from './containers/pages/about/team/team';  
 import History from './containers/pages/about/history/history'; // Import History component
+import Department from './containers/pages/department/department'; // Import History component
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/bikesHome/gauss2" element={<Gauss2 />} />  {/* Gauss2 page */}
           <Route path="/about/team" element={<Team />} />
           <Route path="/about/history" element={<History />} /> {/* History page route */}
+          <Route path="/department" element={<Department />} /> {/* History page route */}
         </Routes>
       </Router>
     </ApolloProvider>
