@@ -314,14 +314,14 @@
 /* For Mobile (below 768px) */
 @media (max-width: 768px) {
   .description-sponsors-container {
-  padding-left: 4vh;
-  padding-right: 4vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
   }
 
   .description-sponsors-row {
     display: flex;
     flex-direction: column; /* Stack rows on top of each other */
-    gap: 5vh; /* Adjust gap between rows */
+    gap: 3vh; /* Adjust gap between rows */
     width: 100%; /* Ensure each row takes full width */
   }
 
@@ -383,8 +383,8 @@
 
 @media (max-width: 391px) {
   .description-sponsor-image {
-    width: 121.5px;
-    height: 81px;
+    width: 130.5px;
+    height: 89px;
 
   }
 }

@@ -86,7 +86,7 @@ const Gauss1 = () => {
   const activeCircles = getCirclePositions(view);
 
   return (
-    <div id="gauss1" className='gauss1-page-container'>
+    <div id="gauss1-top" className='gauss1-page-container'>
       <Navbar />
       <div className='gauss1-hero-container'>
         <img src={gauss1Hero} alt="Gauss 1 hero" className='gauss1-hero'/>

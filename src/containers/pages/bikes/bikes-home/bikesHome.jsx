@@ -52,12 +52,6 @@ const BikesHome = () => {
           <img src={gauss2bikesHomePicture} alt="Gauss Team" className='about-card-image' />
         </div>
       </div>
-
-      <div className='history-cards-container'>
-        <div className='history-card-container'>
-
-        </div>
-      </div>
      <Footer />
     </div>
   );
