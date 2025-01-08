@@ -52,7 +52,7 @@
     letter-spacing: 0.5px; /* Adjust spacing as needed */
     margin-bottom: 4vh;
 }
-.history-hero-arrow {
+.historyy-hero-arrow {
     height: 10vh;
     padding-top: 1vh;
 }
@@ -80,6 +80,10 @@
 
     }
     .history-hero-picture {
+        width: 100%; /* Image takes full width on mobile */
+        margin-bottom: 20px; /* Add margin to separate image and text */
+    }
+    .historyy-hero-picture {
         width: 100%; /* Image takes full width on mobile */
         margin-bottom: 20px; /* Add margin to separate image and text */
     }
@@ -113,7 +117,7 @@
         margin-bottom: 0;
     }
 
-    .history-hero-arrow {
+    .historyy-hero-arrow {
         height: 5vh;
         margin-left: 10.8vh;
     }
