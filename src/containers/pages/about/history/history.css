@@ -2,14 +2,8 @@
     background-color: black;
 }
 
-.history-hero-picture {
-    width: 62%;
-    border-bottom-left-radius: 50px;
-    margin-right: 0;
-    padding-right: 0;
-    object-fit: cover; /* Ensure image fits well */
-}
-.history-hero-picture {
+
+.historyy-hero-picture {
     width: 59.5%;
     border-bottom-left-radius: 50px;
 }

@@ -9,6 +9,7 @@ import Footer from '../../footer/footer';  // Importing Footer component
 import './bikesHome.css';  // Optional, for styling the home page
 import gauss1bikesHomePicture from '../../../../assets/gauss-1-mobile.jpg'; // Update path as necessary
 import gauss2bikesHomePicture from '../../../../assets/gauss-2-mobile.jpg'; // Update path as necessary
+import gauss3bikesHomePicture from '../../../../assets/gauss-face.jpg'; // Update path as necessary
 
 const BikesHome = () => {
   // Handle scroll to top

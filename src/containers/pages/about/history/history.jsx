@@ -17,7 +17,7 @@ const History = () => {
                 <p className="history-hero-title">Our History</p>
                 <img src={teamArrow} alt="Gauss 1 hero" className="history-hero-arrow" />
             </div>
-            <img src={historyHero} alt="Gauss 1 hero" className="history-hero-picture" />
+            <img src={historyHero} alt="Gauss 1 hero" className="historyy-hero-picture" />
             <div className="down-arrow-container">
             </div>
         </div>
