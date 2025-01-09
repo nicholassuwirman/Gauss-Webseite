@@ -30,10 +30,10 @@ const Department = () => {
     innovation: { top: '12vh', left: '1.5%' },
     kunstofftechnik: { top: '12vh', left: '1.5%' },
     mobile: {
-      engineering: { top: '101%', left: '50%' },
-      design: { top: '101%', left: '50%' },
-      innovation: { top: '101%', left: '50%' },
-      kunstofftechnik: { top: '101%', left: '50%' },
+      engineering: { top: '80%', left: '50%' },
+      design: { top: '80%', left: '50%' },
+      innovation: { top: '80%', left: '50%' },
+      kunstofftechnik: { top: '80%', left: '50%' },
     },
   };
   
@@ -126,51 +126,54 @@ const updateButtonPositions = (buttonNumber, department, positions) => {
           Discover the departments of students that played a part in building our motorbike, combining skills from engineering, design, and innovation.
         </p>
 
-        <div className="departments-buttons-container">
-        {[1, 2, 3, 4].map((num, index) => {
-        const positions = [
-          departmentsPosition,
-          departmentsSecondPosition,
-          departmentsThirdPosition,
-          departmentsFourthPosition,
-        ];
-        const titles = ['Fb Media', 'Fb Elektrotechnik', 'Fb Kunststofftechnik', 'Fb Informatik'];
-        const descriptions = [
-          'A department focused on the creative and technical aspects of media production, including video production, graphic design, and multimedia content creation.',
-          'This department deals with the design, development, and application of electrical systems and equipment, including circuits, power generation, and control systems.',
-          'Specializes in the design and production of high-performance composite materials, such as carbon fiber, used in the construction of the frame.',
-          'Focuses on embedded systems and software development, particularly in the creation of Battery Management Systems (BMS).',
-        ];
-        return (
-          <div
-            key={num}
-            className="departments-circle-test"
-            style={{
-              top: positions[index].top,
-              left: positions[index].left,
-              transition: 'top 0.5s ease, left 0.5s ease',
-            }}
-            onClick={() =>
-              handleDepartmentsClick(titles[index], Object.keys(departmentsPositions)[index], descriptions[index], num)
-            }
-          >
-            <span className="departments-plus-sign">+</span>
-          </div>
-        );
-        })}
-        <img src={departmentsGaussFront} alt="Gauss 1 hero" className="departments-buttons-image" />
-      
-        {/* Text Description */}
-        {showTextContainer && (
-          <div className={`departments-circle-text-container ${showTextContainer ? 'visible' : ''}`}>
-            <div className="departments-circle-text-box">
-              <div>
-                <p className="departments-circle-text-title">{departmentsTitle}</p>
-                <p className="departments-circle-text-description">{departmentsDescription}</p>
+        <div>
+          <div className="departments-buttons-container">
+          {[1, 2, 3, 4].map((num, index) => {
+          const positions = [
+            departmentsPosition,
+            departmentsSecondPosition,
+            departmentsThirdPosition,
+            departmentsFourthPosition,
+          ];
+          const titles = ['Fb Media', 'Fb Elektrotechnik', 'Fb Kunststofftechnik', 'Fb Informatik'];
+          const descriptions = [
+            'A department focused on the creative and technical aspects of media production, including video production, graphic design, and multimedia content creation.',
+            'This department deals with the design, development, and application of electrical systems and equipment, including circuits, power generation, and control systems.',
+            'Specializes in the design and production of high-performance composite materials, such as carbon fiber, used in the construction of the frame.',
+            'Focuses on embedded systems and software development, particularly in the creation of Battery Management Systems (BMS).',
+          ];
+          return (
+            <div
+              key={num}
+              className="departments-circle-test"
+              style={{
+                top: positions[index].top,
+                left: positions[index].left,
+                transition: 'top 0.5s ease, left 0.5s ease',
+              }}
+              onClick={() =>
+                handleDepartmentsClick(titles[index], Object.keys(departmentsPositions)[index], descriptions[index], num)
+              }
+            >
+              <span className="departments-plus-sign">+</span>
+            </div>
+          );
+          })}
+          <img src={departmentsGaussFront} alt="Gauss 1 hero" className="departments-buttons-image" />
+        
+          {/* Text Description */}
+          {showTextContainer && (
+            <div className={`departments-circle-text-container ${showTextContainer ? 'visible' : ''}`}>
+              <div className="departments-circle-text-box">
+                <div>
+                  <p className="departments-circle-text-title">{departmentsTitle}</p>
+                  <p className="departments-circle-text-description">{departmentsDescription}</p>
+                </div>
               </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
+        
       </div>
 
       <p className='departments-learn-more-text'>Explore the Departments</p>

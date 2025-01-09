@@ -329,16 +329,45 @@
     height: 22px;
   }
   .departments-circle-text-container {
-    width: 40%;
-    left: 58%;
-    top: 65%;
+    width: 90%;
+    left: 5%;
+    top: 85%;
    
   }
+
+  .departments-learn-more-text {
+    font-size: 1.9rem;
+    margin-left: 0vh;
+    margin-top: 10vh;  
+    text-align: center;
+  }
   .departments-circle-text-title {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .departments-circle-text-description {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
+    padding-bottom: 0;
+  }
+
+  .departments-circle-text-box {
+    padding: 10px;
+    padding-top: 5px;
+  }
+  .departments-contributors-images-container {
+    padding-left: 3vh;
+    align-items: center;
+    margin-top: 1.5vh;
+  }
+  .departments-contributor-link-wrapper {
+    width: 80%; /* Make the anchor tag take the width of its container */
+
+  }
+  .departments-contributor-text {
+    font-size: 1.5rem;
+  }
+
+  .departments-arrow-right {
+    margin-top: 0.8vh;
   }
 }
