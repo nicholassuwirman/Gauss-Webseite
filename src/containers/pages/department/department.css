@@ -54,10 +54,9 @@
 }
 
 .departments-plus-sign {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 20px;
   color: white;
-  margin-bottom: 0.3vh;
+  margin-bottom: 0.4vh;
 }
 
 .departments-learn-more-button {
@@ -286,6 +285,7 @@
     padding-left: 10vh;
 }
 @media (max-width: 768px) {
+
   .department-hero-title {
     font-size: 1.57rem;
     margin-bottom: 0;
@@ -334,11 +334,14 @@
     top: 85%;
    
   }
+  .departments-plus-sign {
 
+    margin-bottom: 0.2vh;
+  }
   .departments-learn-more-text {
     font-size: 1.9rem;
     margin-left: 0vh;
-    margin-top: 10vh;  
+    margin-top: 11vh;  
     text-align: center;
   }
   .departments-circle-text-title {
@@ -346,7 +349,7 @@
   }
 
   .departments-circle-text-description {
-    font-size: 0.7rem;
+    font-size: 0.76rem;
     padding-bottom: 0;
   }
 
@@ -369,5 +372,10 @@
 
   .departments-arrow-right {
     margin-top: 0.8vh;
+  }
+
+  .departments-contributor-image{
+    margin-bottom: 1vh;
+    margin-top: 1vh;
   }
 }

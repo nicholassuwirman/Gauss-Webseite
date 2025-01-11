@@ -17,7 +17,7 @@
   justify-content: center; /* Center content vertically if needed */
   height: 80vh; /* Full viewport height */
   margin-top: 10vh; /* Adjust top margin */
-  margin-bottom: 7vh;
+  margin-bottom: 11vh;
 }
 
 /* Image styles */
@@ -221,7 +221,7 @@
   width: 100%;
   padding-left: 10vh;
   padding-right: 10vh;
-  margin-top: 5vh;
+  margin-top: 0vh;
 }
 
 .description-torque {
@@ -504,8 +504,8 @@
     align-items: center; /* Vertically center the content */
     justify-content: center; /* Horizontally center the content */
     height: 55vh; /* Optional: Ensures the container takes full viewport height */
-    margin-top: 7vh;
-    margin-bottom: 15vh;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
   }
   
 
