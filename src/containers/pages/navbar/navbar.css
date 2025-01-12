@@ -6,12 +6,16 @@
   display: inline-block;
   text-decoration: none;
   color: inherit; /* Keeps the text color unchanged */
+  caret-color: transparent; /* Hide the cursor */
+
 }
 
 /* Active Link Style */
 .navbar-menu-text.active-link {
   color: var(--color-primary-red-light); /* Highlight active link in red */
   font-weight: bold;
+  caret-color: transparent; /* Hide the cursor */
+
 }
 
 
@@ -27,6 +31,8 @@
   opacity: 0; /* Hide images initially */
   transition: opacity 0.3s ease; /* Smooth transition */
   pointer-events: none; /* Prevent interaction with the hidden images */
+  caret-color: transparent; /* Hide the cursor */
+
 }
 
 /* Individual images inside the container */
@@ -63,6 +69,8 @@
   background: transparent !important; /* Initial state without background */
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease; /* Smooth transition */
   z-index: 1000; /* Ensure navbar section has a proper stacking order */
+  caret-color: transparent; /* Hide the cursor */
+
 }
 /* Container for the Bike section */
 .bikes-link {

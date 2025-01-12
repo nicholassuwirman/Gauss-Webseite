@@ -2,6 +2,8 @@
 .hero-container {
   position: relative; /* Ensure it's properly stacked */
   z-index: 1; /* Keep it behind interactive elements */
+  caret-color: transparent; /* Hide the cursor */
+
 }
 
 

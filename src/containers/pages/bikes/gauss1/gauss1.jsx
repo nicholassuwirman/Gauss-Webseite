@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
 import './gauss1.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import gsap from 'gsap';
 
 import Navbar from '../../navbar/navbar';  
 import Footer from '../../footer/footer';  
@@ -29,6 +29,157 @@ const Gauss1 = () => {
   const [view, setView] = useState('rear'); 
   const [circleText, setCircleText] = useState('');
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  //-----GSAP-----
+  const gauss1TitleRef = useRef(null); // Reference for the hero title container
+  const gauss1TitleDescriptionRef = useRef(null); // Reference for the hero title highlight
+  const gauss1DescriptionRef = useRef(null); // Reference for the hero title highlight
+  const gauss1DescriptionLeftCardRef = useRef(null); // Reference for the hero title highlight
+  const gauss1DescriptionRightCardRef = useRef(null); // Reference for the hero title highlight
+  const gauss1CarouselRef = useRef(null); // Reference for the hero title highlight
+  const gauss1SideFrontRef = useRef(null); // Reference for the hero title highlight
+  const gauss1SideFrontMotorbikeRef = useRef(null); // Reference for the hero title highlight
+
+  useEffect(() => {
+    // Animation for the hero title (from bottom to top, from invisible to visible)
+    gsap.fromTo(
+      gauss1TitleRef.current, 
+      {
+        opacity: 0, 
+        y: 20, // Start 20px below
+      },
+      {
+        opacity: 1, 
+        y: 0, // End at the original position
+        duration: 1, // Duration of animation
+        ease: "power4.out", // Smooth easing
+      }
+    );
+
+    // Animation for the hero title highlight
+    gsap.fromTo(
+      gauss1TitleDescriptionRef.current,
+      {
+        opacity: 0,
+        y: 20, // Start 20px below
+      },
+      {
+        opacity: 1,
+        y: 0, // End at the original position
+        duration: 1,
+        delay: 0.2, // Slight delay to stagger the animations
+        ease: "power4.out",
+      }
+    );
+
+    // Animation for the hero title highlight
+    gsap.fromTo(
+      gauss1DescriptionRef.current,
+      { opacity: 0, y: 20 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.5,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: gauss1DescriptionRef.current,
+          start: 'top bottom',
+          end: 'top top',
+          scrub: 1,
+        },
+      }
+    );
+
+    // Animation for the hero title highlight
+    gsap.fromTo(
+      gauss1DescriptionLeftCardRef.current,
+      { opacity: 0, y: 20 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 2.5,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: gauss1DescriptionLeftCardRef.current,
+          start: 'top bottom',
+          end: 'top top',
+          scrub: 1,
+        },
+      }
+    );
+
+    // Animation for the hero title highlight
+    gsap.fromTo(
+      gauss1DescriptionRightCardRef.current,
+      { opacity: 0, y: 20 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 2.5,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: gauss1DescriptionRightCardRef.current,
+          start: 'top bottom',
+          end: 'top top',
+          scrub: 1,
+        },
+      }
+    );
+
+    gsap.fromTo(
+      gauss1CarouselRef.current,
+      { opacity: 0, y: 10 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 2,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: gauss1CarouselRef.current,
+          start: 'top bottom',
+          end: 'top top',
+          scrub: 1,
+        },
+      }
+    );
+
+    gsap.fromTo(
+      gauss1SideFrontRef.current,
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 2,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: gauss1SideFrontRef.current,
+          start: 'top bottom',
+          end: 'top top',
+          scrub: 1,
+        },
+      }
+    );
+
+    gsap.fromTo(
+      gauss1SideFrontMotorbikeRef.current,
+      { opacity: 0.5, y: 10 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 2,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: gauss1SideFrontMotorbikeRef.current,
+          start: 'top bottom',
+          end: 'top top',
+          scrub: 1,
+        },
+      }
+    );
+
+
+  }, []);
+  //-----GSAP----
 
   const images = [
     gauss1carousel3,
@@ -92,24 +243,24 @@ const Gauss1 = () => {
         <img src={gauss1Hero} alt="Gauss 1 hero" className='gauss1-hero'/>
         <div className='gauss1-hero-shadow'></div>
         <div className="gauss1-hero-text-overlay">
-          <p className='gauss1-hero-title'>Gauss 1</p>
-          <p className='gauss1-hero-title-description'>The one that started it all</p>
+          <p className='gauss1-hero-title' ref={gauss1TitleRef}>Gauss 1</p>
+          <p className='gauss1-hero-title-description' ref={gauss1TitleDescriptionRef}>The one that started it all</p>
         </div>
       </div>
 
-      <p className='gauss1-text-below-hero'>
+      <p className='gauss1-text-below-hero' ref={gauss1DescriptionRef}>
         GAUSS I pioneered our research, introducing the electric brake, front-wheel energy recovery, and rear air cooling systems, evolving into our first fully functional electric superbike.     
       </p>
 
       <div className='gauss1-systems-container'>
-        <div className='gauss1-systems-left-container'>
+        <div className='gauss1-systems-left-container' ref={gauss1DescriptionLeftCardRef}>
           <img src={gauss1recovery} alt="Gauss1 cooling image" className='gauss1-description-picture' loading="lazy"/>
           <p className='gauss1-systems-title'>Energy Recovery Braking</p>
           <p className='gauss1-systems-description'>
             We developed an innovative drivetrain with an electric front brake that recovers kinetic energy during braking. The engine acts as a generator, converting energy into electricity to recharge the batteries.
           </p>
         </div>
-        <div className='gauss1-systems-right-container'>
+        <div className='gauss1-systems-right-container' ref={gauss1DescriptionRightCardRef}>
           <img src={gauss1cooling} alt="Gauss1 cooling image" className='gauss1-description-picture' loading="lazy"/>
           <p className='gauss1-systems-title'>Advanced Air Cooling</p>
           <p className='gauss1-systems-description'>
@@ -118,7 +269,7 @@ const Gauss1 = () => {
         </div>
       </div>
 
-      <div className="carousel-container">
+      <div className="carousel-container" ref={gauss1CarouselRef}>
         <button className="carousel-button prev" onClick={prevImage}><span className="arrow-sign">‹</span></button>
         <div className="carousel-images-wrapper" style={{ transform: `translateX(-${currentIndex * itemWidth}%)` }}>
           {images.map((image, index) => (
@@ -128,7 +279,7 @@ const Gauss1 = () => {
         <button className="carousel-button next" onClick={nextImage}><span className="arrow-sign">›</span></button>
       </div>
 
-      <div className='gauss1-description-container'>
+      <div className='gauss1-description-container' ref={gauss1SideFrontRef}>
         <div className="toggle-buttons">
           <button
             className={`view-rear-front-button ${view === 'rear' ? 'active' : ''}`}

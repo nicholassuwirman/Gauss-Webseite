@@ -107,7 +107,7 @@ const Description = () => {
 
     gsap.fromTo(
       sponsorsRef.current,
-      { opacity: 0, y: 50 },
+      { opacity: 0, y: 20 },
       {
         opacity: 1,
         y: 0,
@@ -121,6 +121,7 @@ const Description = () => {
         },
       }
     );
+    
   }, []);
 
   return (
@@ -201,10 +202,10 @@ const Description = () => {
     </div>
  
     <div className='description-sponsors-container' ref={sponsorsRef}>
-      <p className='description-sponsored-by-text'>Sponsored by</p>
+      <p className='description-sponsored-by-text'  >Sponsored by</p>
 
 
-      <div className='description-sponsors-row'>
+      <div className='description-sponsors-row' >
         <div className='description-sponsor-inside-row'>
           <img src={sponsorHatronix} alt="Gauss sponsor image" className='description-sponsor-image' loading="lazy"/>
           <img src={sponsorGftn} alt="Gauss sponsor image" className='description-sponsor-image'loading="lazy" />

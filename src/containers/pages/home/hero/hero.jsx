@@ -23,7 +23,7 @@ const Hero = () => {
       {
         opacity: 1, 
         y: 0, // End at the original position
-        duration: 1.5, // Duration of animation
+        duration: 1, // Duration of animation
         ease: "power4.out", // Smooth easing
       }
     );
@@ -38,7 +38,7 @@ const Hero = () => {
       {
         opacity: 1,
         y: 0, // End at the original position
-        duration: 1.5,
+        duration: 1,
         delay: 0.2, // Slight delay to stagger the animations
         ease: "power4.out",
       }
@@ -54,7 +54,7 @@ const Hero = () => {
       {
         opacity: 1,
         y: 0, // End at the original position
-        duration: 1.5,
+        duration: 1,
         delay: 0.4, // Delay to stagger it further
         ease: "power4.out",
       }
@@ -70,7 +70,7 @@ const Hero = () => {
       {
         opacity: 1,
         y: 0, // End at the original position
-        duration: 1.5,
+        duration: 1,
         delay: 0.6, // Delay to stagger it further
         ease: "power4.out",
       }

@@ -1,5 +1,7 @@
 .gauss1-page-container {
   background-color: black;
+  caret-color: transparent; /* Hide the cursor */
+
 }
 
 .gauss1-hero-container {
