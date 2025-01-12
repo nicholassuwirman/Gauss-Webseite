@@ -335,8 +335,9 @@
    
   }
   .departments-plus-sign {
+    font-size: 16px;
 
-    margin-bottom: 0.2vh;
+    margin-bottom: 0.1vh;
   }
   .departments-learn-more-text {
     font-size: 1.9rem;
