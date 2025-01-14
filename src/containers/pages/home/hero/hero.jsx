@@ -97,7 +97,7 @@ const Hero = () => {
 
       {/* Hero Title Section */}
       <div className="hero-title-container" >
-        <p className="hero-title-fuel" ref={heroTitleRef}>Charge the Future</p>
+        <p className="hero-title-fuel" ref={heroTitleRef}>Student Developed</p>
         <p className="hero-title-highlight" ref={heroHighlightRef}>Gauss 2</p>
         <p className="hero-title-search-partner" ref={heroSearchPartnerRef}>Seeking sponsors for our electric superbike. </p>
         <div className="hero-title-partner-mobile-container">
