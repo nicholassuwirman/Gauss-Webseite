@@ -11,8 +11,10 @@ import gauss2Mobile from '../../../assets/gauss-2-mobile.jpg'; // Update path as
 
 const Menu = () => {
   const handleScrollToTop = () => {
-    window.scrollTo(0, 0); // Scroll to top
+    // Use scrollIntoView for immediate jump to top
+    window.scrollTo(0, 0); // Scroll to top when menu is toggled
   };
+  
   const location = useLocation(); // Get the current route
   const isActive = (path) => location.pathname.startsWith(path);
 
@@ -91,9 +93,8 @@ const Navbar = () => {
   }, [toggleMenu]);
 
   const handleScrollToTop = () => {
-    window.scrollIntoView({ top: 0, behavior: 'auto' }, 'immediate');
+    window.scrollTo(0, 0); // Scroll to top when menu is toggled
   };
-  
 
   return (
     <div>
