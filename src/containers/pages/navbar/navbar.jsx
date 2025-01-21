@@ -11,9 +11,8 @@ import gauss2Mobile from '../../../assets/gauss-2-mobile.jpg'; // Update path as
 
 const Menu = () => {
   const handleScrollToTop = () => {
-    window.scrollIntoView({ top: 0, behavior: 'auto' }, 'immediate');
+    window.scrollTo(0, 0); // Scroll to top
   };
-  
   const location = useLocation(); // Get the current route
   const isActive = (path) => location.pathname.startsWith(path);
 
