@@ -13,8 +13,9 @@ import aboutImprint from '../../../assets/about/about-imprint.jpg';
 const About = () => {
   // Handle scroll to top
   const handleScrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollIntoView({ top: 0, behavior: 'auto' }, 'immediate');
   };
+  
 
   return (
     <div id="about" className="about-container">

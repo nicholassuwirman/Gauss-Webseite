@@ -12,6 +12,8 @@ import departmentsElektroPicture from '../../../assets/departments/departments-e
 import arrowRight from '../../../assets/departments/arrow-right.png';
 
 const Department = () => {
+
+  
   const [departmentsTitle, setDepartmentsTitle] = useState('');
   const [departmentsDescription, setDepartmentsDescription] = useState('');
   const [departmentsButtonText, setDepartmentsButtonText] = useState('Learn More');

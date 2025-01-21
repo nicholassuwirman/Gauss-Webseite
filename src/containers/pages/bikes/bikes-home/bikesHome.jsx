@@ -12,6 +12,10 @@ import gauss1bikesHomePicture from '../../../../assets/gauss-1-mobile.jpg'; // U
 import gauss2bikesHomePicture from '../../../../assets/gauss-2-mobile.jpg'; // Update path as necessary
 
 const BikesHome = () => {
+  const handleScrollToTop = () => {
+    window.scrollIntoView({ top: 0, behavior: 'auto' }, 'immediate');
+  };  
+
   const gauss1CardRef = useRef(null); // Reference for the hero title container
   const gauss2CardRef = useRef(null); // Reference for the hero title highlight
   useEffect(() => {
@@ -47,9 +51,7 @@ const BikesHome = () => {
     );
   }, []);
   // Handle scroll to top
-  const handleScrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  
   return (
     <div id="bikesHome" className="bikes-home-container relative flex flex-col overflow-hidden">
      <Navbar/>
