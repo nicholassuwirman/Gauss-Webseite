@@ -13,7 +13,7 @@ import gauss2bikesHomePicture from '../../../../assets/gauss-2-mobile.jpg'; // U
 
 const BikesHome = () => {
   const handleScrollToTop = () => {
-    window.scrollIntoView({ top: 0, behavior: 'auto' }, 'immediate');
+    window.scrollTo(0, 0); // Scroll to top when menu is toggled
   };  
 
   const gauss1CardRef = useRef(null); // Reference for the hero title container
