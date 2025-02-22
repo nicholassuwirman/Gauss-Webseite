@@ -6,7 +6,7 @@ import './footer.css';
 
 const Footer = () => {
     return(
-    <div className='flex justify-between items-center'>
+    <div className='flex justify-between items-center mb-2'>
         <div className='copyright-logo-pic' >
         <img src={copyrightLogo} className='copyright-logo-picture h-[1.5rem] mr-2 '/>    
         <p className='description-copyright-text'>Gauss Project</p>
