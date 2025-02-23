@@ -1,18 +1,140 @@
 /* partners.css */
 .partners-section {
-    padding: 20px;
     text-align: center;
-    background-color: #f9f9f9;
     background-color: black;
-  }
-  
-  .partners-section h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .partners-section p {
-    font-size: 1.2rem;
-    color: #666;
-  }
+    
+}
+
+.partners-container {
+  padding-left: 10vh;
+  margin-top: 5vh;
+}
+
+.partners-row {
+  display: flex;
+  margin-bottom: 4vh;
+}
+
+.partners-contributor-image {
+  border-radius: 5px;
+  border-bottom-right-radius: 40px;
+  margin-bottom: 1vh;
+  height: 180px;
+  width: 310px;
+}
+
+.partners-contributor-image-container {
+  width: 100%;
+  cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+  display: inline-block; /* Prevent anchor tag from affecting layout */
+}
+
+
+.partners-contributor-link-wrapper {
+  display: block; /* Make the anchor tag behave like a block element */
+  width: 22.8%; /* Make the anchor tag take the width of its container */
+  text-decoration: none; /* Remove the default underline */
+  margin-right: 3vh;
+}
+
+/* Add smooth transition for image border */
+.partners-contributor-image-container .departments-contributor-image {
+  border: 2px solid transparent; /* Initially set to transparent */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Add smooth transition for the underline (using pseudo-element) */
+.partners-contributor-image-container .departments-contributor-text {
+  position: relative; /* Ensure text is positioned for the pseudo-element */
+  color: white; /* Default text color */
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.partners-contributor-image-container:hover .departments-contributor-image {
+  border-color: red; /* Border color turns red on hover */
+}
+
+/* Pseudo-element for underline effect */
+.partners-contributor-image-container .departments-contributor-text::after {
+  content: ''; /* Create empty content for the underline */
+  position: absolute; /* Position the underline below the text */
+  bottom: -3px; /* Adjust distance from text */
+  left: 0;
+  width: 0; /* Start with no width */
+  height: 2px; /* Thickness of the underline */
+  background-color: red; /* Red color for the underline */
+  transition: width 0.3s ease; /* Smooth transition for width */
+}
+
+/* On hover, animate the underline to grow and change text color */
+.partners-contributor-image-container:hover .departments-contributor-text::after {
+  width: 100%; /* Underline expands to full width */
+}
+.partners-hero-arrow {
+  height: 10vh;
+    padding-top: 1vh;
+}
+.partners-contributor-image-container:hover .departments-contributor-text {
+  color: white; /* Keep the text white, no color change */
+}
+
+
+.team-hero-title {
+  color: white;
+  font-size: 6rem;
+  font-family: 'Michroma';
+  font-weight: 600;
+  margin-bottom: 30vh;
+}
+
+.team-hero-container {
+  display: flex;
+  margin-top: 3vh;
+}
+
+.team-hero-picture {
+  width: 59.5%;
+  border-bottom-left-radius: 50px;
+}
+
+.team-hero-left {
+  width: 43%;
+  padding-left: 10vh;
+
+}
+
+.team-hero-arrow {
+  height: 10vh;
+  padding-top: 1vh;
+}
+
+
+.partner-hero-title {
+  font-size: 5rem;
+  color: white;
+  font-family: 'Michroma';
+  font-weight: 600;
+  margin-bottom: 30vh;
+  text-align: start;
+  width: 20%;
+}
+.partner-hero-arrow {
+  height: 6rem;
+}
+
+.partners-container {
+  justify-content: left;
+  align-items: start;
+}
+
+.partner-hero-container {
+  margin-bottom: 14vh;
+}
+
+.partners-team-partners-text {
+  color: white;
+  text-align: start;
+  font-size: 3rem;
+  font-family: 'Exo 2';
+  margin-bottom: 4vh;
+}
