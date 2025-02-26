@@ -166,7 +166,7 @@
 /* Navbar Mobile Menu */
 .navbar-mobile-container {
   position: fixed;
-  top: -105%;
+  top: -110%;
   left: 0;
   width: 100%;
   height: 100vh;
