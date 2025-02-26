@@ -1,140 +1,212 @@
 /* partners.css */
 .partners-section {
-    text-align: center;
-    background-color: black;
-    
+  text-align: center;
+  background-color: black;
+  
 }
 
 .partners-container {
-  padding-left: 10vh;
-  margin-top: 5vh;
+padding-left: 10vh;
+margin-top: 5vh;
 }
 
-.partners-row {
-  display: flex;
-  margin-bottom: 4vh;
-}
-
-.partners-contributor-image {
-  border-radius: 5px;
-  border-bottom-right-radius: 40px;
-  margin-bottom: 1vh;
-  height: 180px;
-  width: 310px;
-}
-
-.partners-contributor-image-container {
-  width: 100%;
-  cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
-  display: inline-block; /* Prevent anchor tag from affecting layout */
-}
-
-
-.partners-contributor-link-wrapper {
-  display: block; /* Make the anchor tag behave like a block element */
-  width: 22.8%; /* Make the anchor tag take the width of its container */
-  text-decoration: none; /* Remove the default underline */
-  margin-right: 3vh;
-}
-
-/* Add smooth transition for image border */
-.partners-contributor-image-container .departments-contributor-image {
-  border: 2px solid transparent; /* Initially set to transparent */
-  transition: border-color 0.3s ease; /* Smooth transition for border color */
-}
-
-/* Add smooth transition for the underline (using pseudo-element) */
-.partners-contributor-image-container .departments-contributor-text {
-  position: relative; /* Ensure text is positioned for the pseudo-element */
-  color: white; /* Default text color */
-  transition: color 0.3s ease; /* Smooth transition for text color */
-}
-
-.partners-contributor-image-container:hover .departments-contributor-image {
-  border-color: red; /* Border color turns red on hover */
-}
-
-/* Pseudo-element for underline effect */
-.partners-contributor-image-container .departments-contributor-text::after {
-  content: ''; /* Create empty content for the underline */
-  position: absolute; /* Position the underline below the text */
-  bottom: -3px; /* Adjust distance from text */
-  left: 0;
-  width: 0; /* Start with no width */
-  height: 2px; /* Thickness of the underline */
-  background-color: red; /* Red color for the underline */
-  transition: width 0.3s ease; /* Smooth transition for width */
-}
-
-/* On hover, animate the underline to grow and change text color */
-.partners-contributor-image-container:hover .departments-contributor-text::after {
-  width: 100%; /* Underline expands to full width */
-}
-.partners-hero-arrow {
-  height: 10vh;
-    padding-top: 1vh;
-}
-.partners-contributor-image-container:hover .departments-contributor-text {
-  color: white; /* Keep the text white, no color change */
-}
-
-
-.team-hero-title {
-  color: white;
-  font-size: 6rem;
-  font-family: 'Michroma';
-  font-weight: 600;
-  margin-bottom: 30vh;
-}
-
-.team-hero-container {
-  display: flex;
-  margin-top: 3vh;
-}
-
-.team-hero-picture {
-  width: 59.5%;
+.partner-hero {
+  width: 61%;
   border-bottom-left-radius: 50px;
 }
 
-.team-hero-left {
-  width: 43%;
-  padding-left: 10vh;
 
-}
-
-.team-hero-arrow {
-  height: 10vh;
-  padding-top: 1vh;
-}
 
 
 .partner-hero-title {
-  font-size: 5rem;
-  color: white;
-  font-family: 'Michroma';
-  font-weight: 600;
-  margin-bottom: 30vh;
-  text-align: start;
-  width: 20%;
+font-size: 4.3rem;
+color: white;
+font-family: 'Michroma';
+font-weight: 600;
+margin-bottom: 43vh;
+text-align: start;
+width: 20%;
 }
 .partner-hero-arrow {
-  height: 6rem;
+height: 4rem;
+width: 4rem;
 }
 
 .partners-container {
-  justify-content: left;
-  align-items: start;
+justify-content: left;
+align-items: start;
 }
 
 .partner-hero-container {
-  margin-bottom: 14vh;
+margin-bottom: 14vh;
+display: flex;
 }
 
 .partners-team-partners-text {
-  color: white;
-  text-align: start;
-  font-size: 3rem;
-  font-family: 'Exo 2';
-  margin-bottom: 4vh;
+color: white;
+text-align: start;
+font-size: 3rem;
+font-family: 'Exo 2';
+margin-bottom: 4vh;
+}
+/* partners.css */
+.partners-section {
+  text-align: center;
+  background-color: black;
+}
+
+.partners-container {
+padding-left: 10vh;
+margin-top: 3vh;
+}
+
+/* PARTNER CARD STYLES */
+.partners-contributor-image-container {
+width: 100%;
+cursor: pointer; /* Pointer to indicate interactivity */
+display: inline-block; /* Prevent anchor tag from affecting layout */
+text-align: center;
+}
+
+/* Link styling */
+.partners-contributor-link-wrapper {
+display: block; /* Ensure the anchor tag behaves as a block */
+width: 100%;
+text-decoration: none; /* Remove the default underline */
+margin-right: 3vh;
+}
+
+/* IMAGE STYLES */
+.partners-contributor-image {
+border-radius: 5px;
+border-bottom-right-radius: 40px;
+margin-bottom: 1vh;
+height: 180px;
+width: 310px;
+border: 3px solid transparent; /* Transparent border initially */
+transition: border-color 0.3s ease; /* Smooth border transition */
+}
+
+/* Hover effect: Red border */
+.partners-contributor-image-container:hover .partners-contributor-image {
+border-color: red;
+}
+
+/* TEXT STYLES */
+.partners-contributor-text {
+color: white;
+font-size: 1.9rem;
+font-family: 'Exo 2';
+position: relative;
+transition: color 0.3s ease;
+}
+
+/* Pseudo-element for the underline animation */
+.partners-contributor-text::after {
+content: ''; 
+position: absolute;
+bottom: -3px; /* Distance from text */
+left: 0;
+width: 0; /* Initially hidden */
+height: 2px;
+background-color: red;
+transition: width 0.3s ease;
+}
+
+/* Hover effect: Expand underline */
+.partners-contributor-image-container:hover .partners-contributor-text::after {
+width: 100%;
+}
+
+/* Ensure text color stays white */
+.partners-contributor-image-container:hover .partners-contributor-text {
+color: white;
+}
+
+/* GRID LAYOUT */
+.partners-row {
+display: grid;
+grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+gap: 16px;
+margin-bottom: 5vh;
+}
+
+.partner-hero-title {
+  display: flex;
+  flex-direction: row;
+}
+.partner-hero-left {
+  display: flex;
+  flex-direction: column;
+}
+/* Responsive Layout for Mobile */
+@media (max-width: 768px) {
+  .partners-row {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+  }
+
+  .partner-hero-title {
+    font-size: 2rem;
+    width: 82.2%;
+    margin-bottom: 5vh;
+  }
+
+  .partner-hero-title {
+    flex-direction: column;
+  }
+
+  .partners-container {
+    padding-left: 0vh;
+  }
+
+  .partners-team-partners-text {
+    font-size: 2.2rem;
+  }
+
+  .partner-hero-container {
+    flex-direction: column;
+  }
+
+  .partner-hero {
+    width: 100%;
+    border-bottom-left-radius: 50px;
+  }
+
+  .partner-hero-left {
+    padding-left: 4vh;
+    flex-direction: row;
+  }
+    
+  .partner-hero-arrow {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .partners-team-partners-text {
+    padding-left: 4vh;
+    margin-bottom: 2vh;
+  }
+
+  .partners-row {
+    padding-left: 4vh;
+    padding-right: 4vh;
+  }
+
+  .partners-contributor-image {
+    height: 120px;
+    border-bottom-right-radius: 40px;
+
+  }
+
+  .partners-contributor-text {
+    font-size: 1.35rem;
+  }
+
+  .partners-row {
+    margin-bottom: 2vh;
+  }
+
+  .partner-hero-container {
+    margin-bottom: 7vh;
+  }
 }
