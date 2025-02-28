@@ -48,9 +48,11 @@ font-size: 3rem;
 font-family: 'Exo 2';
 margin-bottom: 4vh;
 }
+
+/* debug */
+
 /* partners.css */
 .partners-section {
-  text-align: center;
   background-color: black;
 }
 
@@ -70,7 +72,7 @@ text-align: center;
 /* Link styling */
 .partners-contributor-link-wrapper {
 display: block; /* Ensure the anchor tag behaves as a block */
-width: 100%;
+width: 85%;
 text-decoration: none; /* Remove the default underline */
 margin-right: 3vh;
 }
@@ -81,7 +83,7 @@ border-radius: 5px;
 border-bottom-right-radius: 40px;
 margin-bottom: 1vh;
 height: 180px;
-width: 310px;
+width: 300px;
 border: 3px solid transparent; /* Transparent border initially */
 transition: border-color 0.3s ease; /* Smooth border transition */
 }
@@ -99,6 +101,7 @@ font-family: 'Exo 2';
 position: relative;
 transition: color 0.3s ease;
 }
+/* debug */
 
 /* Pseudo-element for the underline animation */
 .partners-contributor-text::after {

@@ -27,6 +27,10 @@ import gauss2Video from '../../../../assets/Gauss 2 Video.mp4';
 
 import gaussDescriptionImage from '../../../../assets/gauss-description-2.jpg';
 
+import contactPerosnSteven from '../../../../assets/team-steven-samstag-cropped.jpg';
+import emailLogo from '../../../../assets/email_.png';
+import linkedinLogo from '../../../../assets/linkedin_.png';
+
 const Description = () => {
   // Create separate refs for each animated section
   const descriptionContentRef = useRef(null);
@@ -241,8 +245,38 @@ const Description = () => {
         </div>
       </div>
 
-      <button className="history-button">Be a part of history</button>
 
+      <div className='description-contact-container'>
+        <p className='description-contact-person-text'>Contact Person</p>
+        <div className='description-contact-person-container'>
+          <div className='contact-person-1-container'>
+            <p className='description-contanct-person-name'>Steven Samstag</p>
+            <img src={contactPerosnSteven} alt="Gauss sponsor image" className='contact-person-image' loading="lazy"/>
+            <div className='contact-person-logos-container'>
+              <a href="https://www.linkedin.com/in/steven-samstag-7a474b263/?originalSubdomain=de" target="_blank" rel="noopener noreferrer">
+                <img src={linkedinLogo} alt="LinkedIn Profile" className='contact-person-logo-linkedin' loading="lazy"/>
+              </a>
+              <a href="https://mail.google.com/mail/?view=cm&to=dummyemail@gmail.com" target="_blank" rel="noopener noreferrer">
+                <img src={emailLogo} alt="Email Contact" className='contact-person-logo-email' loading="lazy"/>
+              </a>
+            </div>          
+          </div>
+          <div className='contact-person-2-container'>
+            <p className='description-contanct-person-name'>Steven Samstag</p>
+            <img src={contactPerosnSteven} alt="Gauss sponsor image" className='contact-person-image' loading="lazy"/>
+            <div className='contact-person-logos-container'>
+              <a href="https://www.linkedin.com/in/steven-samstag-7a474b263/?originalSubdomain=de" target="_blank" rel="noopener noreferrer">
+                <img src={linkedinLogo} alt="LinkedIn Profile" className='contact-person-logo-linkedin' loading="lazy"/>
+              </a>
+              <a href="https://mail.google.com/mail/?view=cm&to=dummyemail@gmail.com" target="_blank" rel="noopener noreferrer">
+                <img src={emailLogo} alt="Email Contact" className='contact-person-logo-email' loading="lazy"/>
+              </a>
+            </div>          
+          </div>
+        </div>
+      </div>
+      
+      <button className="history-button">Be a part of history</button>
     </div>
 
 

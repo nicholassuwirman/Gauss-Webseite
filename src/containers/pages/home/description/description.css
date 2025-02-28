@@ -17,7 +17,7 @@
   justify-content: center; /* Center content vertically if needed */
   height: 80vh; /* Full viewport height */
   margin-top: 10vh; /* Adjust top margin */
-  margin-bottom: 11vh;
+  margin-bottom: 14vh;
 }
 
 /* Image styles */
@@ -108,7 +108,7 @@
   top: 0;
   left: 0;
   width: 93%;
-  height: 68vh;
+  height: 30rem;
   padding: 0;
   object-fit: cover; 
   transition: filter 0.5s ease-out;
@@ -270,7 +270,7 @@
   flex-wrap: wrap;
   padding-right: 2rem;
   padding-left: 4rem;
-  margin-bottom: 15vh;
+  margin-bottom: 10vh;
   margin-top: 10vh;
 }
 
@@ -309,6 +309,71 @@
   width: 270px; /* Set desired size */
   height: 180px; /* Consistent aspect ratio */
   border-radius: 10px; /* Round borders */
+}
+
+/* -----------Contact Person-------- */
+
+.description-contact-container {
+  text-align: center;
+}
+
+.description-contact-person-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.description-contact-person-text {
+  color: white;
+  font-family: 'Exo 2';
+  font-size: 2.8rem;
+  margin-top: 12vh;
+  margin-bottom: 5vh;
+}
+
+.contact-person-image {
+  width: 300px;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+border-bottom-right-radius: 40px;
+}
+
+.contact-person-1-container {
+  margin-right: 2rem;
+  
+}
+
+.contact-person-2-container {
+  margin-left: 2rem;
+}
+
+.contact-person-logos-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-person-logo-linkedin,
+.contact-person-logo-email {
+  height: 2.5rem;
+  margin: 0 0.7rem;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+.contact-person-logo-linkedin:hover,
+.contact-person-logo-email:hover {
+  transform: translateY(-3px); /* Moves the icon up slightly */
+  opacity: 0.8; /* Makes it slightly transparent */
+}
+
+
+.description-contanct-person-name {
+  color: white;
+  font-family: "Exo 2";
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
 
 /* For Mobile (below 768px) */
@@ -398,7 +463,7 @@
 
 .gauss-electric-picture {
   width: 700px;
-  width: 50%;
+  width: 46rem;
   margin-right: 5vh;
   margin-left: 3vh;
 }
@@ -414,7 +479,7 @@
   margin-top: 2vh;
   background-color: var(--color-primary-red); /* Orange-red background color (offered background) */
   color: white; /* White text */
-  padding: 20px 36px; /* Padding to make the button bigger */
+  padding: 25px 40px; /* Padding to make the button bigger */
   border: none; /* Remove border */
   border-radius: 8px; /* Rounded corners */
   cursor: pointer; /* Change cursor to pointer on hover */
@@ -476,6 +541,29 @@
   100% { background-position: 0 0; }
 }
 @media (max-width: 768px) {
+  .description-contact-person-container {
+    flex-direction: column;
+  }
+
+  .contact-person-1-container {
+    margin-bottom: 3rem;
+  }
+
+  .description-contact-person-text {
+    font-size: 2.5rem;
+  }
+
+  .description-contanct-person-name {
+    font-size: 1.7rem;
+  }
+
+  .contact-person-1-container {
+    margin-right: 0;
+  }
+
+  .contact-person-2-container {
+    margin-left: 0;
+  }
 
   .gauss-electric-container {
     flex-direction: column;
@@ -488,7 +576,7 @@
     width: 100%;
     padding: 0;
     margin: 0;
-    margin-top: 6vh;
+    margin-top: 2vh;
   }
   .gauss-electric-text {
     width: full;
@@ -504,7 +592,7 @@
     align-items: center; /* Vertically center the content */
     justify-content: center; /* Horizontally center the content */
     height: 55vh; /* Optional: Ensures the container takes full viewport height */
-    margin-top: 5vh;
+    margin-top: 2vh;
     margin-bottom: 12vh;
   }
   
@@ -514,10 +602,10 @@
     align-items: center;      /* Center align the items */
     padding-left: 4vh;
     padding-right: 4vh;
-    margin-bottom: 10vh;
+    margin-bottom: 6vh;
     margin-top: 3vh;
   }
-
+  
 .description-text {
   font-size: 2.2rem;
 }
@@ -666,9 +754,3 @@ width: 100%;
     margin-bottom: 2vh;
   }
 }
-
-
-/* Temporary debug borders for layout 
-* {
-  border: 1px solid red; 
-}*/
