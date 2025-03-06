@@ -18,7 +18,7 @@
 
 .footer-gauss-logo {
   height: 55px;
-  margin-bottom: 1vh;
+  margin-bottom: 2vh;
 }
 
 .footer-top-column-logo {
@@ -35,9 +35,9 @@
 .footer-company-name {
   color: white;
   font-family: 'Exo 2';
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 600;
-  margin-bottom: 1vh;
+  margin-bottom: 2vh;
 }
 
 .footer-company-description {
@@ -50,15 +50,11 @@
   color: white;
   font-family: 'Exo 2';
   font-weight: 600;
-  margin-bottom: 3vh;
-  font-size: 1.4rem;
+  margin-bottom: 2vh;
+  font-size: 1.5rem;
 }
 
-.footer-link-text {
-  color: white;
-  font-family: 'Exo 2';
-  margin-bottom: 0.5vh;
-}
+
 
 .footer-social-icons {
   display: flex;
@@ -95,14 +91,31 @@
 }
 
 .footer-copyright-icon {
-  width: 18px; /* Adjust size */
-  height: 18px;
+  width: 22px; /* Adjust size */
+  height: 22px;
+  
+}
+
+.footer-copyright-text {
+  font-family: 'Exo 2';
+  font-size: 1.1rem;
 }
 
 .footer-link-text {
   color: white;
   text-decoration: none;
   transition: color 0.3s ease-in-out; /* Ensure smooth color transition */
+  color: white;
+  font-family: 'Exo 2';
+  margin-bottom: 0.5vh;
+}
+
+.footer-imprint-text {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out; /* Ensure smooth color transition */
+  color: white;
+  font-family: 'Exo 2';
 }
 
 .footer-link-text:hover {
@@ -110,5 +123,21 @@
   opacity: 1; /* Forces full opacity */
 }
 
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+  }
+  .footer-container {
+    margin-top: 4vh;
+    padding-right: 7vw;
+  }
+  .footer-top-column-logo {
+    width: 100%;
+    margin-bottom: 5vh;
+  }
 
-
+  .footer-top-column {
+    width: 100%;
+    margin-bottom: 4vh;
+  }
+}

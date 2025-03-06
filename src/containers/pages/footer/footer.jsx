@@ -41,10 +41,10 @@ const Footer = () => {
         </div>
         <div className="footer-top-column">
           <p className="footer-top-column-title">Projects</p>
-          <Link to="/participate" className="footer-link-text" onClick={scrollToTop}>
+          <Link to="/bikesHome/gauss1" className="footer-link-text" onClick={scrollToTop}>
             Gauss 1
           </Link>
-          <Link to="/participate" className="footer-link-text" onClick={scrollToTop}>
+          <Link to="/bikesHome/gauss2" className="footer-link-text" onClick={scrollToTop}>
             Gauss 2
           </Link>
           <Link to="/participate" className="footer-link-text" onClick={scrollToTop}>
@@ -81,10 +81,11 @@ const Footer = () => {
       <div className="footer-bottom">
         <p className="footer-copyright">
             <img src={copyrightLogo} alt="Copyright" className="footer-copyright-icon" />
-            2024 Gauss Project
-            
+            <p className="footer-copyright-text">
+              2025 Gauss Project
+            </p>
         </p>
-        <Link to="/imprint" className="footer-link-text">Imprint</Link>
+        <Link to="/imprint" className="footer-imprint-text">Imprint</Link>
       </div>
 
     </div>

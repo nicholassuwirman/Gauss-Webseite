@@ -40,7 +40,7 @@ const OurPartner = () => {
         <div className="partners-section">
           <Navbar />
           <div className='partners-container'>
-            <div className="partner-hero-container">
+            <div className="team-hero-container">
               <div className='partner-hero-left'>
                   <p className="partner-hero-title">Our Partners</p>
                     <img src={teamArrow} alt="Gauss 1 hero" className="partner-hero-arrow" />

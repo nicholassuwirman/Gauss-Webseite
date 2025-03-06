@@ -10,10 +10,14 @@
   }
   
   .partner-hero {
-    width: 61%;
+    position: relative;
+    z-index: 1;
+    width: 62.5%; /* Same as your working code */
     border-bottom-left-radius: 50px;
-  }
-  
+    height: auto; /* Ensures aspect ratio is maintained */
+    object-fit: cover; /* Prevents distortion */
+}
+
   
   
   
@@ -39,6 +43,7 @@
   .partner-hero-container {
   margin-bottom: 14vh;
   display: flex;
+  position: relative;
   }
   
   .partners-team-partners-text {
@@ -47,6 +52,7 @@
   font-size: 3rem;
   font-family: 'Exo 2';
   margin-bottom: 4vh;
+  margin-top: 8vh;
   }
   
   /* debug */
@@ -140,6 +146,7 @@
   .partner-hero-left {
     display: flex;
     flex-direction: column;
+    width: 43%;
   }
   /* Responsive Layout for Mobile */
   @media (max-width: 768px) {

@@ -15,9 +15,9 @@
   flex-direction: column; /* Stack image and text container vertically */
   align-items: center; /* Horizontally center the content */
   justify-content: center; /* Center content vertically if needed */
-  height: 80vh; /* Full viewport height */
-  margin-top: 10vh; /* Adjust top margin */
-  margin-bottom: 14vh;
+  height: 60vh; /* Full viewport height */
+  margin-top: 20vh; /* Adjust top margin */
+  margin-bottom: 10vh;
 }
 
 /* Image styles */
@@ -38,7 +38,7 @@
   font-family: 'Exo 2';
 }
 .description-lightning-container {
-  margin-top: 8vh;
+  margin-top: 5vh;
 }
 /* Individual text items */
 .description-text-item {
@@ -221,7 +221,7 @@
   width: 100%;
   padding-left: 10vh;
   padding-right: 10vh;
-  margin-top: 0vh;
+  margin-top: 10vh;
 }
 
 .description-torque {
@@ -233,7 +233,7 @@
 }
 .description-text-header {
   font-family: 'Michroma';
-  font-size: 3.7rem;
+  font-size: 3.4rem;
   color: white;
   margin-bottom: 7vh;
 }
@@ -454,7 +454,7 @@
 }
 @media (max-width: 465px) {
   .description-sponsor-image {
-    width: 135px; /* 270px * 0.5 = 135px */
+    width: 145px; /* 270px * 0.5 = 135px */
     height: 90px; /* 180px * 0.5 = 90px */
   }
  
@@ -520,9 +520,9 @@
   cursor: pointer; /* Change cursor to pointer on hover */
   transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
   font-family: 'Exo 2' /* Font family */;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-bottom: 5vh;
-  padding: 17.5px 30px; /* Padding to make the button bigger */
+  padding: 15px 30px; /* Padding to make the button bigger */
 
   font-family: 'Michroma';
 }
@@ -817,7 +817,7 @@ width: 100%;
   }
 
   .description-become-partner-text {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .history-button {
@@ -832,5 +832,13 @@ width: 100%;
 
   .gauss-electric-container {
     margin-bottom: 2vh;
+  }
+}
+
+@media (max-width: 1920px) and (max-aspect-ratio: 16/9) {  
+  .description-datasheet-container {
+    height: 50vh; /* Full viewport height */
+    margin-top: 10vh; /* Adjust top margin */
+    margin-bottom: 5vh;
   }
 }
