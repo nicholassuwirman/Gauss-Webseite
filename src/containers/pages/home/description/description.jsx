@@ -129,7 +129,7 @@ const Description = () => {
   }, []);
 
   return (
-    <div className="description-container flex flex-col bg-black text-left pb-4 text-lg h-auto">
+    <div className="description-container flex flex-col bg-black text-left text-lg h-auto">
       {/* Wrap the whole content you want to animate */}
       <div className="description-datasheet-container" ref={descriptionContentRef}>
         <div className="description-text justify-center flex text-[#EAEAEA] text-[1rem] font-semibold sm:text-[3rem]">
@@ -247,36 +247,34 @@ const Description = () => {
 
 
       <div className='description-contact-container'>
-        <p className='description-contact-person-text'>Contact Person</p>
-        <div className='description-contact-person-container'>
-          <div className='contact-person-1-container'>
-            <p className='description-contanct-person-name'>Steven Samstag</p>
-            <img src={contactPerosnSteven} alt="Gauss sponsor image" className='contact-person-image' loading="lazy"/>
-            <div className='contact-person-logos-container'>
-              <a href="https://www.linkedin.com/in/steven-samstag-7a474b263/?originalSubdomain=de" target="_blank" rel="noopener noreferrer">
-                <img src={linkedinLogo} alt="LinkedIn Profile" className='contact-person-logo-linkedin' loading="lazy"/>
-              </a>
-              <a href="https://mail.google.com/mail/?view=cm&to=dummyemail@gmail.com" target="_blank" rel="noopener noreferrer">
-                <img src={emailLogo} alt="Email Contact" className='contact-person-logo-email' loading="lazy"/>
-              </a>
-            </div>          
-          </div>
-          <div className='contact-person-2-container'>
-            <p className='description-contanct-person-name'>Steven Samstag</p>
-            <img src={contactPerosnSteven} alt="Gauss sponsor image" className='contact-person-image' loading="lazy"/>
-            <div className='contact-person-logos-container'>
-              <a href="https://www.linkedin.com/in/steven-samstag-7a474b263/?originalSubdomain=de" target="_blank" rel="noopener noreferrer">
-                <img src={linkedinLogo} alt="LinkedIn Profile" className='contact-person-logo-linkedin' loading="lazy"/>
-              </a>
-              <a href="https://mail.google.com/mail/?view=cm&to=dummyemail@gmail.com" target="_blank" rel="noopener noreferrer">
-                <img src={emailLogo} alt="Email Contact" className='contact-person-logo-email' loading="lazy"/>
-              </a>
-            </div>          
+        <div className='description-contact-container-left'>
+          <p className='description-contact-person-text'>Contact Person</p>
+          <div className='description-contact-person-container'>
+            <div className='contact-person-1-container'>
+              <p className='description-contanct-person-name'>Steven Samstag</p>
+              <p className='description-contanct-person-desccription'>Project Leader</p>
+              <img src={contactPerosnSteven} alt="Gauss sponsor image" className='contact-person-image' loading="lazy"/>
+              <div className='contact-person-logos-container'>
+                <a href="https://www.linkedin.com/in/steven-samstag-7a474b263/?originalSubdomain=de" target="_blank" rel="noopener noreferrer">
+                  <img src={linkedinLogo} alt="LinkedIn Profile" className='contact-person-logo-linkedin' loading="lazy"/>
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&to=dummyemail@gmail.com" target="_blank" rel="noopener noreferrer">
+                  <img src={emailLogo} alt="Email Contact" className='contact-person-logo-email' loading="lazy"/>
+                </a>
+              </div>          
+            </div>
+            
           </div>
         </div>
+        
+        <div className='description-contact-container-right'>
+          <p className='description-become-partner-text'>"Our partners play a crucial role in shaping the future of electric superbikes. Be part of the journey."</p>
+          <button className="history-button">Be a Partner</button>
+
+        </div>
+
       </div>
       
-      <button className="history-button">Be a part of history</button>
     </div>
 
 

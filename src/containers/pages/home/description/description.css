@@ -247,6 +247,7 @@
 .lightning-fast-text {
   font-size: 3rem;
   margin-top: 5vh;
+  margin-bottom: 1vh;
   font-family: 'Exo 2';
 }
 .description-weight {
@@ -313,8 +314,40 @@
 
 /* -----------Contact Person-------- */
 
+.description-contanct-person-desccription {
+  color: rgb(217, 217, 217);
+  font-family: 'Exo 2';
+  margin-bottom: 0.5rem;
+}
+
+.description-contact-container-left {
+  width: 30%;
+  margin-left: 15vw;
+}
+
+.description-contact-container-right {
+  width: 50%;
+  height: 100%; /* Ensure it takes full viewport height */
+  display: flex;
+  text-align: start;
+  flex-direction: column; /* Keeps content stacked */
+  justify-content: center; /* Centers content vertically */
+  align-items: start; /* Keeps text left-aligned */
+  padding-left: 20px; /* Optional: Adjust left padding for better alignment */
+  padding-top: 27vh;
+}
+
+.description-become-partner-text {
+  color: white;
+  font-size: 1.7rem;
+  font-family: 'Exo 2';
+  margin-bottom: 1vh;
+}
+
 .description-contact-container {
   text-align: center;
+  display: flex;
+  height: 650px;
 }
 
 .description-contact-person-container {
@@ -329,19 +362,23 @@
   color: white;
   font-family: 'Exo 2';
   font-size: 2.8rem;
-  margin-top: 12vh;
-  margin-bottom: 5vh;
+  margin-top: 10vh;
+  margin-bottom: 1.5vh;
+  padding-bottom: 1.3rem; /* Adds space between text and line */
+  border-bottom: 2px solid rgb(190, 190, 190); /* White underline */
+  display: inline-block; /* Ensures the border matches the text width */
+  padding-left: 10px; /* Extends the line a little */
+  padding-right: 10px; /* Extends the line a little */
 }
 
 .contact-person-image {
   width: 300px;
   margin-bottom: 1rem;
   border-radius: 5px;
-border-bottom-right-radius: 40px;
+  border-bottom-right-radius: 40px;
 }
 
 .contact-person-1-container {
-  margin-right: 2rem;
   
 }
 
@@ -373,7 +410,7 @@ border-bottom-right-radius: 40px;
   color: white;
   font-family: "Exo 2";
   font-size: 1.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 /* For Mobile (below 768px) */
@@ -470,7 +507,6 @@ border-bottom-right-radius: 40px;
 
 
 .history-text {
-  font-family: 'Exo 2';
   font-size: 1.2rem; /* Font size */
 
 }
@@ -479,13 +515,16 @@ border-bottom-right-radius: 40px;
   margin-top: 2vh;
   background-color: var(--color-primary-red); /* Orange-red background color (offered background) */
   color: white; /* White text */
-  padding: 25px 40px; /* Padding to make the button bigger */
   border: none; /* Remove border */
   border-radius: 8px; /* Rounded corners */
   cursor: pointer; /* Change cursor to pointer on hover */
   transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
   font-family: 'Exo 2' /* Font family */;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  margin-bottom: 5vh;
+  padding: 17.5px 30px; /* Padding to make the button bigger */
+
+  font-family: 'Michroma';
 }
 
 .history-button:hover {
@@ -592,8 +631,8 @@ border-bottom-right-radius: 40px;
     align-items: center; /* Vertically center the content */
     justify-content: center; /* Horizontally center the content */
     height: 55vh; /* Optional: Ensures the container takes full viewport height */
-    margin-top: 2vh;
-    margin-bottom: 12vh;
+    margin-top: 5vh;
+    margin-bottom: 15vh;
   }
   
 
@@ -742,6 +781,47 @@ width: 100%;
 
   .description-sponsored-by-text {
     font-size: 2.5rem;
+  }
+
+  .description-contact-container {
+    flex-direction: column; /* Side by side in larger screens */
+    height: 80vh;
+    
+  }
+
+  .description-contact-container-right {
+    width: 80%; 
+    padding-top: 0;
+    padding-left: 0;
+    margin-left: 4vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    margin-top: 5vh;
+  }
+
+
+  .description-contact-person-text {
+    margin-top: 6vh;
+  }
+  .description-contact-container-left {
+    width: 80%; 
+    margin-left: 4vh;
+    height: 65%;
+    
+  }
+
+  .contact-person-image {
+    width: 200px;
+  }
+
+  .description-become-partner-text {
+    font-size: 1.3rem;
+  }
+
+  .history-button {
+    padding: 15px 32px; /* Padding to make the button bigger */
   }
 }
 

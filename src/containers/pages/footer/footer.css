@@ -1,55 +1,114 @@
-.description-copyright-text {
-    color: white;
-    padding-top: 0rem;
-    font-family: 'Exo 2';
-  }
-  .copyright-logo-pic {
-    display: flex;
-    align-items: center;
-    margin-top: 10rem;
-    margin-left: 2.4rem;
-    margin-bottom: 3vh;
-  }
-  
-  .social-icon {
-    height: 1.5rem;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-    transition: transform 0.2s; /* Smooth transform effect over 200ms */
-  
-  }.social-icon:hover {
-    transform: translateY(-4px); /* Move the element up by 4px on hover */
-  
-  }
-  .logo-footer-container {
-    margin-right: 3vh;
-    display: flex;
-    margin-top: 10rem;
-    align-items: center;
-    margin-bottom: 1rem;
-    }
+.footer-container {
+  background-color: var(--color-dark-gray);
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 7vw;
+  padding-right: 5vw;
+  padding-top: 4vh;
+  padding-bottom: 3vh;
+}
 
-  @media (max-width: 768px) {
-    .copyright-logo-pic {
-      margin-left: 1rem;
-      margin-top: 10rem;
-    }
+.footer-top {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10vh;
+}
 
-    .logo-footer-container {
-      margin-right: 1rem;
-      margin-top: 10rem;
 
-    }
+.footer-gauss-logo {
+  height: 55px;
+  margin-bottom: 1vh;
+}
 
-    .description-copyright-text {
-      font-size: 1rem;
-    }
+.footer-top-column-logo {
+  width: 40%;
+  margin-right: 15vh;
+}
+.footer-top-column {
+  width: 20%;
+  margin-right: 10vh;
+  display: flex;
+  flex-direction: column;
+}
 
-    .copyright-logo-picture {
-      height: 1.3rem;
-    }
+.footer-company-name {
+  color: white;
+  font-family: 'Exo 2';
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1vh;
+}
 
-    .social-icon {
-      height: 1.3rem;
-    }
-  }
+.footer-company-description {
+  color: white;
+  font-family: 'Exo 2';
+  font-size: 1rem;
+}
+
+.footer-top-column-title {
+  color: white;
+  font-family: 'Exo 2';
+  font-weight: 600;
+  margin-bottom: 3vh;
+  font-size: 1.4rem;
+}
+
+.footer-link-text {
+  color: white;
+  font-family: 'Exo 2';
+  margin-bottom: 0.5vh;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start; /* Aligns to the left */
+  align-items: center;
+  margin-top: 10px;
+}
+
+.footer-social-icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-social-icon:hover {
+  transform: translateY(-3px); /* Moves the icon up slightly */
+  opacity: 0.8; /* Slight transparency effect */
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.footer-copyright {
+  color: white;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between text & icon */
+}
+
+.footer-copyright-icon {
+  width: 18px; /* Adjust size */
+  height: 18px;
+}
+
+.footer-link-text {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out; /* Ensure smooth color transition */
+}
+
+.footer-link-text:hover {
+  color: var(--color-primary-red); /* Ensures the hover color stays consistent */
+  opacity: 1; /* Forces full opacity */
+}
+
+
+
