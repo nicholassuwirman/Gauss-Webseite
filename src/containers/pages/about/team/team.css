@@ -21,6 +21,8 @@
   .team-hero-picture {
     width: 59.5%;
     border-bottom-left-radius: 50px;
+    height: auto; /* Ensures aspect ratio is maintained */
+    object-fit: cover; /* Prevents distortion */
   }
 
   .team-hero-left {
