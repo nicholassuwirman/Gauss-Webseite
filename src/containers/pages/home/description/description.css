@@ -853,5 +853,12 @@ width: 100%;
 }
 
 @media (max-height: 850px) {
-  
+  .description-contact-container {
+    margin-top: 5vh;
+
+  }
+
+  .gauss-electric-container {
+    margin-top: 8vh;
+  }
 }
