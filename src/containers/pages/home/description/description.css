@@ -589,7 +589,7 @@
   }
 
   .description-contact-person-text {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .description-contanct-person-name {
@@ -609,7 +609,7 @@
     padding-right: 4vh;
     padding-left: 4vh;
     margin-bottom: 2vh;
-    margin-top: -5vh;
+    margin-top: 2vh;
   }
   .gauss-electric-picture {
     width: 100%;
@@ -784,21 +784,27 @@ width: 100%;
   }
 
   .description-contact-container {
-    flex-direction: column; /* Side by side in larger screens */
-    height: 80vh;
-    
+    display: flex;
+  flex-direction: column;
+  justify-content: center; /* Keeps content centered */
+  align-items: center;
+  width: 100%;
+  max-width: 600px; /* Adjust based on your layout */
+  padding: 5vw;
+  min-height: clamp(500px, 80vh, 700px);
+  box-sizing: border-box;
   }
 
   .description-contact-container-right {
     width: 80%; 
     padding-top: 0;
     padding-left: 0;
-    margin-left: 4vh;
+    margin-left: 0vh;
     text-align: center;
     justify-content: center;
     align-items: center;
-    height: 30%;
-    margin-top: 5vh;
+    height: 300px;
+    margin-top: 6vh;
   }
 
 
@@ -807,8 +813,8 @@ width: 100%;
   }
   .description-contact-container-left {
     width: 80%; 
-    margin-left: 4vh;
-    height: 65%;
+    margin-left: 0vh;
+    height: 470px;
     
   }
 
@@ -817,12 +823,15 @@ width: 100%;
   }
 
   .description-become-partner-text {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .history-button {
     padding: 15px 32px; /* Padding to make the button bigger */
   }
+
+  
+  
 }
 
 @media screen and (max-height: 668px) {
@@ -841,4 +850,8 @@ width: 100%;
     margin-top: 10vh; /* Adjust top margin */
     margin-bottom: 5vh;
   }
+}
+
+@media (max-height: 850px) {
+  
 }

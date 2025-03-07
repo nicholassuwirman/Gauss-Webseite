@@ -140,4 +140,8 @@
     width: 100%;
     margin-bottom: 4vh;
   }
+
+  .footer-link-text {
+    font-size: 1rem;
+  }
 }
