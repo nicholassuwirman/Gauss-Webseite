@@ -47,16 +47,16 @@ const Footer = () => {
           <Link to="/bikesHome/gauss2" className="footer-link-text" onClick={scrollToTop}>
             Gauss 2
           </Link>
-          <Link to="/participate" className="footer-link-text" onClick={scrollToTop}>
+          <Link to="/about/team" className="footer-link-text" onClick={scrollToTop}>
             Meet the team
           </Link>
-          <Link to="/participate" className="footer-link-text" onClick={scrollToTop}>
+          <Link to="/about/history" className="footer-link-text" onClick={scrollToTop}>
             Our History
           </Link>
-          <Link to="/participate" className="footer-link-text" onClick={scrollToTop}>
+          <Link to="/partners/ourPartners" className="footer-link-text" onClick={scrollToTop}>
             Our Partners
           </Link>
-          <Link to="/participate" className="footer-link-text" onClick={scrollToTop}>
+          <Link to="/partners/becomePartner" className="footer-link-text" onClick={scrollToTop}>
             Be a partner
           </Link>
           <Link to="/participate" className="footer-link-text" onClick={scrollToTop}>
